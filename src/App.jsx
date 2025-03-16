@@ -5,6 +5,7 @@ import Contact from "./pages/contact"
 import Navbar from "./components/navbar"
 import Footer from './components/footer'
 import FreeQuote from "./pages/freeQuote"
+import AboutUs from "./pages/AboutUs"
 function App() {
 
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/treatments" element={<Service/>} />
             <Route path="/contact-us" element={<Contact/>} />
             <Route path="/free-quote" element={<FreeQuote/>} />
+            <Route path="/about-us" element={<AboutUs/>} />
         </Routes>
         <Footer/>
     </>
