@@ -1,7 +1,7 @@
 import HomeCard from '../components/homeCard'
 import HeroSection from '../components/heroSection'
 import PatientVoice from '../components/PatientVoice'
-import { homeServices,services } from '../constants'
+import { homeServices } from '../constants'
 // import Navbar from '../components/navbar'
 // import Footer from '../components/footer'
 const Home = () => {
