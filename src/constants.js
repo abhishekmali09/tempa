@@ -1,7 +1,7 @@
 export const ContactInformation = {
     "contactNumber":"123-456-789",
     "emailAddress":"info@mysite.com",
-    "address":"500 Terry Francine Street, 6th Floor, San Francisco, CA 94158",
+    "address":"500 Terry Francine St., 6th Floor, San Francisco, CA 94158",
     "socialMediaHandles":{
         "facebook":"link",
         "instagram":"link",
@@ -39,6 +39,26 @@ export const services = [
     },
     {
         img:"./Images/ServiceImage1.png",
+        name:"Service4"
+    },
+    {
+        img:"./Images/ServiceImage2.png",
+        name:"Service4"
+    },
+    {
+        img:"./Images/ServiceImage2.png",
+        name:"Service4"
+    },
+    {
+        img:"./Images/ServiceImage2.png",
+        name:"Service4"
+    },
+    {
+        img:"./Images/ServiceImage2.png",
+        name:"Service4"
+    },
+    {
+        img:"./Images/ServiceImage2.png",
         name:"Service4"
     },
     {

@@ -1,14 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-const ServicesCard = ({serviceDetails}) => {
+const ServicesCard = ({ serviceDetails }) => {
   return (
-    <div className='max-w-[calc((100vw-40px)/3)] bg-[#e3d4ca]'>
-        <img src={serviceDetails.img} className='w-full h-10/12' />
-        <div className='text-center pt-5 text-xl'>
-            <h1>{serviceDetails.name}</h1>
-        </div>
+    <div className="py-10 flex flex-col justify-start items-center">
+      <img
+        src={serviceDetails.img}
+        alt={serviceDetails.name}
+        className="w-[150px] h-[150px] aspect-square rounded-full object-cover"
+      />
+      <div className="text-center pt-5 text-xl font-semibold">
+        <h1>{serviceDetails.name}</h1>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ServicesCard
+export default ServicesCard;
