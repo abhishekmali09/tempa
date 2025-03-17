@@ -7,6 +7,7 @@ import Footer from './components/footer'
 import FreeQuote from "./pages/freeQuote"
 import AboutUs from "./pages/AboutUs"
 import Doctors from "./pages/doctors"
+import Hospitals from "./pages/hospitals"
 function App() {
 
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/free-quote" element={<FreeQuote/>} />
             <Route path="/about-us" element={<AboutUs/>} />
             <Route path="/doctors" element={<Doctors/>} />
+            <Route path="/hospitals" element={<Hospitals/>} />
         </Routes>
         <Footer/>
     </>
