@@ -1,8 +1,8 @@
 import React from 'react';
 import img from '../../public/Images/ServiceImage1.png';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { Facebook, Twitter, LinkedIn } from '@mui/icons-material';
 
-// TeamMemberCard Component with left-aligned content
+// TeamMemberCard Component with left-aligned content and MUI icons
 const TeamMemberCard = ({ name, title, photo, social }) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md w-full sm:w-[300px]">
@@ -11,13 +11,13 @@ const TeamMemberCard = ({ name, title, photo, social }) => {
       <p className="text-gray-600 mb-4">{title}</p>
       <div className="flex gap-4">
         <a href={social.facebook} target="_blank" rel="noopener noreferrer">
-          <FaFacebookF className="text-black text-xl" />
+          <Facebook className="text-black text-xl" />
         </a>
         <a href={social.twitter} target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="text-black text-xl" />
+          <Twitter className="text-black text-xl" />
         </a>
         <a href={social.linkedin} target="_blank" rel="noopener noreferrer">
-          <FaLinkedinIn className="text-black text-xl" />
+          <LinkedIn className="text-black text-xl" />
         </a>
       </div>
     </div>
