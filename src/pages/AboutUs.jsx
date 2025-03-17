@@ -3,22 +3,20 @@ import img from '../../public/Images/ServiceImage1.png';
 
 const AboutUs = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-8">
-      <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-        <div className="p-6">
-          <h1 className="text-4xl font-bold text-center mb-4">About Us</h1>
-          <p className="text-center text-gray-600 mb-8">Finding Inspiration in Every Turn</p>
-          <p className="text-gray-700 mb-8">
-            This is your About Page.
-          </p>
+    <div className='bg-[#faf3eb] max-w-screen'>
+      <div className='flex flex-col mx-auto max-w-[500px] justify-center items-center pt-30 pb-10'>
+        <div className="p-8">
+          <h1 className="text-6xl flex flex-col  text-center mb-8">About Us</h1>
+          <p className="flex flex-col text-center mb-4">Finding Inspiration in Every Turn</p>
+          <p className="flex flex-col text-center mb-8">
+            This is your About Page.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias vitae repellat, molestiae hic eaque praesentium itaque. Enim, nesciunt dicta.</p>
           <img src={img} alt="About Us" className="w-full h-auto mb-8" />
-          <h2 className="text-2xl font-bold mb-4">Our Story</h2>
-          <p className="text-gray-700">
+          <h2 className="text-5xl flex flex-col text-center mb-4">Our Story</h2>
+          <p className="flex flex-col text-center mb-2">
                Team is good 
           </p>
-          <p className="text-gray-700 mt-4">
-            some thing about the company
-          </p>
+          <p className='flex flex-col text-center mb-8 '>
+            some thing about the company.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias vitae repellat, molestiae hic eaque praesentium itaque. Enim, nesciunt dicta.</p>
         </div>
       </div>
     </div>
