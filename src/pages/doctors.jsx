@@ -23,12 +23,12 @@ const Doctors = () => {
         <h1 className='text-5xl text-center'>Doctors</h1>
         <div className='max-w-[1200px] mx-auto'>
             <form onSubmit={onSubmit} className='flex gap-5 font-semibold md:flex-row flex-col '>
-                <input placeholder='Mumbai' className='bg-[#decdc3] focus:border-2 border-[#966b54] p-2 rounded-lg' />
-                <input placeholder="Cardiac Surgery" className='bg-[#decdc3] focus:border-2 border-[#966b54] p-2 rounded-lg' />
+                <input placeholder='Mumbai' className='bg-[#decdc3] focus:border-2 border-[#966b54] p-2 rounded-lg w-[20rem] h-[4rem] text-xl' />
+                <input placeholder="Cardiac Surgery" className='bg-[#decdc3] focus:border-2 border-[#966b54] p-2 rounded-lg w-[20rem] h-[4rem] text-xl' />
                 <button type='submit' className='bg-[#966b54] px-8 py-2 text-white rounded-lg '>Search</button>
             </form>
         </div>
-        <div className='w-full flex flex-col justify-center items-start gap-10'>
+        <div className='w-full flex flex-col justify-center items-start gap-10 px-10'>
             {
                 currentPageDoc.length!==0 && currentPageDoc.map((doctor)=>{
                     return <DoctorsCard doctorDetail={doctor}/>
