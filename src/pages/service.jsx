@@ -1,4 +1,4 @@
-import { homeServices,services } from '../constants'
+import { homeServices,treatments } from '../constants'
 import ServicesCard from '../components/servicesCard'
 import FreeQuote from '../components/freeQuote'
 const Service = () => {
@@ -9,8 +9,8 @@ const Service = () => {
                 <h1 className='text-5xl'>Treatments Provided</h1>
                 <div className='w-9 h-0.5 bg-black'></div>
             </div>
-            <div className='max-w-[1100px] flex flex-wrap justify-center items-center flex-col sm:flex-row gap-10'>
-            {services.length!=0 && services.map((ser)=>{
+            <div className='max-w-[1100px] flex flex-wrap justify-center items-baseline flex-row gap-10 mx-auto'>
+            {treatments.length!==0 && treatments.map((ser)=>{
                 return <ServicesCard serviceDetails={ser} />
 
             })}
