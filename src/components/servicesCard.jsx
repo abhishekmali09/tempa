@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicesCard = ({ serviceDetails }) => {
   return (
-    <div className="py-10 flex flex-col justify-start items-center">
+    <div className="py-10 flex flex-col justify-start items-center w-[150px]">
       <img
         src={serviceDetails.img}
         alt={serviceDetails.name}
