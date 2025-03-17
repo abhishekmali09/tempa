@@ -1,23 +1,23 @@
 import React from 'react';
 import img from '../../public/Images/ServiceImage1.png';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { Facebook, Twitter, LinkedIn } from '@mui/icons-material';
 
-// TeamMemberCard Component
+// TeamMemberCard Component with left-aligned content and MUI icons
 const TeamMemberCard = ({ name, title, photo, social }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md text-center w-full sm:w-[300px]">
-      <img src={photo} alt={name} className="w-32 h-32 mx-auto mb-4 object-cover" />
+    <div className="bg-white p-6 rounded-lg shadow-md w-full sm:w-[300px]">
+      <img src={photo} alt={name} className="w-32 h-32 mb-4 object-cover" />
       <h3 className="text-xl font-bold mb-2">{name}</h3>
       <p className="text-gray-600 mb-4">{title}</p>
-      <div className="flex justify-center gap-4">
+      <div className="flex gap-4">
         <a href={social.facebook} target="_blank" rel="noopener noreferrer">
-          <FaFacebookF className="text-black text-xl" />
+          <Facebook className="text-black text-xl" />
         </a>
         <a href={social.twitter} target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="text-black text-xl" />
+          <Twitter className="text-black text-xl" />
         </a>
         <a href={social.linkedin} target="_blank" rel="noopener noreferrer">
-          <FaLinkedinIn className="text-black text-xl" />
+          <LinkedIn className="text-black text-xl" />
         </a>
       </div>
     </div>
@@ -65,9 +65,9 @@ const AboutUs = () => {
           Some thing about the company. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias vitae repellat, molestiae hic eaque praesentium itaque. Enim, nesciunt dicta.
         </p>
       </div>
-      {/* New "Meet the Team" section */}
+      {/* "Meet the Team" section */}
       <div className="max-w-[1000px] mx-auto mt-10">
-        <h2 className="text-3xl font-bold text-center mb-4">MEET THE TEAM</h2>
+        <h2 className="text-3xl text-center mb-4">MEET THE TEAM</h2>
         <hr className="mb-8" />
         <div className="flex flex-wrap justify-center gap-8">
           {teamMembers.map((member, index) => (
