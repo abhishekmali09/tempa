@@ -381,3 +381,131 @@ export const doctors = [
         short_desc: "Dr. Sandeep Attawar is one of India’s foremost cardiothoracic surgeons and presently working as Chair & Program Director, Cardiac Surgery and Thoracic organ transplantation at Parkway-Global Hospitals, India."
     }
 ];
+
+export const hospitals = [
+    {
+      name: "APOLLO HOSPITAL IN DELHI",
+      address: "India, New Delhi - 110076",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/Apollo-Hospital-Delhi111.jpg",
+    },
+    {
+      name: "ARTEMIS HOSPITAL",
+      address: "India, Haryana - 122001",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/artimis_hosp11.jpg",
+    },
+    {
+      name: "BLK HOSPITAL",
+      address: "India, New Delhi - 110005",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/blk_hospital.jpg",
+    },
+    {
+      name: "FORTIS ESCORTS HEART HOSPITAL",
+      address: "India, New Delhi - 110025",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/fortis-escorts11.jpg",
+    },
+    {
+      name: "FORTIS HOSPITAL",
+      address: "India, Gurugram - 121001",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/FMRI_HOSP11.jpg",
+    },
+    {
+      name: "JAYPEE HOSPITAL",
+      address: "India, Noida - 201304",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/Jaypee_Hospital_in_India.jpg",
+    },
+    {
+      name: "MAX HOSPITAL",
+      address: "India, New Delhi - 110017",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/max_saket.jpg",
+    },
+    {
+      name: "SHARP SIGHT CENTRE",
+      address: "India, New Delhi - 110092",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/sharp-sight-centre-delhi-enlwg1.jpg",
+    },
+    {
+      name: "BUMRUNGRAD HOSPITAL",
+      address: "Thailand, Bangkok - 10110",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/BUMRUNGRAD-INTERNATIONAL-HOSPITAL-01_preview-min.jpeg",
+    },
+    {
+      name: "MOUNT ELIZABETH HOSPITAL",
+      address: "Singapore, Singapore - 228510",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/mountelizabeth_hospital.jpg",
+    },
+    {
+      name: "MEDICALPARK HOSPITAL",
+      address: "Turkey, Istanbul - 34188",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/medical_park.jpg",
+    },
+    {
+      name: "FOCUZ AYURVEDA HOSPITAL",
+      address: "India, Kerala - 673634",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/focuz_hospital.jpg",
+    },
+    {
+      name: "MANIPAL HOSPITAL",
+      address: "India, Dwarka - 110075",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/Manipal-Hospital-Dwarka-Doctors-List_4.jpg",
+    },
+    {
+      name: "PSRI HOSPITAL",
+      address: "India, Delhi - 110017",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/psri_hospital_in_delhi.jpg",
+    },
+    {
+      name: "AMRITA HOSPITAL",
+      address: "India, Faridabad - 121002",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/amrita.jpg",
+    },
+    {
+      name: "ART Fertility Clinics",
+      address: "India, South Delhi - 110065",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/art-fertility-clinics-in-india.jpg",
+    },
+    {
+      name: "MEDANTA HOSPITAL",
+      address: "India, Gurugram - 122001",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/medi.jpg",
+    },
+    {
+      name: "AMRI HOSPITAL",
+      address: "India, Kolkata - 700029",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/AMRI_HOSPITAL11.jpg",
+    },
+    {
+      name: "ASIAN HOSPITAL IN FARIDABAD",
+      address: "India, Faridabad - 121001",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/asian_90011.jpg",
+    },
+    {
+      name: "GLENEAGLES GLOBAL HOSPITAL",
+      address: "India, Tamil Nadu - 600100",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/GLENEAGLES_GLOBAL_HOSPITAL.jpg",
+    },
+    {
+      name: "COLUMBIA ASIA HOSPITAL",
+      address: "India, Bangalore - 560055",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/colombia_Asia_hospital.jpg",
+    },
+    {
+      name: "ASTER CMI HOSPITAL",
+      address: "India, Bangalore - 560092",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/Aster_CMI_Hospital.jpg",
+    },
+    {
+      name: "HCG CANCER CENTER",
+      address: "India, Bangalore - 560002",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/hcg_bangalore.jpg",
+    },
+    {
+      name: "KOKILABEN DHIRUBHAI AMBANI HOSPITAL",
+      address: "India, Mumbai - 400053",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/kokilavan_hosp11.jpg",
+    },
+    {
+      name: "YATHARTH HOSPITAL",
+      address: "India, Noida",
+      img: "https://peacemedicaltourism.com/assets/uploads/hospitals/yh-bd9393d9f1.jpg",
+    }
+  ];
