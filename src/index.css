@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@theme {
+    --font-text: "open-sans", "sans-serif";
+    --font-heading: "poppins", "sans-serif";
+}
+.grayish{
+    background-color: #ECEFF1;
+}
+.golden-yellow{
+    background-color: #FFCA28;
+}
+.teal{
+    background-color: #26A69A;
+}
+.coral{
+    background-color: #FF6F61;
+}
