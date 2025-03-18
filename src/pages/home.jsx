@@ -9,8 +9,8 @@ const Home = () => {
     <>
     <div>
         <HeroSection/>
-        <div className='bg-[#decdc3] p-10 '>
-            <h1 className='text-4xl pb-10 border-b-2'>Services</h1>
+        <div className='grayish p-10 '>
+            <h1 className='text-4xl pb-10 border-b-2 border-black  font-heading text-rose-400 '>Services</h1>
             {homeServices.length!=0 && homeServices.map((ser)=>{
                 return <HomeCard serviceDetails={ser} />
             })}
