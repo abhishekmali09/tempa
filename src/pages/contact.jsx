@@ -17,38 +17,38 @@ const iconsReg = {
 ContactInformation
 const Contact = () => {
   return (
-    <div className='bg-[#faf3eb] max-w-screen'>
+    <div className='grayish max-w-screen'>
         <div className='flex flex-col mx-auto max-w-[500px] justify-center items-center pt-30 pb-10'>
-            <p>Let's Connect</p>
+            <p className='font-text'>Let's Connect</p>
             <div className='pb-6 flex gap-6 flex-col justify-center items-center'>
-                <h1 className='text-6xl'>Contact</h1>
-                <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias vitae repellat, molestiae hic eaque praesentium itaque. Enim, nesciunt dicta.</p>
+                <h1 className='text-6xl font-heading text-rose-400 '>Contact</h1>
+                <p className='text-center font-text '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias vitae repellat, molestiae hic eaque praesentium itaque. Enim, nesciunt dicta.</p>
             </div>
         </div>
         <div className='border-2 w-full flex lg:flex-row flex-col'>
             <div className='lg:w-1/2 w-full flex justify-center items-center p-10'>
                 <div className=' grid grid-rows-1 grid-cols-2 gap-20 justify-center max-w-[400px]'>
                     <div className='grid grid-rows-2 gap-10 w-full'>
-                        <div className='flex flex-col gap-5'>
+                        <div className='flex flex-col gap-5 '>
                             <LocationOnOutlinedIcon/>
-                            <h1>Address</h1>
-                            <p className='font-semibold'>{ContactInformation.address}</p>
+                            <h1 className='font-heading'>Address</h1>
+                            <p className='font-semibold font-text'>{ContactInformation.address}</p>
                         </div>
                         <div className='flex flex-col gap-5'>
                             <PhoneOutlinedIcon/>
-                            <h1>Phone</h1>
-                            <p className='font-semibold'>{ContactInformation.contactNumber}</p>
+                            <h1 className='font-heading'>Phone</h1>
+                            <p className='font-semibold font-text'>{ContactInformation.contactNumber}</p>
                         </div>
                     </div>
                     <div className='grid grid-rows-2 gap-10 w-full'>
                         <div className='flex flex-col gap-5'>
                             <EmailOutlinedIcon/>
-                            <h1>Email</h1>
-                            <p className='font-semibold'>{ContactInformation.emailAddress}</p>
+                            <h1 className='font-heading'>Email</h1>
+                            <p className='font-semibold font-text'>{ContactInformation.emailAddress}</p>
                         </div>
                         <div className='flex flex-col gap-5'>
                             <ThumbUpOffAltOutlinedIcon/>
-                            <h1>Social Media</h1>
+                            <h1 className='font-heading'>Social Media</h1>
                             <div className='flex gap-2 '>
                             { Object.entries(ContactInformation.socialMediaHandles).map((social)=>{
                                    return <a className='font-semibold cursor-pointer ' target='_blank' href={social[1]} key={social[0]} >{iconsReg[social[0]]}</a>

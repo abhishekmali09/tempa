@@ -8,6 +8,8 @@ import FreeQuote from "./pages/freeQuote"
 import AboutUs from "./pages/AboutUs"
 import Doctors from "./pages/doctors"
 import Hospitals from "./pages/hospitals"
+import DoctorDetail from "./pages/doctorDetail"
+import HospitalsDetail from "./pages/hospitalsDetail"
 function App() {
 
 
@@ -22,6 +24,8 @@ function App() {
             <Route path="/about-us" element={<AboutUs/>} />
             <Route path="/doctors" element={<Doctors/>} />
             <Route path="/hospitals" element={<Hospitals/>} />
+            <Route path="/doctors/:doctorId" element={<DoctorDetail/>} />
+            <Route path="/hospitals/:hospitalId" element={<HospitalsDetail/>} />
         </Routes>
         <Footer/>
     </>

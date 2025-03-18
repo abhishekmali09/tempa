@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react'
 import { doctors } from '../constants'
 import DoctorsCard from '../components/doctorsCard'
 import {useForm} from "react-hook-form";
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 const Doctors = () => {
     const {register,handleSubmit} = useForm();
     const doctorsPerPage = 10;
@@ -18,9 +20,9 @@ const Doctors = () => {
         setCurrentPageDoc(doctors.slice((currentPage-1)*(doctorsPerPage),currentPage*doctorsPerPage))
     },[currentPage])
   return (
-    <div className='max-w-screen bg-[#faf3eb] pt-30 pb-10 '>
+    <div className='max-w-screen grayish pt-30 pb-10 '>
         <div className='max-w-[1200px] mx-auto flex flex-col gap-10'>
-        <h1 className='text-5xl text-center'>Doctors</h1>
+        <h1 className='text-5xl text-center font-heading text-teal-500'>DOCTORS</h1>
         <div className='max-w-[1200px] mx-auto'>
             <form onSubmit={onSubmit} className='flex gap-5 font-semibold md:flex-row flex-col '>
                 <input placeholder='Mumbai' className='bg-[#decdc3] focus:border-2 border-[#966b54] p-2 rounded-lg w-[20rem] h-[4rem] text-xl' />
@@ -37,9 +39,18 @@ const Doctors = () => {
         </div>
         </div>
         <div className='flex gap-5 justify-center items-end pt-10'>
-            <button type='submit' className={`bg-[#966b54] px-8 py-2 text-white rounded-lg`} onClick={()=>setCurrentPage((prevPage)=>prevPage-1)} disabled={currentPage===1}>{"<"}</button>
-            <button type='submit' className='bg-[#966b54] px-8 py-2 text-white rounded-lg '>{currentPage}</button>
-            <button type='submit' className={`bg-[#966b54] px-8 py-2 text-white rounded-lg `} onClick={()=>setCurrentPage((prevPage)=>prevPage+1)} disabled={currentPage===totalPages}>{">"}</button>
+            <ArrowCircleLeftIcon
+        className={`cursor-pointer text-teal-500 ${
+            currentPage === 1 ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
+        }`}
+        fontSize="large"
+        onClick={() => setCurrentPage((prevPage) => prevPage - 1)}
+        />
+        <p  className='text-teal-800 text-4xl font-bold font-heading'>{currentPage}</p>
+
+        <ArrowCircleRightIcon className={`cursor-pointer text-teal-500 ${
+            currentPage === totalPages ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
+        }`} onClick={()=>setCurrentPage((prevPage)=>prevPage+1)}  fontSize="large"></ArrowCircleRightIcon>
         </div>
     </div>
   )
