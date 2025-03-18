@@ -2,18 +2,18 @@ import React from 'react'
 import MainImage from "/Images/ServiceImage2.png"
 const HospitalsCard = ({hospitalDetail}) => {
   return (
-    <div className="flex gap-4 mx-auto flex-col  md:w-[30rem] w-[20rem] h-[30rem] p-10  shadow-2xl shadow-[#403e3c] hover:scale-105 duration-850 rounded-4xl">
-        <div className="flex justify-center items-start  w-full h-1/2">
-            <img src={MainImage} className="h-full w-full"/>
+    <div className="flex gap-4 mx-auto flex-col justify-evenly  max-w-[25rem] h-[30rem] p-10  hover:shadow-2xl hover:shadow-[#403e3c] hover:scale-102 duration-850 rounded-4xl">
+        <div className="  w-full h-1/2">
+            <img src={hospitalDetail.img || MainImage} className="h-full w-full object-cover"/>
         </div>
         <div className="flex gap-5 flex-col  justify-between  ">
-            <div className="flex flex-col gap-6">
-                <h1 className="text-3xl">{hospitalDetail.name}</h1>
-                    <p className="text-xl font-semibold">{hospitalDetail.address}</p>
+        <div className="flex flex-col gap-6">
+            <h1 className="text-3xl font-heading">{hospitalDetail.name}</h1>
+                <p className="text-lg font-semibold font-text">{hospitalDetail.address}</p>
+        </div>
+            <div className="">
+            <button type='submit' className=' hover:text-white text-black bg-teal-200 hover:bg-teal-500 px-8 py-2  rounded-lg cursor-pointer  '><a href={`/hospitals/${hospitalDetail.id}`}>Know More</a></button>
             </div>
-               <div className="flex gap-7 flex-col md:flex-row">
-                <button type='submit' className='hover:bg-[#966b54] hover:text-white text-black bg-[#decdc3] px-8 py-2  rounded-lg cursor-pointer'>Know More</button>
-               </div>
         </div>
 
     </div>

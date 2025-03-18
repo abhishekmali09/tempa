@@ -9,7 +9,7 @@ const HeroSection = () => {
                 <h1>Your Health,</h1>
                 <h1>Our Priority</h1>
             </div>
-            <button className='cursor-pointer bg-[#966b54] rounded-3xl px-5 py-2 text-white'>Get Medical opinion</button>
+            <button className='cursor-pointer bg-[#966b54] rounded-3xl px-5 py-2 text-white text-lg'><a href='/free-quote'>Get Medical opinion</a></button>
         </div>
         <div className='sm:max-w-screen w-1/2'>
             <img src={MainImage} className='h-screen w-full' alt="Hero Section Image" />
