@@ -52,243 +52,371 @@ export const treatments = [
 
 
 export const doctors = [
-        {
-            id: 1,
-            img: "./Images/Doctor1.png",
-            name: "Dr. Dharma Chaudhary",
+    {
+        id: 1,
+        img: "./Images/Doctor1.png",
+        name: "Dr. Dharma Chaudhary",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "17 Years",
+        department: "Clinical Hematology & BMT",
+        desc: "Renowned Haematologist, Sr. Consultant & Director in Bone Marrow Transplant Department.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "17 Years",
-            department: "Clinical Hematology & BMT",
-            shortDesc: "Renowned Haematologist, Sr. Consultant & Director in Bone Marrow Transplant Department."
-        },
-        {
-            id: 2,
-            img: "./Images/Doctor2.png",
-            name: "Dr. W V B S Ramalingam",
+            department: "Clinical Hematology & BMT"
+        }
+    },
+    {
+        id: 2,
+        img: "./Images/Doctor2.png",
+        name: "Dr. W V B S Ramalingam",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "34 Years",
+        department: "ENT Surgery",
+        desc: "Experienced ENT Surgeon, Sr. Consultant & Director in ENT & Cochlear Implant Department.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "34 Years",
-            department: "ENT Surgery",
-            shortDesc: "Experienced ENT Surgeon, Sr. Consultant & Director in ENT & Cochlear Implant Department."
-        },
-        {
-            id: 3,
-            img: "./Images/Doctor3.png",
-            name: "Dr. Sunil Prakash",
+            department: "ENT Surgery"
+        }
+    },
+    {
+        id: 3,
+        img: "./Images/Doctor3.png",
+        name: "Dr. Sunil Prakash",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "35 Years",
+        department: "Nephrology & Kidney Transplant",
+        desc: "Best Nephrologist in India, Sr. Consultant & Director in the Nephrology Department.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "35 Years",
-            department: "Nephrology & Kidney Transplant",
-            shortDesc: "Best Nephrologist in India, Sr. Consultant & Director in the Nephrology Department."
-        },
-        {
-            id: 4,
-            img: "./Images/Doctor4.png",
-            name: "Dr. Kapil Kumar",
+            department: "Nephrology & Kidney Transplant"
+        }
+    },
+    {
+        id: 4,
+        img: "./Images/Doctor4.png",
+        name: "Dr. Kapil Kumar",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "25 Years",
+        department: "Surgical Oncology",
+        desc: "One of the best oncologist surgeons, Director & HOD - Surgical Oncology.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "25 Years",
-            department: "Surgical Oncology",
-            shortDesc: "One of the best oncologist surgeons, Director & HOD - Surgical Oncology."
-        },
-        {
-            id: 5,
-            img: "./Images/Doctor5.png",
-            name: "Dr. Rajiv Anand",
+            department: "Surgical Oncology"
+        }
+    },
+    {
+        id: 5,
+        img: "./Images/Doctor5.png",
+        name: "Dr. Rajiv Anand",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "38 Years",
+        department: "Neurology",
+        desc: "Top Neurologist, Director & Sr. Consultant, Department of Neurology.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "38 Years",
-            department: "Neurology",
-            shortDesc: "Top Neurologist, Director & Sr. Consultant, Department of Neurology."
-        },
-        {
-            id: 6,
-            img: "./Images/Doctor6.png",
-            name: "Dr. Deep Goel",
+            department: "Neurology"
+        }
+    },
+    {
+        id: 6,
+        img: "./Images/Doctor6.png",
+        name: "Dr. Deep Goel",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "25 Years",
+        department: "GI & Bariatric Surgery",
+        desc: "Expert in Bariatric Surgery, Sr. Consultant & Director in Surgical Gastroenterology.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "25 Years",
-            department: "GI & Bariatric Surgery",
-            shortDesc: "Expert in Bariatric Surgery, Sr. Consultant & Director in Surgical Gastroenterology."
-        },
-        {
-            id: 7,
-            img: "./Images/Doctor7.png",
-            name: "Dr. Subhash Chandra",
+            department: "GI & Bariatric Surgery"
+        }
+    },
+    {
+        id: 7,
+        img: "./Images/Doctor7.png",
+        name: "Dr. Subhash Chandra",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "28 Years",
+        department: "Cardiology",
+        desc: "Chairman & HOD in Cardiology Department, one of India's best cardiologists.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "28 Years",
-            department: "Cardiology",
-            shortDesc: "Chairman & HOD in Cardiology Department, one of India's best cardiologists."
-        },
-        {
-            id: 8,
-            img: "./Images/Doctor8.png",
-            name: "Dr. Amit Agarwal",
+            department: "Cardiology"
+        }
+    },
+    {
+        id: 8,
+        img: "./Images/Doctor8.png",
+        name: "Dr. Amit Agarwal",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "25 Years",
+        department: "Medical Oncology",
+        desc: "Experienced Oncologist, Director & HOD in Medical Oncology Department.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "25 Years",
-            department: "Medical Oncology",
-            shortDesc: "Experienced Oncologist, Director & HOD in Medical Oncology Department."
-        },
-        {
-            id: 9,
-            img: "./Images/Doctor9.png",
-            name: "Dr. S Hukku",
+            department: "Medical Oncology"
+        }
+    },
+    {
+        id: 9,
+        img: "./Images/Doctor9.png",
+        name: "Dr. S Hukku",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "35 Years",
+        department: "Radiation Oncology",
+        desc: "Renowned Radiation Oncologist, Sr. Consultant & Chairman Radiation Oncology.",
+        detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "35 Years",
-            department: "Radiation Oncology",
-            shortDesc: "Renowned Radiation Oncologist, Sr. Consultant & Chairman Radiation Oncology."
-        },
-        {
-            id: 10,
-            img: "./Images/Doctor10.png",
-            name: "Dr. Rajesh Sharma",
+            department: "Radiation Oncology"
+        }
+    },
+    {
+        id: 10,
+        img: "./Images/Doctor10.png",
+        name: "Dr. Rajesh Sharma",
+        hospital: "Jaypee Hospital, Noida",
+        experience: "25 Years",
+        department: "Pediatric Cardiac Surgery",
+        desc: "Expert Pediatric Cardiothoracic Surgeon, performed over 20,000 surgeries.",
+        detail: {
             hospital: "Jaypee Hospital, Noida",
             experience: "25 Years",
-            department: "Pediatric Cardiac Surgery",
-            shortDesc: "Expert Pediatric Cardiothoracic Surgeon, performed over 20,000 surgeries."
-        },
-
-        {
-            id: 11,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr-Sanjay-Gupta21.jpg",
-            name: "DR SANJAY GUPTA",
+            department: "Pediatric Cardiac Surgery"
+        }
+    },
+    {
+        id: 11,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr-Sanjay-Gupta21.jpg",
+        name: "DR SANJAY GUPTA",
+        hospital: "Jaypee Hospital, Noida - India",
+        experience: "20 Years of Experience",
+        department: "Orthopaedic Surgeon",
+        desc: "Dr. Sanjay Gupta is a gold medallist in MS orthopaedics and performed over 5000 successful joint replacement surgeries. He is presently working as an associate director and HOD in the department of joint replacement and orthopaedics at Jaypee hospital, Noida.",
+        detail: {
             hospital: "Jaypee Hospital, Noida - India",
             experience: "20 Years of Experience",
-            department: "Orthopaedic Surgeon",
-            short_desc: "Dr. Sanjay Gupta is a gold medallist in MS orthopaedics and performed over 5000 successful joint replacement surgeries. He is presently working as an associate director and HOD in the department of joint replacement and orthopaedics at Jaypee hospital, Noida."
-        },
-        {
-            id: 12,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_-Abhideep-Chaudhary.jpg",
-            name: "DR ABHIDEEP CHAUDHARY",
+            department: "Orthopaedic Surgeon"
+        }
+    },
+    {
+        id: 12,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_-Abhideep-Chaudhary.jpg",
+        name: "DR ABHIDEEP CHAUDHARY",
+        hospital: "Blk Hospital, New Delhi - India",
+        experience: "16 Years of Experience",
+        department: "Liver Transplant Surgeon",
+        desc: "Dr. Abhideep Chaudhary is a renowned Liver Transplant Surgeon in India and working as a senior consultant and director of Liver Transplant Department at Jaypee Hospital, Noida, India.",
+        detail: {
             hospital: "Blk Hospital, New Delhi - India",
             experience: "16 Years of Experience",
-            department: "Liver Transplant Surgeon",
-            short_desc: "Dr. Abhideep Chaudhary is a renowned Liver Transplant Surgeon in India and working as a senior consultant and director of Liver Transplant Department at Jaypee Hospital, Noida, India."
-        },
-        {
-            id: 13,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Harit_Chaturvedi_new_0.jpg",
-            name: "DR HARIT CHATURVEDI",
+            department: "Liver Transplant Surgeon"
+        }
+    },
+    {
+        id: 13,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Harit_Chaturvedi_new_0.jpg",
+        name: "DR HARIT CHATURVEDI",
+        hospital: "Max Hospital, New Delhi - India",
+        experience: "27 Years of Experience",
+        department: "Surgical Oncologist",
+        desc: "Dr. Harit Chaturvedi is the best name in surgical oncology and presently working as a Chairman - Cancer Care, Director & Chief Consultant - Surgical Oncology at Max Hospitals Groups Hospital, New Delhi, India.",
+        detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "27 Years of Experience",
-            department: "Surgical Oncologist",
-            short_desc: "Dr. Harit Chaturvedi is the best name in surgical oncology and presently working as a Chairman - Cancer Care, Director & Chief Consultant - Surgical Oncology at Max Hospitals Groups Hospital, New Delhi, India."
-        },
-        {
-            id: 14,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Sanjay_gupta-Liver.jpg",
-            name: "PROF DR SUBHASH GUPTA",
+            department: "Surgical Oncologist"
+        }
+    },
+    {
+        id: 14,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Sanjay_gupta-Liver.jpg",
+        name: "PROF DR SUBHASH GUPTA",
+        hospital: "Max Hospital, New Delhi - India",
+        experience: "35 Years of Experience",
+        department: "Liver Transplant Surgeon",
+        desc: "Prof (Dr) Subhash Gupta is a renowned Liver Transplant surgeon in India and presently working as a Chief of liver transplant/hepato-pancreatic-biliary surgeon and the Chairman of the Max Center.",
+        detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "35 Years of Experience",
-            department: "Liver Transplant Surgeon",
-            short_desc: "Prof (Dr) Subhash Gupta is a renowned Liver Transplant surgeon in India and presently working as a Chief of liver transplant/hepato-pancreatic-biliary surgeon and the Chairman of the Max Center."
-        },
-        {
-            id: 15,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_Anant_Kumar_max1.png",
-            name: "DR ANANT KUMAR",
+            department: "Liver Transplant Surgeon"
+        }
+    },
+    {
+        id: 15,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_Anant_Kumar_max1.png",
+        name: "DR ANANT KUMAR",
+        hospital: "Max Hospital, New Delhi - India",
+        experience: "30 Years of Experience",
+        department: "Urologist & Kidney Transplant Surgeon",
+        desc: "Dr. Anant Kumar is one of the best Kidney transplant surgeons and presently working as a Chairman - Urology, Renal Transplant, Robotics(Max Saket Complex) and Uro-Oncology Max Hospital, Saket, in Delhi, India.",
+        detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "30 Years of Experience",
-            department: "Urologist & Kidney Transplant Surgeon",
-            short_desc: "Dr. Anant Kumar is one of the best Kidney transplant surgeons and presently working as a Chairman - Urology, Renal Transplant, Robotics(Max Saket Complex) and Uro-Oncology Max Hospital, Saket, in Delhi, India."
-        },
-        {
-            id: 16,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_Anurag_Krishna_Max1.jpg",
-            name: "DR ANURAG KRISHNA",
+            department: "Urologist & Kidney Transplant Surgeon"
+        }
+    },
+    {
+        id: 16,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_Anurag_Krishna_Max1.jpg",
+        name: "DR ANURAG KRISHNA",
+        hospital: "Max Hospital, New Delhi - India",
+        experience: "35 Years of Experience",
+        department: "Pediatric Surgeon & Urologist",
+        desc: "Dr. Anurag Krishna is a renowned pediatric and urologist surgeon in India and presently working as Director - Paediatrics & Paediatric Surgery at Max Hospital, Saket, Delhi, India.",
+        detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "35 Years of Experience",
-            department: "Pediatric Surgeon & Urologist",
-            short_desc: "Dr. Anurag Krishna is a renowned pediatric and urologist surgeon in India and presently working as Director - Paediatrics & Paediatric Surgery at Max Hospital, Saket, Delhi, India."
-        },
-        {
-            id: 17,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Pradeep_Chowbey_Max.jpg",
-            name: "DR PRADEEP CHOWBEY",
+            department: "Pediatric Surgeon & Urologist"
+        }
+    },
+    {
+        id: 17,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Pradeep_Chowbey_Max.jpg",
+        name: "DR PRADEEP CHOWBEY",
+        hospital: "Max Hospital, New Delhi - India",
+        experience: "37 Years of Experience",
+        department: "GI & Bariatric Surgeon",
+        desc: "Dr. Pradeep Chowbey is a world-renowned Bariatric Surgeon in India and presently working as an Executive Vice Chairman at a Max Institute of Minimal Access Centre, Max Healthcare.",
+        detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "37 Years of Experience",
-            department: "GI & Bariatric Surgeon",
-            short_desc: "Dr. Pradeep Chowbey is a world-renowned Bariatric Surgeon in India and presently working as an Executive Vice Chairman at a Max Institute of Minimal Access Centre, Max Healthcare."
-        },
-        {
-            id: 18,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_Anil_Arora.JPG",
-            name: "PROF DR ANIL ARORA",
+            department: "GI & Bariatric Surgeon"
+        }
+    },
+    {
+        id: 18,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_Anil_Arora.JPG",
+        name: "PROF DR ANIL ARORA",
+        hospital: "Max Hospital, New Delhi - India",
+        experience: "32 Years of Experience",
+        department: "Orthopaedic Surgeon",
+        desc: "Dr. (Prof.) Anil Arora is a well-renowned orthopedic surgeon in India providing the ultimate in state-of-the-art quality orthopedic care and presently working as a Senior Director & Unit Head - Orthopaedic & Joint Replacement Center at Max Hospitals Group.",
+        detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "32 Years of Experience",
-            department: "Orthopaedic Surgeon",
-            short_desc: "Dr. (Prof.) Anil Arora is a well-renowned orthopedic surgeon in India providing the ultimate in state-of-the-art quality orthopedic care and presently working as a Senior Director & Unit Head - Orthopaedic & Joint Replacement Center at Max Hospitals Group."
-        },
-        {
-            id: 19,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_shishta-nadda-bas.JPG",
-            name: "DR SHISHTA NADDA BASU",
+            department: "Orthopaedic Surgeon"
+        }
+    },
+    {
+        id: 19,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_shishta-nadda-bas.JPG",
+        name: "DR SHISHTA NADDA BASU",
+        hospital: "Max Hospital, New Delhi - India",
+        experience: "40 Years of Experience",
+        department: "Gynecologist / Infertility specialist",
+        desc: "Dr. Shishta Nadda Basu is the best doctor for Gynaecology and Obstetrics and presently working as a Senior Director & Head of Department at Max Super Speciality Hospital, Shalimar Bagh, New Delhi, India.",
+        detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "40 Years of Experience",
-            department: "Gynecologist / Infertility specialist",
-            short_desc: "Dr. Shishta Nadda Basu is the best doctor for Gynaecology and Obstetrics and presently working as a Senior Director & Head of Department at Max Super Speciality Hospital, Shalimar Bagh, New Delhi, India."
-        },
-        {
-            id: 20,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_ashok_seth.jpg",
-            name: "DR ASHOK SETH",
+            department: "Gynecologist / Infertility specialist"
+        }
+    },
+    {
+        id: 20,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_ashok_seth.jpg",
+        name: "DR ASHOK SETH",
+        hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
+        experience: "40 Years of Experience",
+        department: "Cardiologist",
+        desc: "Dr. Ashok Seth is the most renowned cardiologist in India and presently working as a Chairman of Fortis Escorts Heart Institute, New Delhi, and Head, Cardiology Council of Fortis Group of Hospitals.",
+        detail: {
             hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
             experience: "40 Years of Experience",
-            department: "Cardiologist",
-            short_desc: "Dr. Ashok Seth is the most renowned cardiologist in India and presently working as a Chairman of Fortis Escorts Heart Institute, New Delhi, and Head, Cardiology Council of Fortis Group of Hospitals."
-        },
-        {
-            id: 21,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/DR_YUGAL_K_MISHRA.PNG",
-            name: "DR YUGAL K MISHRA",
+            department: "Cardiologist"
+        }
+    },
+    {
+        id: 21,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/DR_YUGAL_K_MISHRA.PNG",
+        name: "DR YUGAL K MISHRA",
+        hospital: "Manipal Hospital, Dwarka - India",
+        experience: "32 Years of Experience",
+        department: "Cardiothoracic & Vascular Surgeon",
+        desc: "Dr. Yugal K Mishra is one of the renowned Robotic & minimally invasive heart surgeons in Asia and presently working as a Director, Department of Cardiovascular Surgery at Fortis Escorts Heart Institute & Research Centre, Okhla Road, New Delhi.",
+        detail: {
             hospital: "Manipal Hospital, Dwarka - India",
             experience: "32 Years of Experience",
-            department: "Cardiothoracic & Vascular Surgeon",
-            short_desc: "Dr. Yugal K Mishra is one of the renowned Robotic & minimally invasive heart surgeons in Asia and presently working as a Director, Department of Cardiovascular Surgery at Fortis Escorts Heart Institute & Research Centre, Okhla Road, New Delhi."
-        },
-        {
-            id: 22,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Vivek_Vij.jpg",
-            name: "DR VIVEK VIJ",
+            department: "Cardiothoracic & Vascular Surgeon"
+        }
+    },
+    {
+        id: 22,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Vivek_Vij.jpg",
+        name: "DR VIVEK VIJ",
+        hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
+        experience: "18 Years of Experience",
+        department: "Liver Transplant Surgeon",
+        desc: "Dr. Vivek Vij is one of the best liver transplant surgeons and presently working as Director of Liver Transplant and GI surgery department at Fortis Health Care, New Delhi, India.",
+        detail: {
             hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
             experience: "18 Years of Experience",
-            department: "Liver Transplant Surgeon",
-            short_desc: "Dr. Vivek Vij is one of the best liver transplant surgeons and presently working as Director of Liver Transplant and GI surgery department at Fortis Health Care, New Delhi, India."
-        },
-        {
-            id: 23,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Ashok_Rajgopal.jpg",
-            name: "DR ASHOK RAJGOPAL",
+            department: "Liver Transplant Surgeon"
+        }
+    },
+    {
+        id: 23,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Ashok_Rajgopal.jpg",
+        name: "DR ASHOK RAJGOPAL",
+        hospital: "Fortis Hospital, Gurugram - India",
+        experience: "30 Years of Experience",
+        department: "Orthopaedic Surgeon",
+        desc: "Dr. Ashok Rajgopal is a renowned orthopaedic surgeon in India and presently working as Director & Chairman of Fortis Bone & Joint Institute Executive at Fortis Hospitals Groups.",
+        detail: {
             hospital: "Fortis Hospital, Gurugram - India",
             experience: "30 Years of Experience",
-            department: "Orthopaedic Surgeon",
-            short_desc: "Dr. Ashok Rajgopal is a renowned orthopaedic surgeon in India and presently working as Director & Chairman of Fortis Bone & Joint Institute Executive at Fortis Hospitals Groups."
-        },
-        {
-            id: 24,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Sheshir_seth.png",
-            name: "DR SHISHIR SETH",
+            department: "Orthopaedic Surgeon"
+        }
+    },
+    {
+        id: 24,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Sheshir_seth.png",
+        name: "DR SHISHIR SETH",
+        hospital: "Apollo Hospital, New Delhi - India",
+        experience: "13 Years of Experience",
+        department: "Clinical Hematologist & BMT",
+        desc: "Dr. Shishir Seth is one of the best Haematologists in India and presently working as a Senior Consultant in Hemato-Oncology and Bone Marrow Transplant at the Apollo Hospitals, New Delhi.",
+        detail: {
             hospital: "Apollo Hospital, New Delhi - India",
             experience: "13 Years of Experience",
-            department: "Clinical Hematologist & BMT",
-            short_desc: "Dr. Shishir Seth is one of the best Haematologists in India and presently working as a Senior Consultant in Hemato-Oncology and Bone Marrow Transplant at the Apollo Hospitals, New Delhi."
-        },
-        {
-            id: 25,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr-s-m-shuaib-zaidi.jpg",
-            name: "DR S M SHUAIB ZAIDI",
+            department: "Clinical Hematologist & BMT"
+        }
+    },
+    {
+        id: 25,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr-s-m-shuaib-zaidi.jpg",
+        name: "DR S M SHUAIB ZAIDI",
+        hospital: "Apollo Hospital, New Delhi - India",
+        experience: "18 Years of Experience",
+        department: "Surgical Oncologist",
+        desc: "Dr. Shuaib Zaidi is a well-known surgical oncologist in India and presently working as a Senior Consultant at Indraprastha Apollo Hospital in New Delhi.",
+        detail: {
             hospital: "Apollo Hospital, New Delhi - India",
             experience: "18 Years of Experience",
-            department: "Surgical Oncologist",
-            short_desc: "Dr. Shuaib Zaidi is a well-known surgical oncologist in India and presently working as a Senior Consultant at Indraprastha Apollo Hospital in New Delhi."
-        },
-        {
-            id: 26,
-            image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr-sandeep-attawar.jpg",
-            name: "DR SANDEEP ATTAWAR",
+            department: "Surgical Oncologist"
+        }
+    },
+    {
+        id: 26,
+        image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr-sandeep-attawar.jpg",
+        name: "DR SANDEEP ATTAWAR",
+        hospital: "Gleneagles Global Hospital, Tamil Nadu - India",
+        experience: "22 Years of Experience",
+        department: "Cardiothoracic & Vascular Surgeon",
+        desc: "Dr. Sandeep Attawar is one of India’s foremost cardiothoracic surgeons and presently working as Chair & Program Director, Cardiac Surgery and Thoracic organ transplantation at Parkway-Global Hospitals, India.",
+        detail: {
             hospital: "Gleneagles Global Hospital, Tamil Nadu - India",
             experience: "22 Years of Experience",
-            department: "Cardiothoracic & Vascular Surgeon",
-            short_desc: "Dr. Sandeep Attawar is one of India’s foremost cardiothoracic surgeons and presently working as Chair & Program Director, Cardiac Surgery and Thoracic organ transplantation at Parkway-Global Hospitals, India."
+            department: "Cardiothoracic & Vascular Surgeon"
         }
+    }
 ];
-
 export const hospitals = [
     {
       id: 1,
