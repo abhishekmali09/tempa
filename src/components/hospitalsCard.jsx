@@ -2,7 +2,7 @@ import React from 'react'
 import MainImage from "/Images/ServiceImage2.png"
 const HospitalsCard = ({hospitalDetail}) => {
   return (
-    <div className="flex gap-4 mx-auto flex-col justify-evenly  max-w-[25rem] h-[30rem] p-10  hover:shadow-2xl hover:shadow-[#403e3c] hover:scale-102 duration-850 rounded-4xl">
+    <div className="flex gap-4 mx-auto flex-col justify-evenly  max-w-[25rem] h-[30rem] py-10 px-5 hover:shadow-2xl hover:shadow-[#403e3c] hover:scale-102 duration-850 rounded-4xl">
         <div className="  w-full h-1/2">
             <img src={hospitalDetail.img || MainImage} className="h-full w-full object-cover"/>
         </div>

@@ -3,7 +3,7 @@ import { ContactInformation } from '../constants'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined';
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
@@ -47,7 +47,7 @@ const Contact = () => {
                             <p className='font-semibold font-text'>{ContactInformation.emailAddress}</p>
                         </div>
                         <div className='flex flex-col gap-5'>
-                            <ThumbUpOffAltOutlinedIcon/>
+                            <ConnectWithoutContactIcon/>
                             <h1 className='font-heading'>Social Media</h1>
                             <div className='flex gap-2 '>
                             { Object.entries(ContactInformation.socialMediaHandles).map((social)=>{
@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className=' lg:border-l-2 border-t-2 lg:border-t-0 w-full lg:w-1/2'>
-                <Form/>
+                <Form formType="contact"/>
             </div>
         </div>
         <iframe

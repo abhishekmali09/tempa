@@ -1,3 +1,14 @@
+import { z } from "zod";
+
+export const contactUsSchema =z.object({
+    firstName: z.string().min(3, "First name must be at least 3 characters"),
+    lastName: z.string().min(3, "Last name must be at least 3 characters"),
+    email: z.string().email("Invalid email address"),
+    message: z.string().min(10, "Message must be at least 10 characters").max(1000),
+})
+export const newsLetterSchema = z.object({
+    email:z.string().email("Invalid email address")
+})
 export const ContactInformation = {
     "contactNumber":"123-456-789",
     "emailAddress":"info@mysite.com",
@@ -54,7 +65,7 @@ export const treatments = [
 export const doctors = [
     {
         id: 1,
-        img: "./Images/Doctor1.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. Dharma Chaudhary",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "17 Years",
@@ -63,12 +74,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "17 Years",
-            department: "Clinical Hematology & BMT"
+            department: "Clinical Hematology & BMT",
+            city: "New Delhi"
         }
     },
     {
         id: 2,
-        img: "./Images/Doctor2.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. W V B S Ramalingam",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "34 Years",
@@ -77,12 +89,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "34 Years",
-            department: "ENT Surgery"
+            department: "ENT Surgery",
+            city: "New Delhi"
         }
     },
     {
         id: 3,
-        img: "./Images/Doctor3.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. Sunil Prakash",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "35 Years",
@@ -91,12 +104,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "35 Years",
-            department: "Nephrology & Kidney Transplant"
+            department: "Nephrology & Kidney Transplant",
+            city: "New Delhi"
         }
     },
     {
         id: 4,
-        img: "./Images/Doctor4.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. Kapil Kumar",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -105,12 +119,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "25 Years",
-            department: "Surgical Oncology"
+            department: "Surgical Oncology",
+            city: "New Delhi"
         }
     },
     {
         id: 5,
-        img: "./Images/Doctor5.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. Rajiv Anand",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "38 Years",
@@ -119,12 +134,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "38 Years",
-            department: "Neurology"
+            department: "Neurology",
+            city: "New Delhi"
         }
     },
     {
         id: 6,
-        img: "./Images/Doctor6.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. Deep Goel",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -133,12 +149,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "25 Years",
-            department: "GI & Bariatric Surgery"
+            department: "GI & Bariatric Surgery",
+            city: "New Delhi"
         }
     },
     {
         id: 7,
-        img: "./Images/Doctor7.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. Subhash Chandra",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "28 Years",
@@ -147,12 +164,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "28 Years",
-            department: "Cardiology"
+            department: "Cardiology",
+            city: "New Delhi"
         }
     },
     {
         id: 8,
-        img: "./Images/Doctor8.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. Amit Agarwal",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -161,12 +179,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "25 Years",
-            department: "Medical Oncology"
+            department: "Medical Oncology",
+            city: "New Delhi"
         }
     },
     {
         id: 9,
-        img: "./Images/Doctor9.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. S Hukku",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "35 Years",
@@ -175,12 +194,13 @@ export const doctors = [
         detail: {
             hospital: "BLK Super Specialty Hospital, New Delhi",
             experience: "35 Years",
-            department: "Radiation Oncology"
+            department: "Radiation Oncology",
+            city: "New Delhi"
         }
     },
     {
         id: 10,
-        img: "./Images/Doctor10.png",
+        image: "../Images/doctor avatar.png",
         name: "Dr. Rajesh Sharma",
         hospital: "Jaypee Hospital, Noida",
         experience: "25 Years",
@@ -189,7 +209,8 @@ export const doctors = [
         detail: {
             hospital: "Jaypee Hospital, Noida",
             experience: "25 Years",
-            department: "Pediatric Cardiac Surgery"
+            department: "Pediatric Cardiac Surgery",
+            city: "Noida"
         }
     },
     {
@@ -203,7 +224,8 @@ export const doctors = [
         detail: {
             hospital: "Jaypee Hospital, Noida - India",
             experience: "20 Years of Experience",
-            department: "Orthopaedic Surgeon"
+            department: "Orthopaedic Surgeon",
+            city: "Noida"
         }
     },
     {
@@ -217,7 +239,8 @@ export const doctors = [
         detail: {
             hospital: "Blk Hospital, New Delhi - India",
             experience: "16 Years of Experience",
-            department: "Liver Transplant Surgeon"
+            department: "Liver Transplant Surgeon",
+            city: "New Delhi"
         }
     },
     {
@@ -231,7 +254,8 @@ export const doctors = [
         detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "27 Years of Experience",
-            department: "Surgical Oncologist"
+            department: "Surgical Oncologist",
+            city: "New Delhi"
         }
     },
     {
@@ -245,7 +269,8 @@ export const doctors = [
         detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "35 Years of Experience",
-            department: "Liver Transplant Surgeon"
+            department: "Liver Transplant Surgeon",
+            city: "New Delhi"
         }
     },
     {
@@ -259,7 +284,8 @@ export const doctors = [
         detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "30 Years of Experience",
-            department: "Urologist & Kidney Transplant Surgeon"
+            department: "Urologist & Kidney Transplant Surgeon",
+            city: "New Delhi"
         }
     },
     {
@@ -273,7 +299,8 @@ export const doctors = [
         detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "35 Years of Experience",
-            department: "Pediatric Surgeon & Urologist"
+            department: "Pediatric Surgeon & Urologist",
+            city: "New Delhi"
         }
     },
     {
@@ -287,7 +314,8 @@ export const doctors = [
         detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "37 Years of Experience",
-            department: "GI & Bariatric Surgeon"
+            department: "GI & Bariatric Surgeon",
+            city: "New Delhi"
         }
     },
     {
@@ -301,7 +329,8 @@ export const doctors = [
         detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "32 Years of Experience",
-            department: "Orthopaedic Surgeon"
+            department: "Orthopaedic Surgeon",
+            city: "New Delhi"
         }
     },
     {
@@ -315,7 +344,8 @@ export const doctors = [
         detail: {
             hospital: "Max Hospital, New Delhi - India",
             experience: "40 Years of Experience",
-            department: "Gynecologist / Infertility specialist"
+            department: "Gynecologist / Infertility specialist",
+            city: "New Delhi"
         }
     },
     {
@@ -329,7 +359,8 @@ export const doctors = [
         detail: {
             hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
             experience: "40 Years of Experience",
-            department: "Cardiologist"
+            department: "Cardiologist",
+            city: "New Delhi"
         }
     },
     {
@@ -343,7 +374,8 @@ export const doctors = [
         detail: {
             hospital: "Manipal Hospital, Dwarka - India",
             experience: "32 Years of Experience",
-            department: "Cardiothoracic & Vascular Surgeon"
+            department: "Cardiothoracic & Vascular Surgeon",
+            city: "Dwarka"
         }
     },
     {
@@ -357,7 +389,8 @@ export const doctors = [
         detail: {
             hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
             experience: "18 Years of Experience",
-            department: "Liver Transplant Surgeon"
+            department: "Liver Transplant Surgeon",
+            city: "New Delhi"
         }
     },
     {
@@ -371,7 +404,8 @@ export const doctors = [
         detail: {
             hospital: "Fortis Hospital, Gurugram - India",
             experience: "30 Years of Experience",
-            department: "Orthopaedic Surgeon"
+            department: "Orthopaedic Surgeon",
+            city: "Gurugram"
         }
     },
     {
@@ -385,7 +419,8 @@ export const doctors = [
         detail: {
             hospital: "Apollo Hospital, New Delhi - India",
             experience: "13 Years of Experience",
-            department: "Clinical Hematologist & BMT"
+            department: "Clinical Hematologist & BMT",
+            city: "New Delhi"
         }
     },
     {
@@ -399,7 +434,8 @@ export const doctors = [
         detail: {
             hospital: "Apollo Hospital, New Delhi - India",
             experience: "18 Years of Experience",
-            department: "Surgical Oncologist"
+            department: "Surgical Oncologist",
+            city: "New Delhi"
         }
     },
     {
@@ -413,7 +449,8 @@ export const doctors = [
         detail: {
             hospital: "Gleneagles Global Hospital, Tamil Nadu - India",
             experience: "22 Years of Experience",
-            department: "Cardiothoracic & Vascular Surgeon"
+            department: "Cardiothoracic & Vascular Surgeon",
+            city: "Chennai" // Assuming Tamil Nadu refers to Chennai, a major city
         }
     }
 ];
