@@ -15,3 +15,34 @@
 .coral{
     background-color: #FF6F61;
 }
+
+/*navbar */
+.nav-item {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #37474F;
+    text-decoration: none;
+    transition: font-weight 0.3s ease-in;
+  }
+  
+  .nav-item:hover {
+    font-weight: 700;
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FF6F61;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease-in;
+  }
+  
+  .nav-item:hover::after {
+    width: 100%;
+  }  
+ 
