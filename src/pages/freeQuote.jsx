@@ -3,7 +3,7 @@ import { ContactInformation } from '../constants'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined';
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
@@ -25,9 +25,9 @@ const FreeQuote = () => {
                                 <LocationOnOutlinedIcon className='col-start-1 row-start-3'/>
                                 <PhoneOutlinedIcon className='col-start-1 row-start-4'/>
                                 <EmailOutlinedIcon className='col-start-1 row-start-5'/>
-                                <ThumbUpOffAltOutlinedIcon className='col-start-1 row-start-6'/>
+                                <ConnectWithoutContactIcon className='col-start-1 row-start-6'/>
 
-                                <p className='font-semibold col-start-2 row-start-3 font-text text-lg'>{ContactInformation.address}</p>
+                                <p className='font-semibold col-start-2 row-start-3 font-text text-lg'>{ContactInformation.address}</p> 
                                 <p className='font-semibold col-start-2 row-start-4 font-text text-lg'>{ContactInformation.contactNumber}</p>
                                 <p className='font-semibold col-start-2 row-start-5 font-text text-lg'>{ContactInformation.emailAddress}</p>
                                 <div className='flex gap-3 col-start-2 row-start-6'>
@@ -38,7 +38,7 @@ const FreeQuote = () => {
                     </div>
                 </div>
                 <div className=' w-full lg:w-1/2'>
-                <Form/>
+                <Form formType="quote"/>
                 </div>
             </div>
             <iframe

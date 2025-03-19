@@ -1,10 +1,9 @@
-import MainImage from "/Images/PuttingGloves.png"
+import MainImage from "/Images/doctor avatar.png"
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 
 const DoctorsCard = ({doctorDetail}) => {
-    console.log(doctorDetail);
   return (
     <div className="flex gap-4 mx-auto md:flex-row flex-col lg:max-w-[55rem] md:max-w-[45rem] max-w-[25rem] p-10  hover:shadow-2xl hover:shadow-[#403e3c] hover:scale-102 duration-850 rounded-4xl">
         <div className="flex justify-center items-start md:max-w-1/2 w-full">
