@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../public/Images/ServiceImage1.png';
+import img_aboutUs from '../../public/Images/About us design.png';
 import { Facebook, Twitter, LinkedIn } from '@mui/icons-material';
 import  img_Accuracy from '../../public/Images/Accuracy.png';
 import img_Integrity from '../../public/Images/Integrity.png';
@@ -77,11 +77,11 @@ const AboutUs = () => {
             </div>
           </div>
           {/* Right Section (Image) */}
-          <div className="hidden lg:flex">
+          <div className=" h-full hidden lg:flex">
             <img
-              width="400px"
-              height="400px"
-              src={'#'}
+              width="500px"
+              height="700px"
+              src={img_aboutUs}
               alt="About Us"
               className="rounded-lg shadow-lg max-w-full"
             />
@@ -103,10 +103,9 @@ const AboutUs = () => {
             alt="Accuracy"
             className="w-36 h-36 mb-4"
           />
-          <h2 className="text-2xl font-semibold font-heading mb-2">Accuracy</h2>
-          <p className="text-center font-text text-[#37474F]  text-text">
-          We prioritize delivering medically sound and reliable information, ensuring all quotes are sourced from credible professionals or grounded in evidence-based knowledge.
-          </p>
+          <h2 className="text-3xl font-semibold font-heading mb-2">Accuracy</h2>
+          <p className="text-center text-2xl font-text text-[#37474F] ">
+          We provide medical information backed by experts and evidence.</p>
         </div>
 
         {/* Integrity (Top-right corner) */}
@@ -116,10 +115,9 @@ const AboutUs = () => {
             alt="Integrity"
             className="w-36 h-36 mb-4"
           />
-          <h2 className="text-2xl font-semibold font-heading mb-2">Integrity</h2>
-          <p className="text-center font-text text-gray-600 text-text">
-          We commit to honesty and transparency, maintaining ethical standards in how we present content and engage with our community.
-          </p>
+          <h2 className="text-3xl font-semibold font-heading mb-2">Integrity</h2>
+          <p className="text-center  text-2xl font-text text-gray-600 text-text">
+          Honest, transparent, ethical content and engagement is our commitment.          </p>
         </div>
 
         {/* Empathy (Bottom-left corner) */}
@@ -129,10 +127,9 @@ const AboutUs = () => {
             alt="Empathy"
             className="w-36 h-36 mb-4"
           />
-          <h2 className="text-2xl font-semibold font-heading mb-2">Empathy</h2>
-          <p className="text-center font-text text-gray-600 text-text">
-           We value compassion and understanding, reflecting the human side of medicine through quotes that connect with the emotions and experiences of our users.
-          </p>
+          <h2 className="text-3xl font-semibold font-heading mb-2">Empathy</h2>
+          <p className="text-center text-2xl font-text text-gray-600 text-text">
+          Quotes show medicine's compassion, connecting with users emotionally.          </p>
         </div>
 
         {/* Education (Bottom-right corner) */}
@@ -142,10 +139,9 @@ const AboutUs = () => {
             alt="Education"
             className="w-36 h-36 mb-4"
           />
-          <h2 className="text-2xl font-semibold font-heading mb-2">Education</h2>
-          <p className="text-center font-text text-gray-600 text-text">
-           We strive to inform and enlighten, curating quotes that enhance medical literacy and spark curiosity about health and wellness.
-          </p>
+          <h2 className="text-3xl font-semibold font-heading mb-2">Education</h2>
+          <p className="text-center text-2xl font-text text-gray-600 text-text">
+          We curate quotes to foster medical literacy and curiosity about health. </p>
         </div>
       </div>
       </div>
