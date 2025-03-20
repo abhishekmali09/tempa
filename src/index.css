@@ -13,7 +13,7 @@
     background-color: #26A69A;
 }
 .coral{
-    background-color: #FF6F61;
+    background-color: #ff637d;
 }
 
 /*navbar */
@@ -26,11 +26,11 @@
     text-decoration: none;
     transition: font-weight 0.3s ease-in;
   }
-  
+
   .nav-item:hover {
     font-weight: 700;
   }
-  
+
   .nav-item::after {
     content: '';
     position: absolute;
@@ -41,8 +41,7 @@
     left: 0;
     transition: width 0.3s ease-in;
   }
-  
+
   .nav-item:hover::after {
     width: 100%;
-  }  
- 
+  }

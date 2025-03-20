@@ -20,7 +20,7 @@ export const ContactInformation = {
         "linkedin":"link",
     }
 }
-export const businessName = "Medical Business"
+export const businessName = "Pulse Quote"
 export const homeServices = [
     {
         "name":"Cardiology Checkup",
@@ -65,7 +65,7 @@ export const treatments = [
 export const doctors = [
     {
         id: 1,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. Dharma Chaudhary",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "17 Years",
@@ -80,7 +80,7 @@ export const doctors = [
     },
     {
         id: 2,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. W V B S Ramalingam",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "34 Years",
@@ -95,7 +95,7 @@ export const doctors = [
     },
     {
         id: 3,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. Sunil Prakash",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "35 Years",
@@ -110,7 +110,7 @@ export const doctors = [
     },
     {
         id: 4,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. Kapil Kumar",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -125,7 +125,7 @@ export const doctors = [
     },
     {
         id: 5,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. Rajiv Anand",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "38 Years",
@@ -140,7 +140,7 @@ export const doctors = [
     },
     {
         id: 6,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. Deep Goel",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -155,7 +155,7 @@ export const doctors = [
     },
     {
         id: 7,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. Subhash Chandra",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "28 Years",
@@ -170,7 +170,7 @@ export const doctors = [
     },
     {
         id: 8,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. Amit Agarwal",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -185,7 +185,7 @@ export const doctors = [
     },
     {
         id: 9,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. S Hukku",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "35 Years",
@@ -200,7 +200,7 @@ export const doctors = [
     },
     {
         id: 10,
-        image: "../Images/doctor avatar.png",
+        image: "/Images/doctor_921059.png",
         name: "Dr. Rajesh Sharma",
         hospital: "Jaypee Hospital, Noida",
         experience: "25 Years",

@@ -39,7 +39,7 @@ const Hospitals = () => {
                 <input placeholder='Jaypee Hospital' className='bg-teal-100 focus:border-2 outline-0 focus:border-teal-400 p-2 rounded-lg sm:w-[20rem] max-w-[20rem] h-[4rem] text-lg font-heading' value={searchData.name} onChange={(e)=>setSearchData((prev)=>({...prev,"name":e.target.value}))}/>
                 <input placeholder='New Delhi' className='bg-teal-100 focus:border-2 outline-0 focus:border-teal-400 p-2 rounded-lg w-[20rem] h-[4rem] text-lg font-heading' value={searchData.city} onChange={(e)=>setSearchData((prev)=>({...prev,"city":e.target.value}))}/>
             </div>
-            <button type='submit' className='teal px-8 py-2 h-[4rem] text-white rounded-lg cursor-pointer font-text'>Search</button>
+            <button type='submit' className='teal px-8 py-2 h-[4rem] text-white rounded-lg cursor-pointer font-text text-xl hover:font-semibold'>Search</button>
         </form>
     </div>
     <div className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-start gap-10 '>

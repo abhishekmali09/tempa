@@ -29,14 +29,14 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-white h-24 flex text-[#37474F] justify-around items-center border-b-2 border-gray-300 sticky top-0 z-20" style={{ fontFamily: 'var(--font-text)' }}>
+    <nav className="bg-white h-24 flex text-[#37474F] justify-around items-center border-b-2 border-gray-300 sticky top-0 z-20 font-heading" >
       {/* Logo */}
       <div>
         <img alt="logo" src={img_logo} className="w-30 h-30" />
       </div>
-      <div className='text-4xl font-heading font-bold'>{businessName}</div>
+      {/* <div className='text-4xl font-heading font-bold'>{businessName}</div> */}
       {/* Desktop Navigation */}
-      <ul className="  font-heading hidden md:flex gap-14 transition duration-300 ease-in group">
+      <ul className="  font-heading hidden lg:flex gap-14 transition duration-300 ease-in group">
         <li>
           <a href="/" className="nav-item">Home</a>
         </li>
@@ -44,11 +44,9 @@ const Navbar = () => {
           <span className="nav-item cursor-pointer">Discover</span>
           <ul className={`flex flex-col gap-2 p-3 w-[159px] absolute bg-white rounded-lg shadow-lg text-[#37474F] ${isHover ? 'block' : 'hidden'}`}>
             <li className="flex gap-3">
-              <div className="bg-[url('/Images/Others/about-us-dark.jpeg')] bg-no-repeat bg-center bg-contain"></div>
               <a href="/about-us" className="nav-item">About Us</a>
             </li>
             <li className="flex gap-3">
-              <div className="bg-[url('/Images/Others/quality-dark-icon.jpeg')] bg-no-repeat bg-center bg-contain"></div>
               <a href="/contact-us" className="nav-item">Contact Us</a>
             </li>
           </ul>
@@ -70,32 +68,32 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Menu Button */}
-      <div className="relative">
-        <button onClick={handleMenuOpen} className="md:hidden z-30 text-[#37474F]">
+      {/* <div className="relative"> */}
+        <button onClick={handleMenuOpen} className="lg:hidden z-30 text-[#37474F]">
           {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
         </button>
-      </div>
+      {/* </div> */}
 
       {/* Mobile Navigation */}
-      <ul className={`mobile-navbar md:hidden z-10 bg-white absolute h-screen w-full top-0 left-0 flex justify-center items-center flex-col gap-10 ${isMenuOpen ? 'block' : 'hidden'}`} ref={navbarRef}>
+      <ul className={`mobile-navbar lg:hidden z-10 bg-white absolute h-screen w-full top-0 left-0 flex justify-center font-heading items-center flex-col gap-10 text-2xl ${isMenuOpen ? 'block' : 'hidden'}`} ref={navbarRef}>
         <li>
           <a href="/" className="nav-item" onClick={() => setIsMenuOpen(false)}>Home</a>
         </li>
-        <li className="relative">
-          <span className="nav-item cursor-pointer" onClick={() => setIsDiscoverOpen(!isDiscoverOpen)}>Discover</span>
+        {/* <li className="relative"> */}
+          {/* <span className="nav-item cursor-pointer" onClick={() => setIsDiscoverOpen(!isDiscoverOpen)}>Discover</span>
           {isDiscoverOpen && (
-            <ul className="flex flex-col gap-3 mt-2 pl-4 text-[#37474F]">
-              <li className="flex gap-3">
-                <div className="bg-[url('/Images/Others/about-us-dark.jpeg')] w-8 h-8 bg-no-repeat bg-center bg-contain"></div>
+            <ul className="flex flex-col gap-3 mt-2 pl-4 text-[#37474F]"> */}
+              <li >
+                {/* <div className=" w-8 h-8 bg-no-repeat bg-center bg-contain"></div> */}
                 <a href="/about-us" className="nav-item" onClick={() => setIsMenuOpen(false)}>About Us</a>
               </li>
-              <li className="flex gap-3">
-                <div className="bg-[url('/Images/Others/quality-dark-icon.jpeg')] w-8 h-8 bg-no-repeat bg-center bg-contain"></div>
+              <li >
+                {/* <div className=" w-8 h-8 bg-no-repeat bg-center bg-contain"></div> */}
                 <a href="/contact-us" className="nav-item" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
               </li>
-            </ul>
-          )}
-        </li>
+            {/* </ul> */}
+          {/* )} */}
+        {/* </li> */}
         <li>
           <a href="/treatments" className="nav-item" onClick={() => setIsMenuOpen(false)}>Treatments</a>
         </li>
@@ -116,126 +114,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-// import React, { useState, useEffect, useRef } from 'react';
-// import { businessName } from '../constants';
-// import CloseIcon from '@mui/icons-material/Close';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import img_logo from '../../public/Images/nav_logo.png';
-
-// const Navbar = () => {
-//   const [isHover, setIsHover] = useState(false);
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//   const [isDiscoverOpen, setIsDiscoverOpen] = useState(false);
-//   const navbarRef = useRef(null);
-
-//   // Reset Discover submenu when mobile menu closes
-//   useEffect(() => {
-//     if (!isMenuOpen) {
-//       setIsDiscoverOpen(false);
-//     }
-//   }, [isMenuOpen]);
-
-//   // Toggle mobile menu and control body overflow
-//   function handleMenuOpen() {
-//     setIsMenuOpen((prev) => {
-//       const newState = !prev;
-//       if (typeof window !== 'undefined' && window.document) {
-//         document.body.style.overflow = newState ? 'hidden' : 'unset';
-//       }
-//       return newState;
-//     });
-//   }
-
-//   return (
-//     <nav className=" grayish h-24 flex text-[#37474F] justify-around items-center" style={{ fontFamily: 'var(--font-text)' }}>
-//       {/* Logo */}
-//       <div>
-//         <img alt="logo" src={img_logo}  className="w-25 h-25" />
-//       </div>
-//       <div className='text-4xl font-heading font-bold'>{businessName}</div>
-//       {/* Desktop Navigation */}
-//       <ul className="hidden md:flex gap-14 transition duration-300 ease-in group">
-//         <li>
-//           <a href="/" className="nav-item">Home</a>
-//         </li>
-//         <li className="relative z-10" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
-//           <span className="nav-item cursor-pointer">Discover</span>
-//           <ul className={`flex flex-col gap-3  py-4 w-[230px] absolute grayish rounded-lg text-[#37474F] ${isHover ? 'block' : 'hidden'}`}>
-//             <li className="flex gap-3">
-//               <div className="bg-[url('/Images/Others/about-us-dark.jpeg')] w-8 h-8 bg-no-repeat bg-center bg-contain"></div>
-//               <a href="/about-us" className="nav-item">About Us</a>
-//             </li>
-//             <li className="flex gap-3">
-//               <div className="bg-[url('/Images/Others/quality-dark-icon.jpeg')] w-8 h-8 bg-no-repeat bg-center bg-contain"></div>
-//               <a href="/contact-us" className="nav-item">Contact Us</a>
-//             </li>
-//           </ul>
-//         </li>
-//         <li>
-//           <a href="/treatments" className="nav-item">Treatments</a>
-//         </li>
-//         <li>
-//           <a href="/hospitals" className="nav-item">Hospitals</a>
-//         </li>
-//         <li>
-//           <a href="/doctors" className="nav-item">Doctors</a>
-//         </li>
-//         <li>
-//           <a href="/free-quote" className="golden-yellow text-[#37474F] px-4 py-2 rounded hover:brightness-90 transition duration-300 ease-in">
-//             Free Quote
-//           </a>
-//         </li>
-//       </ul>
-      
-
-//       {/* Mobile Menu Button */}
-//       <div className="relative">
-//         <button onClick={handleMenuOpen} className="md:hidden z-30 text-[#37474F]">
-//           {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
-//         </button>
-//       </div>
-
-//       {/* Mobile Navigation */}
-//       <ul className={`mobile-navbar md:hidden z-10  bg-[#ECEFF1] absolute h-screen grayish w-full top-0 left-0 flex justify-center items-center flex-col gap-10 ${isMenuOpen ? 'block' : 'hidden'}`} ref={navbarRef}>
-//         <li>
-//           <a href="/" className="nav-item" onClick={() => setIsMenuOpen(false)}>Home</a>
-//         </li>
-//         <li className="relative">
-//           <span className="nav-item cursor-pointer" onClick={() => setIsDiscoverOpen(!isDiscoverOpen)}>Discover</span>
-//           {isDiscoverOpen && (
-//             <ul className="flex flex-col gap-3 mt-2 pl-4 text-[#37474F]">
-//               <li className="flex gap-3">
-//                 <div className="bg-[url('/Images/Others/about-us-dark.jpeg')] w-8 h-8 bg-no-repeat bg-center bg-contain"></div>
-//                 <a href="/about-us" className="nav-item" onClick={() => setIsMenuOpen(false)}>About Us</a>
-//               </li>
-//               <li className="flex gap-3">
-//                 <div className="bg-[url('/Images/Others/quality-dark-icon.jpeg')] w-8 h-8 bg-no-repeat bg-center bg-contain"></div>
-//                 <a href="/contact-us" className="nav-item" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
-//               </li>
-//             </ul>
-//           )}
-//         </li>
-//         <li>
-//           <a href="/treatments" className="nav-item" onClick={() => setIsMenuOpen(false)}>Treatments</a>
-//         </li>
-//         <li>
-//           <a href="/hospitals" className="nav-item" onClick={() => setIsMenuOpen(false)}>Hospitals</a>
-//         </li>
-//         <li>
-//           <a href="/doctors" className="nav-item" onClick={() => setIsMenuOpen(false)}>Doctors</a>
-//         </li>
-//         <li>
-//         <a href="/free-quote" className="golden-yellow text-[#37474F] px-4 py-2 rounded hover:brightness-90 transition duration-300 ease-in w-full" onClick={() => setIsMenuOpen(false)}>
-//             Free Quote
-//           </a>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
