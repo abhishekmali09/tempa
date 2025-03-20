@@ -81,7 +81,7 @@ const Form = ({ formType }) => {
                             <small className='font-semibold font-heading'>First Name</small>
                         </label>
                         <input
-                            className='border-2 p-1 rounded'
+                            className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
                             {...register("firstName")}
                         />
                         {errors.firstName && (
@@ -94,7 +94,7 @@ const Form = ({ formType }) => {
                             <small className='font-semibold font-heading'>Last Name</small>
                         </label>
                         <input
-                            className='border-2 p-1 rounded'
+                            className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
                             {...register("lastName")}
                         />
                         {errors.lastName && (
@@ -108,7 +108,8 @@ const Form = ({ formType }) => {
                         <small className='font-semibold font-heading'>Email</small>
                     </label>
                     <input
-                        className='border-2 p-1 rounded'
+                        type='email'
+                        className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
                         {...register("email")}
                     />
                     {errors.email && (
@@ -116,12 +117,12 @@ const Form = ({ formType }) => {
                     )}
                 </div>
 
-                <div className='flex flex-col  w-[20rem] md:w-[30rem] h-32'>
+                <div className='flex flex-col  w-[20rem] md:w-[30rem] h-48'>
                     <label>
                         <small className='font-semibold font-heading'>Message</small>
                     </label>
                     <textarea
-                        className='border-2 p-2 rounded resize-none h-full'
+                        className='border-2 p-2 rounded resize-none h-full focus:border-2 duration-500 focus:border-teal-500 outline-0'
                         {...register("message")}
                     />
                     {errors.message && (
@@ -129,10 +130,10 @@ const Form = ({ formType }) => {
                     )}
                 </div>
 
-                <div className='flex flex-col items-start w-[20rem] md:w-[30rem]'>
+                <div className='flex flex-col items-start w-full'>
                     <button
                         type='submit'
-                        className='font-heading w-[20rem] md:w-[30rem] max-w-xs cursor-pointer text-black px-5 py-3 text-xl font-semibold bg-rose-400 mt-4 hover:scale-[101%] duration-300 rounded'
+                        className='font-heading  w-full cursor-pointer text-black px-5 py-3 text-xl font-semibold bg-rose-400 mt-4 hover:scale-[101%] duration-700 rounded hover:font-bold'
                     >
                         Send
                     </button>

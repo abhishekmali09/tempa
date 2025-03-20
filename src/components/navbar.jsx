@@ -28,11 +28,12 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-white h-24 flex text-[#37474F] justify-around items-center border-b-2 border-gray-300 sticky top-0 z-20" style={{ fontFamily: 'var(--font-text)' }}>
+    <nav className="bg-white h-24 flex text-[#37474F] justify-around items-center border-b-2 border-gray-300 sticky top-0 z-20 font-heading" >
       {/* Logo */}
       <div>
         <img alt="logo" src={img_logo} className="w-50 h-50" />
       </div>
+
       {/* Desktop Navigation */}
       <ul className="  font-heading hidden lg:flex gap-14 transition duration-300 ease-in group">
         <li>
@@ -42,11 +43,9 @@ const Navbar = () => {
           <span className="nav-item cursor-pointer">Discover</span>
           <ul className={`flex flex-col gap-2 p-3 w-[159px] absolute bg-white rounded-lg shadow-lg text-[#37474F] ${isHover ? 'block' : 'hidden'}`}>
             <li className="flex gap-3">
-              <div className="bg-[url('/Images/Others/about-us-dark.jpeg')] bg-no-repeat bg-center bg-contain"></div>
               <a href="/about-us" className="nav-item">About Us</a>
             </li>
             <li className="flex gap-3">
-              <div className="bg-[url('/Images/Others/quality-dark-icon.jpeg')] bg-no-repeat bg-center bg-contain"></div>
               <a href="/contact-us" className="nav-item">Contact Us</a>
             </li>
           </ul>
@@ -68,23 +67,36 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Menu Button */}
-      <div className="relative">
+
+      {/* <div className="relative"> */}
+
         <button onClick={handleMenuOpen} className="lg:hidden z-30 text-[#37474F]">
           {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
         </button>
-      </div>
+      {/* </div> */}
 
       {/* Mobile Navigation */}
-      <ul className={`mobile-navbar lg:hidden z-10 bg-white absolute h-screen w-full top-0 left-0 flex justify-center items-center flex-col gap-10 ${isMenuOpen ? 'block' : 'hidden'}`} ref={navbarRef}>
+
+      <ul className={`mobile-navbar lg:hidden z-10 bg-white absolute h-screen w-full top-0 left-0 flex justify-center font-heading items-center flex-col gap-10 text-2xl ${isMenuOpen ? 'block' : 'hidden'}`} ref={navbarRef}>
         <li>
           <a href="/" className="nav-item" onClick={() => setIsMenuOpen(false)}>Home</a>
         </li>
-        <li>
-          <a href="/" className="nav-item" onClick={() => setIsMenuOpen(false)}>About Us</a>
-        </li>
-        <li>
-          <a href="/" className="nav-item" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
-        </li>
+        {/* <li className="relative"> */}
+          {/* <span className="nav-item cursor-pointer" onClick={() => setIsDiscoverOpen(!isDiscoverOpen)}>Discover</span>
+          {isDiscoverOpen && (
+            <ul className="flex flex-col gap-3 mt-2 pl-4 text-[#37474F]"> */}
+              <li >
+                {/* <div className=" w-8 h-8 bg-no-repeat bg-center bg-contain"></div> */}
+                <a href="/about-us" className="nav-item" onClick={() => setIsMenuOpen(false)}>About Us</a>
+              </li>
+              <li >
+                {/* <div className=" w-8 h-8 bg-no-repeat bg-center bg-contain"></div> */}
+                <a href="/contact-us" className="nav-item" onClick={() => setIsMenuOpen(false)}>Contact Us</a>
+              </li>
+            {/* </ul> */}
+          {/* )} */}
+        {/* </li> */}
+
         <li>
           <a href="/treatments" className="nav-item" onClick={() => setIsMenuOpen(false)}>Treatments</a>
         </li>
@@ -105,3 +117,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
