@@ -1,19 +1,19 @@
-import HomeCard from '../components/homeCard'
 import HeroSection from '../components/heroSection'
 import PatientVoice from '../components/PatientVoice'
-import { homeServices } from '../constants'
 import Carousal from '../components/carousal'
-// import Navbar from '../components/navbar'
-// import Footer from '../components/footer'
 const Home = () => {
   return (
     <>
     <div>
         <HeroSection/>
-        <div className='grayish p-10 '>
-            <h1 className='text-4xl pb-10  max-w-[1200px] mx-auto px-10  font-heading text-rose-400 '>Services</h1>
-            <div className='border-b-2 border-black'></div>
-            <Carousal/>
+        <div className=' py-10 bg-white max-w-[1500px] mx-auto'>
+            <h1 className='text-4xl p-10  max-w-[1200px] mx-auto font-heading text-rose-400 '>Goverment Policies</h1>
+            <div className="flex justify-center items-start w-full px-10">
+            {/* <div className="flex justify-center items-center"> */}
+                <img src="/Images/speakerimg.png" className=" w-[200px] h-[100px] hidden lg:flex object-contain" alt="Speaker" />
+            {/* </div> */}
+            <Carousal />
+            </div>
         </div>
         <PatientVoice/>
 

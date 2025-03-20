@@ -23,20 +23,43 @@ export const ContactInformation = {
     }
 }
 export const businessName = "Pulse Quote"
-export const homeServices = [
+export const healthProgrammes = [
     {
-        "name":"Cardiology Checkup",
-        "cost":"$200"
+        name: "Pradhan Mantri Jan Arogya Yojana (PMJAY)",
+        url: "https://pmjay.gov.in/"
     },
     {
-        "name":"Medical Consultation",
-        "cost":"$250"
+        name: "National Tuberculosis Elimination Programme (NTEP)",
+        url: "https://tbcindia.gov.in/"
     },
     {
-        "name":"Physical Therapy",
-        "cost":"$100"
+        name: "Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)",
+        url: "https://pmssy-mohfw.nic.in/"
     },
-]
+    {
+        name: "National Programme for Non-Communicable Diseases (NPNCD)",
+        url: "https://dghs.gov.in/content/1362_3_NationalProgrammePreventionControl.aspx"
+    },
+    {
+        name: "Mission Indradhanush (MI)",
+        url: "https://www.nhm.gov.in/index1.php?lang=1&level=2&sublinkid=824&lid=634"
+    },
+    {
+        name: "National Mental Health Programme (NMHP)",
+        url: "https://dghs.gov.in/content/1350_3_NationalMentalHealthProgramme.aspx"
+    },
+    {
+        name: "Pradhan Mantri National Dialysis Programme (PMNDP)",
+        url: "https://pmndp.mohfw.gov.in/"
+    },{
+        name: "National Programme for Non-Communicable Diseases (NPNCD)",
+        url: "https://dghs.gov.in/content/1362_3_NationalProgrammePreventionControl.aspx"
+    },
+    {
+        name: "Mission Indradhanush (MI)",
+        url: "https://www.nhm.gov.in/index1.php?lang=1&level=2&sublinkid=824&lid=634"
+    },
+];
 export const treatments = [
     { id: 1, img: "https://img.icons8.com/external-others-pike-picture/100/external-Bariatric-Surgery-bariatric-others-pike-picture.png", name: "Bariatric Surgery" },
     { id: 2, img: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-cardiac-allergy-flaticons-lineal-color-flat-icons.png", name: "Cardiac Sciences" },
@@ -67,7 +90,7 @@ export const treatments = [
 export const doctors = [
     {
         id: 1,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. Dharma Chaudhary",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "17 Years",
@@ -82,7 +105,7 @@ export const doctors = [
     },
     {
         id: 2,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. W V B S Ramalingam",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "34 Years",
@@ -97,7 +120,7 @@ export const doctors = [
     },
     {
         id: 3,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. Sunil Prakash",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "35 Years",
@@ -112,7 +135,7 @@ export const doctors = [
     },
     {
         id: 4,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. Kapil Kumar",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -127,7 +150,7 @@ export const doctors = [
     },
     {
         id: 5,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. Rajiv Anand",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "38 Years",
@@ -142,7 +165,7 @@ export const doctors = [
     },
     {
         id: 6,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. Deep Goel",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -157,7 +180,7 @@ export const doctors = [
     },
     {
         id: 7,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. Subhash Chandra",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "28 Years",
@@ -172,7 +195,7 @@ export const doctors = [
     },
     {
         id: 8,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. Amit Agarwal",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "25 Years",
@@ -187,7 +210,7 @@ export const doctors = [
     },
     {
         id: 9,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. S Hukku",
         hospital: "BLK Super Specialty Hospital, New Delhi",
         experience: "35 Years",
@@ -202,7 +225,7 @@ export const doctors = [
     },
     {
         id: 10,
-        image: "/Images/doctor_921059.png",
+        image: "/Images/Doctors_design-removebg.png",
         name: "Dr. Rajesh Sharma",
         hospital: "Jaypee Hospital, Noida",
         experience: "25 Years",

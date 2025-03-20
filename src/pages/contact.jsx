@@ -19,38 +19,37 @@ const Contact = () => {
   return (
     <div className='grayish w-full'>
 
-            <div className='flex flex-col mx-auto max-w-[500px] justify-center items-center pt-30 pb-10'>
-                <p className='font-text'>Let's Connect</p>
+            <div className='flex flex-col mx-auto max-w-[750px] justify-center items-center pt-30 pb-10'>
                 <div className='pb-6 flex gap-6 flex-col justify-center items-center'>
-                    <h1 className='text-6xl font-heading text-rose-400 '>Contact</h1>
-                    <p className='text-center font-text '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias vitae repellat, molestiae hic eaque praesentium itaque. Enim, nesciunt dicta.</p>
+                    <h1 className='md:text-7xl text-6xl font-heading text-rose-400 '>Contact Us</h1>
+                    <p className='text-center font-text text-2xl px-10'>Connect with us for tailored medical quotes. Use the form, email, or call us—we're here to make it easy for you.</p>
                 </div>
             </div>
-            <div className='border-b-2 border-t-2 w-full'>
+            <div className='border-b-[1px] border-t-[1px] w-full bg-white '>
                 <div className='max-w-[1200px] mx-auto flex lg:flex-row flex-col'>
                     <div className='lg:w-1/2 w-full flex justify-center items-center p-10'>
                         <div className=' grid grid-rows-1 grid-cols-2 gap-20 justify-center max-w-[400px]'>
                             <div className='grid grid-rows-2 gap-10 w-full'>
                                 <div className='flex flex-col gap-5 '>
                                     <LocationOnOutlinedIcon/>
-                                    <h1 className='font-heading'>Address</h1>
-                                    <p className=' font-semibold font-text'>{ContactInformation.address}</p>
+                                    <h1 className='font-heading text-2xl'>Address</h1>
+                                    <p className='  font-text text-xl'>{ContactInformation.address}</p>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <PhoneOutlinedIcon/>
-                                    <h1 className='font-heading'>Phone</h1>
-                                    <p className='font-semibold font-text'>{ContactInformation.contactNumber}</p>
+                                    <h1 className='font-heading text-2xl'>Phone</h1>
+                                    <p className=' font-text text-xl'>{ContactInformation.contactNumber}</p>
                                 </div>
                             </div>
                             <div className='grid grid-rows-2 gap-10 w-full'>
                                 <div className='flex flex-col gap-5'>
                                     <EmailOutlinedIcon/>
-                                    <h1 className='font-heading'>Email</h1>
-                                    <p className='font-semibold font-text'>{ContactInformation.emailAddress}</p>
+                                    <h1 className='font-heading text-2xl'>Email</h1>
+                                    <p className=' font-text text-xl'>{ContactInformation.emailAddress}</p>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <ConnectWithoutContactIcon/>
-                                    <h1 className='font-heading'>Social Media</h1>
+                                    <h1 className='font-heading text-2xl'>Social Media</h1>
                                     <div className='flex gap-2 '>
                                     { Object.entries(ContactInformation.socialMediaHandles).map((social)=>{
                                         return <a className='font-semibold cursor-pointer ' target='_blank' href={social[1]} key={social[0]} >{iconsReg[social[0]]}</a>
@@ -60,7 +59,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=' lg:border-l-2 border-t-2 lg:border-t-0 w-full lg:w-1/2'>
+                    <div className=' lg:border-l-[1px] border-t-[1px] lg:border-t-0 w-full lg:w-1/2 py-10'>
                         <Form formType="contact"/>
                     </div>
                 </div>

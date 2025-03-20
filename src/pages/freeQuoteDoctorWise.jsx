@@ -21,29 +21,29 @@ const FreeQuoteDoctorWise = () => {
   return (
     <div className='grayish max-w-screen'>
         <div className=' w-full flex items-end lg:flex-row flex-col pt-30 pb-10'>
-            <div className='lg:w-1/2 w-full flex justify-center items-center p-10'>
-                <div className=' grid grid-cols-2 gap-11 justify-center max-w-[400px]'>
-                            <h1 className='text-6xl col-start-1 row-start-1 col-span-2 row-span-2 font-heading text-rose-400 pb-10'>Free Quote </h1>
+                <div className='lg:w-1/2 w-full flex justify-center items-center p-10'>
+                    <div className=' grid grid-cols-2 gap-11 justify-center max-w-[400px]'>
+                                <h1 className='md:text-7xl text-6xl col-start-1 row-start-1 col-span-2 row-span-2 font-heading text-rose-400 pb-10'>Free Quote</h1>
 
-                            <LocationOnOutlinedIcon className='col-start-1 row-start-3'/>
-                            <PhoneOutlinedIcon className='col-start-1 row-start-4'/>
-                            <EmailOutlinedIcon className='col-start-1 row-start-5'/>
-                            <ConnectWithoutContactIcon className='col-start-1 row-start-6'/>
+                                <LocationOnOutlinedIcon className='col-start-1 row-start-3' fontSize='large'/>
+                                <PhoneOutlinedIcon className='col-start-1 row-start-4' fontSize='large'/>
+                                <EmailOutlinedIcon className='col-start-1 row-start-5' fontSize='large'/>
+                                <ConnectWithoutContactIcon className='col-start-1 row-start-6' fontSize='large'/>
 
-                            <p className='font-semibold col-start-2 row-start-3 font-text text-lg'>{ContactInformation.address}</p>
-                            <p className='font-semibold col-start-2 row-start-4 font-text text-lg'>{ContactInformation.contactNumber}</p>
-                            <p className='font-semibold col-start-2 row-start-5 font-text text-lg'>{ContactInformation.emailAddress}</p>
-                            <div className='flex gap-3 col-start-2 row-start-6'>
-                                { Object.entries(ContactInformation.socialMediaHandles).map((social)=>{
-                                        return <a className='font-semibold cursor-pointer ' key={social[0]} target='_blank' href={social[1]}>{iconsReg[social[0]]}</a>
-                                })}
-                            </div>
+                                <p className='font-semibold col-start-2 row-start-3 font-text text-xl'>{ContactInformation.address}</p>
+                                <p className='font-semibold col-start-2 row-start-4 font-text text-xl'>{ContactInformation.contactNumber}</p>
+                                <p className='font-semibold col-start-2 row-start-5 font-text text-xl'>{ContactInformation.emailAddress}</p>
+                                <div className='flex gap-3 col-start-2 row-start-6'>
+                                    { Object.entries(ContactInformation.socialMediaHandles).map((social)=>{
+                                            return <a className='font-semibold cursor-pointer ' key={social[0]} target='_blank' href={social[1]}>{iconsReg[social[0]]}</a>
+                                    })}
+                                </div>
+                    </div>
+                </div>
+                <div className=' w-full lg:w-1/2'>
+                <Form formType="quote" doctorDetail={doctors[doctorId.doctorId-1]}/>
                 </div>
             </div>
-            <div className=' w-full lg:w-1/2'>
-            <Form formType="quote" doctorDetail={doctors[doctorId.doctorId]}/>
-            </div>
-        </div>
         <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40811.1274211957!2d77.23156499863079!3d28.553648502338184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c16e028cd1%3A0x653beb1ee85ec67a!2sLotus%20Temple!5e0!3m2!1sen!2sin!4v1742134950922!5m2!1sen!2sin"
         height="450"

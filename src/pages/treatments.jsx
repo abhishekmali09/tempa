@@ -1,4 +1,4 @@
-import { homeServices,treatments } from '../constants'
+import { healthProgrammes,treatments } from '../constants'
 import TreatmentsCard from '../components/treatmentCard'
 import FreeQuote from '../components/freeQuote'
 const Treatments = () => {

@@ -21,16 +21,16 @@ const FreeQuote = () => {
             <div className=' w-full flex items-end lg:flex-row flex-col pt-30 pb-10'>
                 <div className='lg:w-1/2 w-full flex justify-center items-center p-10'>
                     <div className=' grid grid-cols-2 gap-11 justify-center max-w-[400px]'>
-                                <h1 className='text-6xl col-start-1 row-start-1 col-span-2 row-span-2 font-heading text-rose-400 pb-10'>Free Quote</h1>
+                                <h1 className='md:text-7xl text-6xl col-start-1 row-start-1 col-span-2 row-span-2 font-heading text-rose-400 pb-10'>Free Quote</h1>
 
-                                <LocationOnOutlinedIcon className='col-start-1 row-start-3'/>
-                                <PhoneOutlinedIcon className='col-start-1 row-start-4'/>
-                                <EmailOutlinedIcon className='col-start-1 row-start-5'/>
-                                <ConnectWithoutContactIcon className='col-start-1 row-start-6'/>
+                                <LocationOnOutlinedIcon className='col-start-1 row-start-3' fontSize='large'/>
+                                <PhoneOutlinedIcon className='col-start-1 row-start-4' fontSize='large'/>
+                                <EmailOutlinedIcon className='col-start-1 row-start-5' fontSize='large'/>
+                                <ConnectWithoutContactIcon className='col-start-1 row-start-6' fontSize='large'/>
 
-                                <p className='font-semibold col-start-2 row-start-3 font-text text-lg'>{ContactInformation.address}</p>
-                                <p className='font-semibold col-start-2 row-start-4 font-text text-lg'>{ContactInformation.contactNumber}</p>
-                                <p className='font-semibold col-start-2 row-start-5 font-text text-lg'>{ContactInformation.emailAddress}</p>
+                                <p className='font-semibold col-start-2 row-start-3 font-text text-xl'>{ContactInformation.address}</p>
+                                <p className='font-semibold col-start-2 row-start-4 font-text text-xl'>{ContactInformation.contactNumber}</p>
+                                <p className='font-semibold col-start-2 row-start-5 font-text text-xl'>{ContactInformation.emailAddress}</p>
                                 <div className='flex gap-3 col-start-2 row-start-6'>
                                     { Object.entries(ContactInformation.socialMediaHandles).map((social)=>{
                                             return <a className='font-semibold cursor-pointer ' key={social[0]} target='_blank' href={social[1]}>{iconsReg[social[0]]}</a>
@@ -38,7 +38,7 @@ const FreeQuote = () => {
                                 </div>
                     </div>
                 </div>
-                <div className=' w-full lg:w-1/2'>
+                <div className=' w-full lg:w-1/2 '>
                 <Form formType="quote"/>
                 </div>
             </div>
