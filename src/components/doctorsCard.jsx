@@ -5,7 +5,7 @@ import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 
 const DoctorsCard = ({doctorDetail}) => {
   return (
-    <div className="flex gap-4 mx-auto md:flex-row flex-col lg:max-w-[55rem] md:max-w-[45rem] max-w-[25rem] p-10  hover:shadow-2xl hover:shadow-[#403e3c] hover:scale-102 duration-850 rounded-4xl">
+    <div className="flex gap-4 mx-auto md:flex-row flex-col lg:max-w-[55rem] md:max-w-[45rem] max-w-[25rem] p-10  hover:shadow-lg hover:shadow-[#403e3c] border-[1px] hover:scale-102 duration-850 rounded-4xl">
         <div className="flex justify-center items-start md:max-w-1/2 w-full">
             <img src={doctorDetail.image || MainImage} className="h-full object-contain"/>
         </div>

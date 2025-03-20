@@ -1,9 +1,9 @@
 import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 import { useState, useEffect } from "react";
-import { homeServices,treatments } from "../constants";
+import { healthProgrammes,treatments } from "../constants";
 import HomeCard from "./homeCard";
-homeServices
+// homeServices
 const Carousal = ({initialSlideIndex }) => {
     const handleSlideClick = (index) => {
         if (emblaApi) {
@@ -14,7 +14,7 @@ const Carousal = ({initialSlideIndex }) => {
 
       const OPTIONS = { loop: true };
       const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [
-        AutoScroll({ playOnInit: true, stopOnInteraction: false, speed: 1 }),
+        AutoScroll({ playOnInit: true, stopOnInteraction: false, speed: 1.8 }),
       ]);
 
       const [activeIndex, setActiveIndex] = useState(0);
@@ -36,11 +36,11 @@ const Carousal = ({initialSlideIndex }) => {
 
 
     return (
-        <section className="embla overflow-hidden mx-auto w-full max-w-[1200px] ">
-        <div className="embla__viewport mx-10" ref={emblaRef}>
-          <div className="embla__container flex gap-4 w-full ">
+        <section className="embla overflow-hidden w-full pb-10">
+        <div className="embla__viewport " ref={emblaRef}>
+          <div className="embla__container flex gap-10 w-full ">
             {
-                treatments.length!=0 && treatments.map((ser,index)=>{
+                healthProgrammes.length!=0 && healthProgrammes.map((ser,index)=>{
                     return <HomeCard treatmentDetails={ser} index={index}
                     handleSlideClick={handleSlideClick}/>
                 })

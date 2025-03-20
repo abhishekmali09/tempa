@@ -77,7 +77,7 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
         <div className='primary-background px-10 pt-10 pb-6 w-full'>
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className='ont-text mx-auto auto-rows-min max-w-[1000px] w-full grid justify-center items-start gap-y-4'
+                className='font-text mx-auto auto-rows-min max-w-[1000px] w-full grid justify-center items-start gap-y-4'
             >
                 <div className='flex gap-4 w-full lg:flex-row flex-col'>
                     <div className='flex flex-col lg:w-1/2 w-full'>
@@ -85,7 +85,7 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
                             <small className='font-semibold font-heading'>First Name</small>
                         </label>
                         <input
-                            className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
+                            className='border-2 p-1 h-[50px] text-xl font-heading rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
                             {...register("firstName")}
                         />
                         {errors.firstName && (
@@ -98,7 +98,7 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
                             <small className='font-semibold font-heading'>Last Name</small>
                         </label>
                         <input
-                            className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
+                            className='border-2 p-1 h-[50px] text-xl font-heading rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
                             {...register("lastName")}
                         />
                         {errors.lastName && (
@@ -113,7 +113,7 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
                     </label>
                     <input
                         type='email'
-                        className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
+                        className='border-2 p-1 rounded h-[50px] text-xl font-heading focus:border-2 duration-500 focus:border-teal-500 outline-0'
                         {...register("email")}
                     />
                     {errors.email && (
@@ -126,7 +126,7 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
                     </label>
                     <input
                         type='email'
-                        className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
+                        className='border-2 p-1 rounded h-[50px] text-xl font-heading focus:border-2 duration-500 focus:border-teal-500 outline-0'
                         {...register("doctor_name")}
                         value={doctorDetail.name}
                         disabled
@@ -141,7 +141,7 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
                     </label>
                     <input
                         type='email'
-                        className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
+                        className='border-2 p-1 rounded h-[50px] text-xl font-heading focus:border-2 duration-500 focus:border-teal-500 outline-0'
                         {...register("treatment_name")}
                         value={treatmentDetail.name}
                         disabled
@@ -151,12 +151,12 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
                     )}
                 </div>}
 
-                <div className='flex flex-col  w-[20rem] md:w-[30rem] h-48'>
+                <div className='flex flex-col h-48'>
                     <label>
                         <small className='font-semibold font-heading'>Message</small>
                     </label>
                     <textarea
-                        className='border-2 p-2 rounded resize-none h-full focus:border-2 duration-500 focus:border-teal-500 outline-0'
+                        className='border-2 p-2 rounded text-xl font-heading resize-none h-full focus:border-2 duration-500 focus:border-teal-500 outline-0'
                         {...register("message")}
                     />
                     {errors.message && (
