@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { businessName } from '../constants';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import img_logo from '../../public/Images/navbar__logo.png';
@@ -32,9 +31,9 @@ const Navbar = () => {
     <nav className="bg-white h-24 flex text-[#37474F] justify-around items-center border-b-2 border-gray-300 sticky top-0 z-20 font-heading" >
       {/* Logo */}
       <div>
-        <img alt="logo" src={img_logo} className="w-30 h-30" />
+        <img alt="logo" src={img_logo} className="w-50 h-50" />
       </div>
-      {/* <div className='text-4xl font-heading font-bold'>{businessName}</div> */}
+
       {/* Desktop Navigation */}
       <ul className="  font-heading hidden lg:flex gap-14 transition duration-300 ease-in group">
         <li>
@@ -68,13 +67,16 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Menu Button */}
+
       {/* <div className="relative"> */}
+
         <button onClick={handleMenuOpen} className="lg:hidden z-30 text-[#37474F]">
           {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
         </button>
       {/* </div> */}
 
       {/* Mobile Navigation */}
+
       <ul className={`mobile-navbar lg:hidden z-10 bg-white absolute h-screen w-full top-0 left-0 flex justify-center font-heading items-center flex-col gap-10 text-2xl ${isMenuOpen ? 'block' : 'hidden'}`} ref={navbarRef}>
         <li>
           <a href="/" className="nav-item" onClick={() => setIsMenuOpen(false)}>Home</a>
@@ -94,6 +96,7 @@ const Navbar = () => {
             {/* </ul> */}
           {/* )} */}
         {/* </li> */}
+
         <li>
           <a href="/treatments" className="nav-item" onClick={() => setIsMenuOpen(false)}>Treatments</a>
         </li>
@@ -114,3 +117,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

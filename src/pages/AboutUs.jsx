@@ -59,7 +59,9 @@ const AboutUs = () => {
     <section className='max-w-[1200px] mx-auto'>
       <div className="flex flex-col justify-around items-center h-fit gap-10 max-w-screen px-10  py-30 bg-[#ECEFF1]">
         {/* About Us Title */}
+
         <h1 className=" text-6xl font-bold  font-heading  text-rose-400 pt-5">ABOUT US</h1>
+
         <div className="flex flex-col lg:flex-row justify-around items-center gap-10 w-full mt-[52px]">
           {/* Left Section */}
           <div className="flex flex-col gap-10 max-w-md text-left mx-2">
