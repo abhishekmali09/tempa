@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TreatmentsCard = ({ treatmentDetails }) => {
+const TreatmentsCard = ({treatmentDetails }) => {
   return (
-    <a className="py-10 flex font-text flex-col justify-start items-center w-[100px]" href={`/free-quote/t/${treatmentDetails.id}`}>
+    <a className=" py-10 flex font-text flex-col justify-start items-center w-[100px]" href={`/free-quote/t/${treatmentDetails.id}`}  >
       <img
         src={treatmentDetails.img}
         alt={treatmentDetails.name}
