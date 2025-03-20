@@ -1,14 +1,14 @@
 import React from 'react'
 
-const HomeCard = ({serviceDetails}) => {
+const HomeCard = ({ index, handleSlideClick,treatmentDetails}) => {
   return (
-    <div className=' border-b-2  py-10 grid grid-cols-3 items-center text-xl font-text '>
-        <p className='font-bold'>{serviceDetails.name}</p>
-        <p className='text-right '>{serviceDetails.cost}</p>
+    <a className='embla__slide my-10 rounded-2xl py-10 px-10 items-center text-xl  hover:bg-rose-200 hover:text-black duration-700 font-heading flex ' onClick={() => handleSlideClick(index)} href={`/free-quote/t/${treatmentDetails.id}`}>
+        <p className=' text-4xl'>{treatmentDetails.name}</p>
+        {/* <p className='text-right '>{serviceDetails.cost}</p>
          <div className='text-right'>
          <button className=' cursor-pointer border-2 border-teal-400 hover:bg-teal-400 duration-500 hover:text-white px-5 py-2 font-heading'>Book Now</button>
-         </div>
-    </div>
+         </div> */}
+    </a>
   )
 }
 
