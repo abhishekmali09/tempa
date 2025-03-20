@@ -31,7 +31,7 @@ const DoctorsCard = ({doctorDetail}) => {
                 <a href={`/doctors/${doctorDetail.id}` } className='border-2 border-teal-600 hover:text-white hover:bg-teal-500 text-black px-8 py-2 text-center rounded-lg cursor-pointer font-heading duration-300'>Know More
                 </a>
                 {/* </button> */}
-                <button type='submit' className='hover:border-2 hover:border-yellow-500 hover:bg-white golden-yellow   px-8 py-2  rounded-lg font-heading '>Book Appointment</button>
+                <a className='text-center hover:border-2 hover:border-yellow-500 hover:bg-white golden-yellow px-8 py-2  rounded-lg font-heading cursor-pointer' href={`/free-quote/d/${doctorDetail.id}`}>Book Appointment</a>
                </div>
         </div>
 
