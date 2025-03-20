@@ -1,5 +1,5 @@
 import Form from '../components/form'
-import { ContactInformation } from '../constants'
+import { ContactInformation,doctors } from '../constants'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -15,6 +15,7 @@ const iconsReg = {
     "x":<XIcon/>
 }
 const FreeQuote = () => {
+
     return (
         <div className='grayish max-w-screen'>
             <div className=' w-full flex items-end lg:flex-row flex-col pt-30 pb-10'>

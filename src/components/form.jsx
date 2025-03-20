@@ -3,7 +3,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactUsSchema } from '../constants';
 
-const Form = ({ formType }) => {
+const Form = ({ formType,doctorDetail,treatmentDetail }) => {
+    console.log(treatmentDetail);
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: zodResolver(contactUsSchema),
     });
@@ -46,9 +47,12 @@ const Form = ({ formType }) => {
             quoteFormData.append("entry.165473670", data.firstName);
             quoteFormData.append("entry.473017976", data.lastName);
             quoteFormData.append("entry.1188495906", data.email);
+            if(doctorDetail)quoteFormData.append("entry.966855998", data.doctor_name);
+            if(treatmentDetail)quoteFormData.append("entry.1547308294", data.treatment_name);
             quoteFormData.append("entry.2139192016", data.message);
 
             try {
+                // https://docs.google.com/forms/d/e/1FAIpQLSfiDOlrMGhUrEw-RhMDTJYqwQAYPLdwAHEFZAmI4HuBbYbOrQ/viewform?usp=pp_url&entry.165473670=a&entry.473017976=b&entry.1188495906=c&entry.966855998=d&entry.1547308294=e&entry.2139192016=f
                 await fetch(
                     "https://docs.google.com/forms/d/e/1FAIpQLSfiDOlrMGhUrEw-RhMDTJYqwQAYPLdwAHEFZAmI4HuBbYbOrQ/formResponse",
                     {
@@ -116,6 +120,36 @@ const Form = ({ formType }) => {
                         <p className="text-red-500 text-sm">{errors.email.message}</p>
                     )}
                 </div>
+                {doctorDetail && <div className='flex flex-col w-full'>
+                    <label>
+                        <small className='font-semibold font-heading'>Doctor Name</small>
+                    </label>
+                    <input
+                        type='email'
+                        className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
+                        {...register("doctor_name")}
+                        value={doctorDetail.name}
+                        disabled
+                    />
+                    {errors.email && (
+                        <p className="text-red-500 text-sm">{errors.doctor_name.message}</p>
+                    )}
+                </div>}
+                {treatmentDetail && <div className='flex flex-col w-full'>
+                    <label>
+                        <small className='font-semibold font-heading'>Treatment Name</small>
+                    </label>
+                    <input
+                        type='email'
+                        className='border-2 p-1 rounded focus:border-2 duration-500 focus:border-teal-500 outline-0'
+                        {...register("treatment_name")}
+                        value={treatmentDetail.name}
+                        disabled
+                    />
+                    {errors.email && (
+                        <p className="text-red-500 text-sm">{errors.treatment_name.message}</p>
+                    )}
+                </div>}
 
                 <div className='flex flex-col  w-[20rem] md:w-[30rem] h-48'>
                     <label>

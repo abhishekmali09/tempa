@@ -1,7 +1,7 @@
 import { homeServices,treatments } from '../constants'
-import ServicesCard from '../components/servicesCard'
+import TreatmentsCard from '../components/treatmentCard'
 import FreeQuote from '../components/freeQuote'
-const Service = () => {
+const Treatments = () => {
   return (
     <section>
         <div className='font-display grayish p-10 pt-40 flex justify-center items-center flex-col'>
@@ -11,7 +11,7 @@ const Service = () => {
             </div>
             <div className='font-sans max-w-[1100px] flex flex-wrap justify-center items-baseline flex-row gap-10 mx-auto'>
             {treatments.length!==0 && treatments.map((ser)=>{
-                return <ServicesCard serviceDetails={ser} />
+                return <TreatmentsCard treatmentDetails={ser} />
 
             })}
             </div>
@@ -21,4 +21,4 @@ const Service = () => {
   )
 }
 
-export default Service
+export default Treatments
