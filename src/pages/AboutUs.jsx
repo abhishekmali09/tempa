@@ -60,26 +60,26 @@ const AboutUs = () => {
       <div className="flex flex-col justify-around items-center h-fit gap-10 max-w-screen px-10  py-30 bg-[#ECEFF1]">
         {/* About Us Title */}
 
-        <h1 className=" text-6xl font-bold  font-heading  text-rose-400 pt-5">ABOUT US</h1>
+        <h1 className='md:text-7xl text-6xl font-heading text-rose-400 '>ABOUT US</h1>
 
         <div className="flex flex-col lg:flex-row justify-around items-center gap-10 w-full mt-[52px]">
           {/* Left Section */}
-          <div className="flex flex-col gap-10 max-w-md text-left mx-2">
+          <div className="flex flex-col  max-w-md text-left mx-2">
 
-              <h2 className="text-4xl font-bold font-heading text-rose-400 ">MISSION</h2>
+              <h2 className='md:text-5xl text-4xl font-heading text-rose-400 '>MISSION</h2>
               <p className="text-xl font-text text-[#37474F] mt-4">
-              Our mission is to inspire, educate, and comfort through the power of medical quotes, creating a supportive community for healthcare professionals, patients, and anyone touched by the medical field. We aim to curate meaningful words that uplift, motivate, and provide wisdom, bridging the gap between inspiration and understanding in the healthcare journey.
+              Our mission is to inspire, educate, and comfort through the power of medical quotes, creating a supportive community for healthcare professionals, patients, and anyone touched by the medical field.
               </p>
 
             <div>
-              <h2 className="text-4xl font-bold font-heading text-rose-400">MOTTO</h2>
+              <h2 className='md:text-5xl py-3 text-4xl font-heading text-rose-400 '>MOTTO</h2>
               <p className="text-xl font-text text-[#37474F] mt-4">A motto is a short phrase or sentence that captures the essence, purpose, or values of a person, organization, or project.</p>
             </div>
           </div>
           {/* Right Section (Image) */}
           <div className=" h-full hidden lg:flex">
             <img
-              width="500px"
+              width="600px"
               height="700px"
               src={img_aboutUs}
               alt="About Us"
@@ -94,7 +94,7 @@ const AboutUs = () => {
 
 <section className='bg-white'>
 <div className="flex flex-col items-center justify-center py-20 ">
-      <h1 className=" text-center text-6xl mb-12 font-bold text-rose-400 font-heading py-1">OUR VALUES</h1>
+      <h1 className='md:text-7xl text-6xl font-heading text-rose-400 '>OUR VALUES</h1>
       <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-2 gap-10 mt-2 px-10 w-[1200px] max-w-full mx-auto">
         {/*Accuracy  (Top-left corner) */}
         <div className="flex flex-col items-center justify-center col-start-1 row-start-1">
@@ -117,7 +117,7 @@ const AboutUs = () => {
           />
           <h2 className="text-3xl font-semibold font-heading mb-2">Integrity</h2>
           <p className="text-center  text-2xl font-text text-gray-600 text-text">
-          Honest, transparent, ethical content and engagement is our commitment.          </p>
+          Honest, transparent, ethical content and engagement is our commitment. </p>
         </div>
 
         {/* Empathy (Bottom-left corner) */}
@@ -129,7 +129,7 @@ const AboutUs = () => {
           />
           <h2 className="text-3xl font-semibold font-heading mb-2">Empathy</h2>
           <p className="text-center text-2xl font-text text-gray-600 text-text">
-          Quotes show medicine's compassion, connecting with users emotionally.          </p>
+          Quotes show medicine's compassion, connecting with users emotionally. </p>
         </div>
 
         {/* Education (Bottom-right corner) */}
