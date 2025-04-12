@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
          <div className='border-b-2'>
             <div className='grid grid-cols-1 auto-rows-auto lg:grid-rows-1 lg:grid-cols-4 max-w-[1200px] mx-auto'>
-                    <div className='flex flex-col md:border-r-2 gap-3 py-16 lg:col-span-2 p-10 font-heading'>
+                    {/* <div className='flex flex-col md:border-r-2 gap-3 py-16 lg:col-span-2 p-10 font-heading'>
                         <div>
                             <h3>Subscribe to Our</h3>
                             <h3>Newsletter</h3>
@@ -69,8 +69,8 @@ const Footer = () => {
                                 <div className='flex-col'>
                                     <input type='email' {...register("email")} className='bg-red-200 px-6 py-2 focus:outline-0 focus:border-2 border-red-600 max-w-[20rem]' />
                                     {/* <input className='border-3 p-1' {...register("email")} /> */}
-                                    {errors.email && <p><small className="text-red-500">{errors.email.message}</small></p>}
-                                </div>
+                                    {/* {errors.email && <p><small className="text-red-500">{errors.email.message}</small></p>} */}
+                                {/* </div>
                                 <button type='submit' className=' cursor-pointer coral px-8 py-2 text-white rounded-3xl max-w-[100px] h-[45px]'>Join</button>
                                 </div>
                             </div>
@@ -84,8 +84,8 @@ const Footer = () => {
                                 Error while Subscribing!
                             </p>}
                         </form>
-                        <a href='/contact-us' >Contact Us</a>
-                    </div>
+                        <a href='/contact-us' >Contact Us</a> */}
+                    {/* </div> */}
 
                     <div className=' flex flex-col justify-center items-start px-10 font-text'>
                         {
@@ -112,7 +112,7 @@ const Footer = () => {
                         <li>Privacy Policy</li>
                         <li>Accessibility Statement</li>
                         <li>Terms and Conditions</li>
-                        <li>Refund Policy</li>
+                        <li>Compliance  Policy</li>
                     </ul>
                 </div>
            </div>
