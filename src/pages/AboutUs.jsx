@@ -1,11 +1,8 @@
 import React from 'react';
 import img_aboutUs from '../../public/Images/About us design.png';
 import { Facebook, Twitter, LinkedIn } from '@mui/icons-material';
-import img_Excellence from '../../public/Images/Excellence.png';
-import img_Trust from '../../public/Images/Integrity.png';
-import img_Empathy from '../../public/Images/Empathy.png';
-import img_Innovation from '../../public/Images/innovation.png';
-import FAQs from "./FAQs"; // Import the new FAQs component
+import { aboutUsData } from '../constants';
+import GeneralCard from '../components/generalCard';
 
 // TeamMemberCard Component with left-aligned content and MUI icons
 const TeamMemberCard = ({ name, title, photo, social }) => {
@@ -87,63 +84,19 @@ const AboutUs = () => {
            </div>
           </div>
         </div>
-      </section>
 
-      {/* "Our Values" section */}
-      <section className='bg-white'>
-        <div className="flex flex-col items-center justify-center py-20 ">
-          <h1 className='md:text-7xl text-6xl font-heading text-rose-400 '>OUR VALUES</h1>
-          <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-2 gap-10 mt-2 px-10 w-[1200px] max-w-full mx-auto">
-            {/* Trust (Top-left corner) */}
-            <div className="flex flex-col items-center justify-center col-start-1 row-start-1">
-              <img
-                src={img_Trust}
-                alt="Trust"
-                className="w-36 h-36 mb-4"
-              />
-              <h2 className="text-3xl font-semibold font-heading mb-2">Trust</h2>
-              <p className="text-center text-2xl font-text text-[#37474F] ">
-                We build confidence through honesty, transparency, and a no-hidden-cost guarantee—your peace of mind is our priority.
-              </p>
-            </div>
-            {/* Excellence (Top-right corner) */}
-            <div className="flex flex-col items-center justify-center col-start-1 md:col-start-3 md:row-start-1 row-start-2">
-              <img
-                src={img_Excellence}
-                alt="Excellence"
-                className="w-36 h-36 mb-4"
-              />
-              <h2 className="text-3xl font-semibold font-heading mb-2">Excellence</h2>
-              <p className="text-center text-2xl font-text text-gray-600 text-text">
-                We pursue the highest standards, partnering with top-tier medical professionals and facilities to ensure you receive the best care available.
-              </p>
-            </div>
-            {/* Empathy (Bottom-left corner) */}
-            <div className="flex flex-col items-center justify-center col-start-1 md:row-start-2 row-start-3">
-              <img
-                src={img_Empathy}
-                alt="Empathy"
-                className="w-36 h-36 mb-4"
-              />
-              <h2 className="text-3xl font-semibold font-heading mb-2">Empathy</h2>
-              <p className="text-center text-2xl font-text text-gray-600 text-text">
-                Your journey is personal, and we listen, adapt, and support you with compassion every step of the way.
-              </p>
-            </div>
-            {/* Innovation (Bottom-right corner) */}
-            <div className="flex flex-col items-center justify-center col-start-1 md:col-start-3 md:row-start-2 row-start-4">
-              <img
-                src={img_Innovation}
-                alt="Innovation"
-                className="w-36 h-36 mb-4"
-              />
-              <h2 className="text-3xl font-semibold font-heading mb-2">Innovation</h2>
-              <p className="text-center text-2xl font-text text-gray-600 text-text">
-                We embrace cutting-edge solutions to simplify medical travel, making it accessible, efficient, and tailored to your needs.
-              </p>
-            </div>
-          </div>
-        </div>
+<section className='bg-white'>
+<div className="flex flex-col items-center justify-center py-20 ">
+      <h1 className=" text-center text-6xl mb-12 font-bold text-rose-400 font-heading py-1">OUR VALUES</h1>
+      <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-2 gap-10 mt-2 px-10 w-[1200px] max-w-full mx-auto">
+        {
+            aboutUsData.map((data)=>{
+                return <GeneralCard generalData={data}/>
+            })
+        }
+      </div>
+      </div>
+  </section>
 
         <section className='bg-white'>
           <div className="flex flex-col items-center justify-center py-10 ">

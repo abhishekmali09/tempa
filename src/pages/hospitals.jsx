@@ -42,31 +42,32 @@ const Hospitals = () => {
             <button type='submit' className='teal px-8 py-2 h-[4rem] text-white rounded-lg cursor-pointer font-text text-xl hover:font-semibold'>Search</button>
         </form>
     </div>
-    <div className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-start gap-10 '>
         {
-            totalHospitals.length!==0 && currentPageHos.map((hospital)=>{
+            totalHospitals.length!==0 &&
+            <div className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-start gap-10 '>
+            {currentPageHos.map((hospital)=>{
                 return <HospitalsCard hospitalDetail={hospital}/>
-            })
+            })}
+            </div>
         }
         {
                  totalHospitals.length===0 && <h1 className='w-full grayish pt-30 pb-10 text-4xl text-rose-500 flex justify-center items-center'>No Hospitals Found With the Specified Filters</h1>
         }
-    </div>
-    </div>
-    <div className='flex gap-5 justify-center items-center pt-10'>
-    <ArrowCircleLeftIcon
-        className={`cursor-pointer text-teal-500 ${
-            currentPage === 1 ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
+        <div className='flex gap-5 justify-end items-end pt-3 text-2xl font-semibold '>
+            <p
+        className={`cursor-pointer text-teal-500 hover:text-teal-800 duration-500 ${
+            currentPage <= 1 ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
         }`}
-        fontSize="large"
         onClick={() => setCurrentPage((prevPage) => prevPage - 1)}
-        />
-        <p  className='text-teal-800 text-4xl font-bold font-heading'>{currentPage}</p>
+        >Prev</p>
+        {/* <p  className='text-teal-800 text-4xl font-bold font-heading'>{currentPage}</p> */}
 
-        <ArrowCircleRightIcon className={`cursor-pointer text-teal-500 ${
-            currentPage === totalPages ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
-        }`} onClick={()=>setCurrentPage((prevPage)=>prevPage+1)}  fontSize="large"></ArrowCircleRightIcon>
+        <p className={`cursor-pointer text-teal-500 hover:text-teal-800 duration-500 ${
+            currentPage >= totalPages ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
+        }`} onClick={()=>setCurrentPage((prevPage)=>prevPage+1)} >Next</p>
+        </div>
     </div>
+
 </div>
   )
 }
