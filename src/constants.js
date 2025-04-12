@@ -12,9 +12,9 @@ export const newsLetterSchema = z.object({
     email:z.string().email("Invalid email address")
 })
 export const ContactInformation = {
-    "contactNumber":"123-456-789",
+    "contactNumber":"9990776607",
     "emailAddress":"info@mysite.com",
-    "address":"500 Terry Francine St., 6th Floor, San Francisco, CA 94158",
+    "address":"306, Aggarwal Plaza, Plot 11, Sector 10, Dwarka,New Delhi, Delhi 110075",
     "socialMediaHandles":{
         "facebook":"link",
         "instagram":"link",
@@ -22,7 +22,7 @@ export const ContactInformation = {
         "linkedin":"link",
     }
 }
-export const businessName = "Pulse Quote"
+export const businessName = "Health Ally"
 export const healthProgrammes = [
     {
         name: "Pradhan Mantri Jan Arogya Yojana (PMJAY)",
@@ -85,7 +85,50 @@ export const treatments = [
     { id: 22, img: "https://img.icons8.com/external-beshi-color-kerismaker/100/external-Urology-medical-service-beshi-color-kerismaker.png", name: "Urology Surgery" },
     { id: 23, img: "https://img.icons8.com/color/100/spleen.png", name: "Vascular Surgery" }
 ];
-
+export const aboutUsData = [
+    {
+      heading: "Accuracy",
+      desc: "We prioritize delivering medically sound and reliable information, ensuring all quotes are sourced from credible professionals or grounded in evidence-based knowledge.",
+      image: "../../public/Images/Accuracy.png",
+    },
+    {
+      heading: "Integrity",
+      desc: "We commit to honesty and transparency, maintaining ethical standards in how we present content and engage with our community.",
+      image: "../../public/Images/Integrity.png",
+    },
+    {
+      heading: "Empathy",
+      desc: "We value compassion and understanding, reflecting the human side of medicine through quotes that connect with the emotions and experiences of our users.",
+      image: "../../public/Images/Empathy.png",
+    },
+    {
+      heading: "Education",
+      desc: "We strive to inform and enlighten, curating quotes that enhance medical literacy and spark curiosity about health and wellness.",
+      image: "../../public/Images/Education.png",
+    },
+  ];
+  export const whyChooseUsData = [
+    {
+      heading: "24x7 Dedicated Support",
+      desc: "A caring team is always by your side, ready to assist anytime, day or night, throughout your journey right from the start of planning.",
+      image:"https://img.icons8.com/external-kiranshastry-solid-kiranshastry/50/external-opinion-management-kiranshastry-solid-kiranshastry.png"
+    },
+    {
+      heading: "No Hidden Cost Guarantee",
+      desc: "Know exactly what you're paying for with clear, upfront pricing—no surprises, just honest answers.",
+       image:"https://img.icons8.com/ios-filled/100/average-2.png"
+    },
+    {
+      heading: "Opinions Until You're Satisfied",
+      desc: "We help you get the expert medical opinions and options until you feel confident in your treatment choices, NO COMPROMISES on your health!",
+       image:"https://img.icons8.com/ios/100/caduceus.png"
+    },
+    {
+      heading: "Personalized Travel Planning",
+      desc: "Every detail of your trip is tailored to your needs, ensuring comfort and peace of mind from start to finish. As many alterations you want or as much involvement you want in planning",
+       image:"https://img.icons8.com/windows/96/timeline-week.png"
+    },
+  ];
 
 export const doctors = [
     {
@@ -243,12 +286,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr-Sanjay-Gupta21.jpg",
         name: "DR SANJAY GUPTA",
         hospital: "Jaypee Hospital, Noida - India",
-        experience: "20 Years of Experience",
+        experience: "20 Years ",
         department: "Orthopaedic Surgeon",
         desc: "Dr. Sanjay Gupta is a gold medallist in MS orthopaedics and performed over 5000 successful joint replacement surgeries. He is presently working as an associate director and HOD in the department of joint replacement and orthopaedics at Jaypee hospital, Noida.",
         detail: {
             hospital: "Jaypee Hospital, Noida - India",
-            experience: "20 Years of Experience",
+            experience: "20 Years ",
             department: "Orthopaedic Surgeon",
             city: "Noida"
         }
@@ -258,12 +301,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_-Abhideep-Chaudhary.jpg",
         name: "DR ABHIDEEP CHAUDHARY",
         hospital: "Blk Hospital, New Delhi - India",
-        experience: "16 Years of Experience",
+        experience: "16 Years ",
         department: "Liver Transplant Surgeon",
         desc: "Dr. Abhideep Chaudhary is a renowned Liver Transplant Surgeon in India and working as a senior consultant and director of Liver Transplant Department at Jaypee Hospital, Noida, India.",
         detail: {
             hospital: "Blk Hospital, New Delhi - India",
-            experience: "16 Years of Experience",
+            experience: "16 Years ",
             department: "Liver Transplant Surgeon",
             city: "New Delhi"
         }
@@ -273,12 +316,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Harit_Chaturvedi_new_0.jpg",
         name: "DR HARIT CHATURVEDI",
         hospital: "Max Hospital, New Delhi - India",
-        experience: "27 Years of Experience",
+        experience: "27 Years ",
         department: "Surgical Oncologist",
         desc: "Dr. Harit Chaturvedi is the best name in surgical oncology and presently working as a Chairman - Cancer Care, Director & Chief Consultant - Surgical Oncology at Max Hospitals Groups Hospital, New Delhi, India.",
         detail: {
             hospital: "Max Hospital, New Delhi - India",
-            experience: "27 Years of Experience",
+            experience: "27 Years ",
             department: "Surgical Oncologist",
             city: "New Delhi"
         }
@@ -288,12 +331,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Sanjay_gupta-Liver.jpg",
         name: "PROF DR SUBHASH GUPTA",
         hospital: "Max Hospital, New Delhi - India",
-        experience: "35 Years of Experience",
+        experience: "35 Years ",
         department: "Liver Transplant Surgeon",
         desc: "Prof (Dr) Subhash Gupta is a renowned Liver Transplant surgeon in India and presently working as a Chief of liver transplant/hepato-pancreatic-biliary surgeon and the Chairman of the Max Center.",
         detail: {
             hospital: "Max Hospital, New Delhi - India",
-            experience: "35 Years of Experience",
+            experience: "35 Years ",
             department: "Liver Transplant Surgeon",
             city: "New Delhi"
         }
@@ -303,12 +346,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_Anant_Kumar_max1.png",
         name: "DR ANANT KUMAR",
         hospital: "Max Hospital, New Delhi - India",
-        experience: "30 Years of Experience",
+        experience: "30 Years ",
         department: "Urologist & Kidney Transplant Surgeon",
         desc: "Dr. Anant Kumar is one of the best Kidney transplant surgeons and presently working as a Chairman - Urology, Renal Transplant, Robotics(Max Saket Complex) and Uro-Oncology Max Hospital, Saket, in Delhi, India.",
         detail: {
             hospital: "Max Hospital, New Delhi - India",
-            experience: "30 Years of Experience",
+            experience: "30 Years ",
             department: "Urologist & Kidney Transplant Surgeon",
             city: "New Delhi"
         }
@@ -318,12 +361,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_Anurag_Krishna_Max1.jpg",
         name: "DR ANURAG KRISHNA",
         hospital: "Max Hospital, New Delhi - India",
-        experience: "35 Years of Experience",
+        experience: "35 Years ",
         department: "Pediatric Surgeon & Urologist",
         desc: "Dr. Anurag Krishna is a renowned pediatric and urologist surgeon in India and presently working as Director - Paediatrics & Paediatric Surgery at Max Hospital, Saket, Delhi, India.",
         detail: {
             hospital: "Max Hospital, New Delhi - India",
-            experience: "35 Years of Experience",
+            experience: "35 Years ",
             department: "Pediatric Surgeon & Urologist",
             city: "New Delhi"
         }
@@ -333,12 +376,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Pradeep_Chowbey_Max.jpg",
         name: "DR PRADEEP CHOWBEY",
         hospital: "Max Hospital, New Delhi - India",
-        experience: "37 Years of Experience",
+        experience: "37 Years ",
         department: "GI & Bariatric Surgeon",
         desc: "Dr. Pradeep Chowbey is a world-renowned Bariatric Surgeon in India and presently working as an Executive Vice Chairman at a Max Institute of Minimal Access Centre, Max Healthcare.",
         detail: {
             hospital: "Max Hospital, New Delhi - India",
-            experience: "37 Years of Experience",
+            experience: "37 Years ",
             department: "GI & Bariatric Surgeon",
             city: "New Delhi"
         }
@@ -348,12 +391,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_Anil_Arora.JPG",
         name: "PROF DR ANIL ARORA",
         hospital: "Max Hospital, New Delhi - India",
-        experience: "32 Years of Experience",
+        experience: "32 Years ",
         department: "Orthopaedic Surgeon",
         desc: "Dr. (Prof.) Anil Arora is a well-renowned orthopedic surgeon in India providing the ultimate in state-of-the-art quality orthopedic care and presently working as a Senior Director & Unit Head - Orthopaedic & Joint Replacement Center at Max Hospitals Group.",
         detail: {
             hospital: "Max Hospital, New Delhi - India",
-            experience: "32 Years of Experience",
+            experience: "32 Years ",
             department: "Orthopaedic Surgeon",
             city: "New Delhi"
         }
@@ -363,12 +406,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_shishta-nadda-bas.JPG",
         name: "DR SHISHTA NADDA BASU",
         hospital: "Max Hospital, New Delhi - India",
-        experience: "40 Years of Experience",
+        experience: "40 Years ",
         department: "Gynecologist / Infertility specialist",
         desc: "Dr. Shishta Nadda Basu is the best doctor for Gynaecology and Obstetrics and presently working as a Senior Director & Head of Department at Max Super Speciality Hospital, Shalimar Bagh, New Delhi, India.",
         detail: {
             hospital: "Max Hospital, New Delhi - India",
-            experience: "40 Years of Experience",
+            experience: "40 Years ",
             department: "Gynecologist / Infertility specialist",
             city: "New Delhi"
         }
@@ -378,12 +421,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_ashok_seth.jpg",
         name: "DR ASHOK SETH",
         hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
-        experience: "40 Years of Experience",
+        experience: "40 Years ",
         department: "Cardiologist",
         desc: "Dr. Ashok Seth is the most renowned cardiologist in India and presently working as a Chairman of Fortis Escorts Heart Institute, New Delhi, and Head, Cardiology Council of Fortis Group of Hospitals.",
         detail: {
             hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
-            experience: "40 Years of Experience",
+            experience: "40 Years ",
             department: "Cardiologist",
             city: "New Delhi"
         }
@@ -393,12 +436,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/DR_YUGAL_K_MISHRA.PNG",
         name: "DR YUGAL K MISHRA",
         hospital: "Manipal Hospital, Dwarka - India",
-        experience: "32 Years of Experience",
+        experience: "32 Years ",
         department: "Cardiothoracic & Vascular Surgeon",
         desc: "Dr. Yugal K Mishra is one of the renowned Robotic & minimally invasive heart surgeons in Asia and presently working as a Director, Department of Cardiovascular Surgery at Fortis Escorts Heart Institute & Research Centre, Okhla Road, New Delhi.",
         detail: {
             hospital: "Manipal Hospital, Dwarka - India",
-            experience: "32 Years of Experience",
+            experience: "32 Years ",
             department: "Cardiothoracic & Vascular Surgeon",
             city: "Dwarka"
         }
@@ -408,12 +451,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Vivek_Vij.jpg",
         name: "DR VIVEK VIJ",
         hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
-        experience: "18 Years of Experience",
+        experience: "18 Years ",
         department: "Liver Transplant Surgeon",
         desc: "Dr. Vivek Vij is one of the best liver transplant surgeons and presently working as Director of Liver Transplant and GI surgery department at Fortis Health Care, New Delhi, India.",
         detail: {
             hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
-            experience: "18 Years of Experience",
+            experience: "18 Years ",
             department: "Liver Transplant Surgeon",
             city: "New Delhi"
         }
@@ -423,12 +466,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Ashok_Rajgopal.jpg",
         name: "DR ASHOK RAJGOPAL",
         hospital: "Fortis Hospital, Gurugram - India",
-        experience: "30 Years of Experience",
+        experience: "30 Years ",
         department: "Orthopaedic Surgeon",
         desc: "Dr. Ashok Rajgopal is a renowned orthopaedic surgeon in India and presently working as Director & Chairman of Fortis Bone & Joint Institute Executive at Fortis Hospitals Groups.",
         detail: {
             hospital: "Fortis Hospital, Gurugram - India",
-            experience: "30 Years of Experience",
+            experience: "30 Years ",
             department: "Orthopaedic Surgeon",
             city: "Gurugram"
         }
@@ -438,12 +481,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Sheshir_seth.png",
         name: "DR SHISHIR SETH",
         hospital: "Apollo Hospital, New Delhi - India",
-        experience: "13 Years of Experience",
+        experience: "13 Years ",
         department: "Clinical Hematologist & BMT",
         desc: "Dr. Shishir Seth is one of the best Haematologists in India and presently working as a Senior Consultant in Hemato-Oncology and Bone Marrow Transplant at the Apollo Hospitals, New Delhi.",
         detail: {
             hospital: "Apollo Hospital, New Delhi - India",
-            experience: "13 Years of Experience",
+            experience: "13 Years ",
             department: "Clinical Hematologist & BMT",
             city: "New Delhi"
         }
@@ -453,12 +496,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr-s-m-shuaib-zaidi.jpg",
         name: "DR S M SHUAIB ZAIDI",
         hospital: "Apollo Hospital, New Delhi - India",
-        experience: "18 Years of Experience",
+        experience: "18 Years ",
         department: "Surgical Oncologist",
         desc: "Dr. Shuaib Zaidi is a well-known surgical oncologist in India and presently working as a Senior Consultant at Indraprastha Apollo Hospital in New Delhi.",
         detail: {
             hospital: "Apollo Hospital, New Delhi - India",
-            experience: "18 Years of Experience",
+            experience: "18 Years ",
             department: "Surgical Oncologist",
             city: "New Delhi"
         }
@@ -468,12 +511,12 @@ export const doctors = [
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr-sandeep-attawar.jpg",
         name: "DR SANDEEP ATTAWAR",
         hospital: "Gleneagles Global Hospital, Tamil Nadu - India",
-        experience: "22 Years of Experience",
+        experience: "22 Years ",
         department: "Cardiothoracic & Vascular Surgeon",
         desc: "Dr. Sandeep Attawar is one of India’s foremost cardiothoracic surgeons and presently working as Chair & Program Director, Cardiac Surgery and Thoracic organ transplantation at Parkway-Global Hospitals, India.",
         detail: {
             hospital: "Gleneagles Global Hospital, Tamil Nadu - India",
-            experience: "22 Years of Experience",
+            experience: "22 Years ",
             department: "Cardiothoracic & Vascular Surgeon",
             city: "Chennai" // Assuming Tamil Nadu refers to Chennai, a major city
         }
@@ -492,7 +535,8 @@ export const hospitals = [
         established: 1996,
         country: "India",
         city: "New Delhi"
-      }
+      },
+      shortName: "APOLLO HOSPITAL IN DEL..."
     },
     {
       id: 2,
@@ -506,7 +550,8 @@ export const hospitals = [
         established: 2007,
         country: "India",
         city: "Gurugram"
-      }
+      },
+      shortName: "ARTEMIS HOSPITAL"
     },
     {
       id: 3,
@@ -520,7 +565,8 @@ export const hospitals = [
         established: 1959,
         country: "India",
         city: "New Delhi"
-      }
+      },
+      shortName: "BLK HOSPITAL"
     },
     {
       id: 4,
@@ -534,7 +580,8 @@ export const hospitals = [
         established: 1988,
         country: "India",
         city: "New Delhi"
-      }
+      },
+      shortName: "FORTIS ESCORTS HEART..."
     },
     {
       id: 5,
@@ -548,7 +595,8 @@ export const hospitals = [
         established: 2001,
         country: "India",
         city: "Gurugram"
-      }
+      },
+      shortName: "FORTIS HOSPITAL"
     },
     {
       id: 6,
@@ -562,7 +610,8 @@ export const hospitals = [
         established: 2014,
         country: "India",
         city: "Noida"
-      }
+      },
+      shortName: "JAYPEE HOSPITAL"
     },
     {
       id: 7,
@@ -576,7 +625,8 @@ export const hospitals = [
         established: 2006,
         country: "India",
         city: "New Delhi"
-      }
+      },
+      shortName: "MAX HOSPITAL"
     },
     {
       id: 8,
@@ -590,7 +640,8 @@ export const hospitals = [
         established: 1998,
         country: "India",
         city: "New Delhi"
-      }
+      },
+      shortName: "SHARP SIGHT CENTRE"
     },
     {
       id: 9,
@@ -604,7 +655,8 @@ export const hospitals = [
         established: 2010,
         country: "India",
         city: "Kerala"
-      }
+      },
+      shortName: "FOCUZ AYURVEDA HOS..."
     },
     {
       id: 10,
@@ -618,7 +670,8 @@ export const hospitals = [
         established: 2018,
         country: "India",
         city: "Dwarka"
-      }
+      },
+      shortName: "MANIPAL HOSPITAL"
     },
     {
       id: 11,
@@ -632,7 +685,8 @@ export const hospitals = [
         established: 1996,
         country: "India",
         city: "Delhi"
-      }
+      },
+      shortName: "PSRI HOSPITAL"
     },
     {
       id: 12,
@@ -646,7 +700,8 @@ export const hospitals = [
         established: 2022,
         country: "India",
         city: "Faridabad"
-      }
+      },
+      shortName: "AMRITA HOSPITAL"
     },
     {
       id: 13,
@@ -660,7 +715,8 @@ export const hospitals = [
         established: 2012,
         country: "India",
         city: "South Delhi"
-      }
+      },
+      shortName: "ART Fertility Clinic..."
     },
     {
       id: 14,
@@ -674,7 +730,8 @@ export const hospitals = [
         established: 2009,
         country: "India",
         city: "Gurugram"
-      }
+      },
+      shortName: "MEDANTA HOSPITAL"
     },
     {
       id: 15,
@@ -688,7 +745,8 @@ export const hospitals = [
         established: 1996,
         country: "India",
         city: "Kolkata"
-      }
+      },
+      shortName: "AMRI HOSPITAL"
     },
     {
       id: 16,
@@ -702,7 +760,8 @@ export const hospitals = [
         established: 2007,
         country: "India",
         city: "Faridabad"
-      }
+      },
+      shortName: "ASIAN HOSPITAL IN FAR..."
     },
     {
       id: 17,
@@ -716,7 +775,8 @@ export const hospitals = [
         established: 1999,
         country: "India",
         city: "Chennai"
-      }
+      },
+      shortName: "GLENEAGLES GLOBAL HO..."
     },
     {
       id: 18,
@@ -730,7 +790,8 @@ export const hospitals = [
         established: 2005,
         country: "India",
         city: "Bangalore"
-      }
+      },
+      shortName: "COLUMBIA ASIA HOS..."
     },
     {
       id: 19,
@@ -744,7 +805,8 @@ export const hospitals = [
         established: 2014,
         country: "India",
         city: "Bangalore"
-      }
+      },
+      shortName: "ASTER CMI HOSPITAL"
     },
     {
       id: 20,
@@ -758,7 +820,8 @@ export const hospitals = [
         established: 1989,
         country: "India",
         city: "Bangalore"
-      }
+      },
+      shortName: "HCG CANCER CENTER"
     },
     {
       id: 21,
@@ -772,7 +835,8 @@ export const hospitals = [
         established: 2009,
         country: "India",
         city: "Mumbai"
-      }
+      },
+      shortName: "KOKILABEN DHIRUBH..."
     },
     {
       id: 22,
@@ -786,6 +850,7 @@ export const hospitals = [
         established: 2008,
         country: "India",
         city: "Noida"
-      }
+      },
+      shortName: "YATHARTH HOSPITAL"
     }
   ];

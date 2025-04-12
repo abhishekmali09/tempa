@@ -1,11 +1,8 @@
 import React from 'react';
 import img from '../../public/Images/ServiceImage1.png';
 import { Facebook, Twitter, LinkedIn } from '@mui/icons-material';
-import  img_Accuracy from '../../public/Images/Accuracy.png';
-import img_Integrity from '../../public/Images/Integrity.png';
-import img_Empathy from '../../public/Images/Empathy.png';
-import img_Education from '../../public/Images/Education.png';
-
+import { aboutUsData } from '../constants';
+import GeneralCard from '../components/generalCard';
 // TeamMemberCard Component with left-aligned content and MUI icons
 const TeamMemberCard = ({ name, title, photo, social }) => {
   return (
@@ -95,58 +92,12 @@ const AboutUs = () => {
 <section className='bg-white'>
 <div className="flex flex-col items-center justify-center py-20 ">
       <h1 className=" text-center text-6xl mb-12 font-bold text-rose-400 font-heading py-1">OUR VALUES</h1>
-      <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-2 gap-10 mt-2 px-10 w-[1200px] max-w-full mx-auto">
-        {/*Accuracy  (Top-left corner) */}
-        <div className="flex flex-col items-center justify-center col-start-1 row-start-1">
-          <img
-            src={img_Accuracy} // Replace with the actual path to your icon
-            alt="Accuracy"
-            className="w-36 h-36 mb-4"
-          />
-          <h2 className="text-2xl font-semibold font-heading mb-2">Accuracy</h2>
-          <p className="text-center font-text text-[#37474F]  text-text">
-          We prioritize delivering medically sound and reliable information, ensuring all quotes are sourced from credible professionals or grounded in evidence-based knowledge.
-          </p>
-        </div>
-
-        {/* Integrity (Top-right corner) */}
-        <div className="flex flex-col items-center justify-center col-start-1  md:col-start-3  md:row-start-1 row-start-2">
-          <img
-            src={img_Integrity} // Replace with the actual path to your icon
-            alt="Integrity"
-            className="w-36 h-36 mb-4"
-          />
-          <h2 className="text-2xl font-semibold font-heading mb-2">Integrity</h2>
-          <p className="text-center font-text text-gray-600 text-text">
-          We commit to honesty and transparency, maintaining ethical standards in how we present content and engage with our community.
-          </p>
-        </div>
-
-        {/* Empathy (Bottom-left corner) */}
-        <div className="flex flex-col items-center justify-center col-start-1 md:row-start-2 row-start-3">
-          <img
-            src={img_Empathy} // Replace with the actual path to your icon
-            alt="Empathy"
-            className="w-36 h-36 mb-4"
-          />
-          <h2 className="text-2xl font-semibold font-heading mb-2">Empathy</h2>
-          <p className="text-center font-text text-gray-600 text-text">
-           We value compassion and understanding, reflecting the human side of medicine through quotes that connect with the emotions and experiences of our users.
-          </p>
-        </div>
-
-        {/* Education (Bottom-right corner) */}
-        <div className="flex flex-col items-center justify-center col-start-1 md:col-start-3  md:row-start-2  row-start-4">
-          <img
-            src={img_Education} // Replace with the actual path to your icon
-            alt="Education"
-            className="w-36 h-36 mb-4"
-          />
-          <h2 className="text-2xl font-semibold font-heading mb-2">Education</h2>
-          <p className="text-center font-text text-gray-600 text-text">
-           We strive to inform and enlighten, curating quotes that enhance medical literacy and spark curiosity about health and wellness.
-          </p>
-        </div>
+      <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-2 gap-10 mt-2 px-10 w-[1200px] max-w-full mx-auto">
+        {
+            aboutUsData.map((data)=>{
+                return <GeneralCard generalData={data}/>
+            })
+        }
       </div>
       </div>
   </section>
