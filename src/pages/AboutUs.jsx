@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../public/Images/ServiceImage1.png';
+import img_aboutUs from '../../public/Images/About us design.png';
 import { Facebook, Twitter, LinkedIn } from '@mui/icons-material';
 import { aboutUsData } from '../constants';
 import GeneralCard from '../components/generalCard';
@@ -74,11 +74,11 @@ const AboutUs = () => {
             </div>
           </div>
           {/* Right Section (Image) */}
-          <div className="hidden lg:flex">
+          <div className=" h-full hidden lg:flex">
             <img
-              width="400px"
-              height="400px"
-              src={'#'}
+              width="500px"
+              height="700px"
+              src={img_aboutUs}
               alt="About Us"
               className="rounded-lg shadow-lg max-w-full"
             />
