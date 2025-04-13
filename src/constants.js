@@ -11,6 +11,7 @@ export const contactUsSchema =z.object({
 export const newsLetterSchema = z.object({
     email:z.string().email("Invalid email address")
 })
+
 export const ContactInformation = {
     "contactNumber":"9990776607",
     "emailAddress":"info@mysite.com",
@@ -22,44 +23,8 @@ export const ContactInformation = {
         "linkedin":"link",
     }
 }
-export const businessName = "Health Ally"
-export const healthProgrammes = [
-    {
-        name: "Pradhan Mantri Jan Arogya Yojana (PMJAY)",
-        url: "https://pmjay.gov.in/"
-    },
-    {
-        name: "National Tuberculosis Elimination Programme (NTEP)",
-        url: "https://tbcindia.gov.in/"
-    },
-    {
-        name: "Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)",
-        url: "https://pmssy-mohfw.nic.in/"
-    },
-    {
-        name: "National Programme for Non-Communicable Diseases (NPNCD)",
-        url: "https://dghs.gov.in/content/1362_3_NationalProgrammePreventionControl.aspx"
-    },
-    {
-        name: "Mission Indradhanush (MI)",
-        url: "https://www.nhm.gov.in/index1.php?lang=1&level=2&sublinkid=824&lid=634"
-    },
-    {
-        name: "National Mental Health Programme (NMHP)",
-        url: "https://dghs.gov.in/content/1350_3_NationalMentalHealthProgramme.aspx"
-    },
-    {
-        name: "Pradhan Mantri National Dialysis Programme (PMNDP)",
-        url: "https://pmndp.mohfw.gov.in/"
-    },{
-        name: "National Programme for Non-Communicable Diseases (NPNCD)",
-        url: "https://dghs.gov.in/content/1362_3_NationalProgrammePreventionControl.aspx"
-    },
-    {
-        name: "Mission Indradhanush (MI)",
-        url: "https://www.nhm.gov.in/index1.php?lang=1&level=2&sublinkid=824&lid=634"
-    },
-];
+export const businessName = "Your Health Ally"
+
 export const treatments = [
     { id: 1, img: "https://img.icons8.com/external-others-pike-picture/100/external-Bariatric-Surgery-bariatric-others-pike-picture.png", name: "Bariatric Surgery" },
     { id: 2, img: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-cardiac-allergy-flaticons-lineal-color-flat-icons.png", name: "Cardiac Sciences" },
@@ -87,14 +52,14 @@ export const treatments = [
 ];
 export const aboutUsData = [
     {
-      heading: "Accuracy",
-      desc: "We prioritize delivering medically sound and reliable information, ensuring all quotes are sourced from credible professionals or grounded in evidence-based knowledge.",
-      image: "../../public/Images/Accuracy.png",
+      heading: "Trust",
+      desc: "We build confidence through honesty, transparency, and a no-hidden-cost guarantee—your peace of mind is our priority.",
+      image: "../../public/Images/Integrity.png",
     },
     {
-      heading: "Integrity",
-      desc: "We commit to honesty and transparency, maintaining ethical standards in how we present content and engage with our community.",
-      image: "../../public/Images/Integrity.png",
+      heading: "Excellence",
+      desc: "We pursue the highest standards, partnering with top-tier medical professionals and facilities to ensure you receive the best care available.",
+      image: "../../public/Images/Excellence.png",
     },
     {
       heading: "Empathy",
@@ -102,31 +67,31 @@ export const aboutUsData = [
       image: "../../public/Images/Empathy.png",
     },
     {
-      heading: "Education",
-      desc: "We strive to inform and enlighten, curating quotes that enhance medical literacy and spark curiosity about health and wellness.",
-      image: "../../public/Images/Education.png",
+      heading: "Innovation",
+      desc: "We embrace cutting-edge solutions to simplify medical travel, making it accessible, efficient, and tailored to your needs.",
+      image: "../../public/Images/innovation.png",
     },
   ];
   export const whyChooseUsData = [
     {
       heading: "24x7 Dedicated Support",
       desc: "A caring team is always by your side, ready to assist anytime, day or night, throughout your journey right from the start of planning.",
-      image:"https://img.icons8.com/external-kiranshastry-solid-kiranshastry/50/external-opinion-management-kiranshastry-solid-kiranshastry.png"
+      image:"../../public/Images/24-7bg.png"
     },
     {
       heading: "No Hidden Cost Guarantee",
       desc: "Know exactly what you're paying for with clear, upfront pricing—no surprises, just honest answers.",
-       image:"https://img.icons8.com/ios-filled/100/average-2.png"
+       image:"../../public/Images/money.png"
     },
     {
       heading: "Opinions Until You're Satisfied",
       desc: "We help you get the expert medical opinions and options until you feel confident in your treatment choices, NO COMPROMISES on your health!",
-       image:"https://img.icons8.com/ios/100/caduceus.png"
+       image:"../../public/Images/feedback.png"
     },
     {
       heading: "Personalized Travel Planning",
       desc: "Every detail of your trip is tailored to your needs, ensuring comfort and peace of mind from start to finish. As many alterations you want or as much involvement you want in planning",
-       image:"https://img.icons8.com/windows/96/timeline-week.png"
+       image:"../../public/Images/calendar.png"
     },
   ];
 
@@ -522,6 +487,7 @@ export const doctors = [
         }
     }
 ];
+
 export const hospitals = [
     {
       id: 1,
@@ -852,5 +818,770 @@ export const hospitals = [
         city: "Noida"
       },
       shortName: "YATHARTH HOSPITAL"
-    }
+    },
+    {
+      id: 23,
+      name: "Amrita Hospital Faridabad",
+      address: "India, Faridabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F2lBWoNvJfg3Qw89TkaZsB4p31735371067564.jpg&w=640&q=75",
+      desc: "A renowned hospital in Faridabad.",
+      longDesc: "This hospital in Faridabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Faridabad"
+      },
+      shortName: "Amrita Hospital Faridabad"
+    },
+    {
+      id: 24,
+      name: "Yashoda Hospitals Hitec City",
+      address: "India, Hyderabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FY5dWnrYdKkkUwjiZYq3aMM0h1740634828484.jpg&w=640&q=75",
+      desc: "A renowned hospital in Hyderabad.",
+      longDesc: "This hospital in Hyderabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Hyderabad"
+      },
+      shortName: "Yashoda Hospitals Hitec City"
+    },
+    {
+      id: 25,
+      name: "D.Y Patil Hospital",
+      address: "India, Pune",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F65717051282261627576.jpg&w=640&q=75",
+      desc: "A renowned hospital in Pune.",
+      longDesc: "This hospital in Pune is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Pune"
+      },
+      shortName: "D.Y Patil Hospital"
+    },
+    {
+      id: 26,
+      name: "Ayu Health Hospitals",
+      address: "India, Bengaluru",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1672289053437.png&w=640&q=75",
+      desc: "A renowned hospital in Bengaluru.",
+      longDesc: "This hospital in Bengaluru is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Bengaluru"
+      },
+      shortName: "Ayu Health Hospitals"
+    },
+    {
+      id: 27,
+      name: "SevenHills Hospital",
+      address: "India, Mumbai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FUHiArdl39p5M8nMPz3O1xOlN1732873962567.jpg&w=640&q=75",
+      desc: "A renowned hospital in Mumbai.",
+      longDesc: "This hospital in Mumbai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Mumbai"
+      },
+      shortName: "SevenHills Hospital"
+    },
+    {
+      id: 28,
+      name: "Medanta - The Medicity",
+      address: "India, Gurgaon",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2Fy7asH2e2BWTDTrJYrwk8Lk0o1732171241320.jpg&w=640&q=75",
+      desc: "A renowned hospital in Gurgaon.",
+      longDesc: "This hospital in Gurgaon is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Gurgaon"
+      },
+      shortName: "Medanta - The Medicity"
+    },
+    {
+      id: 29,
+      name: "AMRI Hospitals",
+      address: "India, Kolkata",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F97717054924003122394.jpg&w=640&q=75",
+      desc: "A renowned hospital in Kolkata.",
+      longDesc: "This hospital in Kolkata is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Kolkata"
+      },
+      shortName: "AMRI Hospitals"
+    },
+    {
+      id: 30,
+      name: "Moolchand Hospital, Delhi",
+      address: "India, New Delhi",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FDs5yrHiHhjHxcZmydZTXhmkB1733203942565.jpg&w=640&q=75",
+      desc: "A renowned hospital in New Delhi.",
+      longDesc: "This hospital in New Delhi is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "New Delhi"
+      },
+      shortName: "Moolchand Hospital, Delhi"
+    },
+    {
+      id: 31,
+      name: "MIOT International Hospital, Chennai",
+      address: "India, Chennai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1665209336523.jpg&w=640&q=75",
+      desc: "A renowned hospital in Chennai.",
+      longDesc: "This hospital in Chennai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Chennai"
+      },
+      shortName: "MIOT International Hospital, Chennai"
+    },
+    {
+      id: 32,
+      name: "KIMS, Secunderabad",
+      address: "India, Secunderabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2Fw9J55IOIX5lOvs9wHIvwfDOq1732603250564.jpg&w=640&q=75",
+      desc: "A renowned hospital in Secunderabad.",
+      longDesc: "This hospital in Secunderabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Secunderabad"
+      },
+      shortName: "KIMS, Secunderabad"
+    },
+    {
+      id: 33,
+      name: "Apollo Spectra",
+      address: "India, Hyderabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F341726061393.jpg&w=640&q=75",
+      desc: "A renowned hospital in Hyderabad.",
+      longDesc: "This hospital in Hyderabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Hyderabad"
+      },
+      shortName: "Apollo Spectra"
+    },
+    {
+      id: 34,
+      name: "Gleneagles Global Health City, Chennai",
+      address: "India, Chennai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F291726061391.jpg&w=640&q=75",
+      desc: "A renowned hospital in Chennai.",
+      longDesc: "This hospital in Chennai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Chennai"
+      },
+      shortName: "Gleneagles Global Health City, Chennai"
+    },
+    {
+      id: 35,
+      name: "Fortis Memorial Research Institute, Gurgaon",
+      address: "India, Gurgaon",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F075kQDQTPiwRO4TgYU1WrQuX1735036004637.jpg&w=640&q=75",
+      desc: "A renowned hospital in Gurgaon.",
+      longDesc: "This hospital in Gurgaon is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Gurgaon"
+      },
+      shortName: "Fortis Memorial Research Institute, Gurgaon"
+    },
+    {
+      id: 36,
+      name: "Wockhardt Hospitals",
+      address: "India, Mumbai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2Fs8mFrTs208aOxHKxhidDY6gP1740648763734.jpg&w=640&q=75",
+      desc: "A renowned hospital in Mumbai.",
+      longDesc: "This hospital in Mumbai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Mumbai"
+      },
+      shortName: "Wockhardt Hospitals"
+    },
+    {
+      id: 37,
+      name: "Kokilaben Dhirubhai Ambani Hospital",
+      address: "India, Mumbai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FbuLLE0icMSKjuScsXuPgXjlZ1734770128655.jpg&w=640&q=75",
+      desc: "A renowned hospital in Mumbai.",
+      longDesc: "This hospital in Mumbai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Mumbai"
+      },
+      shortName: "Kokilaben Dhirubhai Ambani Hospital"
+    },
+    {
+      id: 38,
+      name: "Yashoda Hospitals – Secunderabad",
+      address: "India, Hyderabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FPCFbnLxc856mCuwIvdmyhA071740564100099.jpg&w=640&q=75",
+      desc: "A renowned hospital in Hyderabad.",
+      longDesc: "This hospital in Hyderabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Hyderabad"
+      },
+      shortName: "Yashoda Hospitals – Secunderabad"
+    },
+    {
+      id: 39,
+      name: "Indraprastha Apollo Hospital",
+      address: "India, New Delhi",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FL1zjxkKrENMommPDNowCUCmJ1732001845397.jpg&w=640&q=75",
+      desc: "A renowned hospital in New Delhi.",
+      longDesc: "This hospital in New Delhi is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "New Delhi"
+      },
+      shortName: "Indraprastha Apollo Hospital"
+    },
+    {
+      id: 40,
+      name: "Apollo Gleneagles Hospitals, Kolkata",
+      address: "India, Kolkata",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1608296539172.jpg&w=640&q=75",
+      desc: "A renowned hospital in Kolkata.",
+      longDesc: "This hospital in Kolkata is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Kolkata"
+      },
+      shortName: "Apollo Gleneagles Hospitals, Kolkata"
+    },
+    {
+      id: 41,
+      name: "Aster Medcity, Kochi",
+      address: "India, Ernakulam",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F168059214716.png&w=640&q=75",
+      desc: "A renowned hospital in Ernakulam.",
+      longDesc: "This hospital in Ernakulam is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Ernakulam"
+      },
+      shortName: "Aster Medcity, Kochi"
+    },
+    {
+      id: 42,
+      name: "Manipal Hospital, Bangalore",
+      address: "India, Bangalore",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F3iTlrktPxZ5CYpK21j3A144C1732514755614.jpg&w=640&q=75",
+      desc: "A renowned hospital in Bangalore.",
+      longDesc: "This hospital in Bangalore is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Bangalore"
+      },
+      shortName: "Manipal Hospital, Bangalore"
+    },
+    {
+      id: 43,
+      name: "BLK-Max Super Speciality Hospital, New Delhi",
+      address: "India, New Delhi",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FsGyDUdJgGEOO7IkjlZdEpgg51734672772073.jpg&w=640&q=75",
+      desc: "A renowned hospital in New Delhi.",
+      longDesc: "This hospital in New Delhi is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "New Delhi"
+      },
+      shortName: "BLK-Max Super Speciality Hospital, New Delhi"
+    },
+    {
+      id: 44,
+      name: "Billroth Hospitals",
+      address: "India, Chennai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F93117054923606654806.jpg&w=640&q=75",
+      desc: "A renowned hospital in Chennai.",
+      longDesc: "This hospital in Chennai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Chennai"
+      },
+      shortName: "Billroth Hospitals"
+    },
+    {
+      id: 45,
+      name: "St Stephens Hospital",
+      address: "India, New Delhi",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F4SlDlpH7CfiwT6gihcQqU56p1733292425901.jpg&w=640&q=75",
+      desc: "A renowned hospital in New Delhi.",
+      longDesc: "This hospital in New Delhi is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "New Delhi"
+      },
+      shortName: "St Stephens Hospital"
+    },
+    {
+      id: 46,
+      name: "Zydus Hospital",
+      address: "India, Ahmedabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F91317054923413727696.jpg&w=640&q=75",
+      desc: "A renowned hospital in Ahmedabad.",
+      longDesc: "This hospital in Ahmedabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Ahmedabad"
+      },
+      shortName: "Zydus Hospital"
+    },
+    {
+      id: 47,
+      name: "Marengo Asia Hospital, Faridabad",
+      address: "India, Faridabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FskMgIFapr3m2yhUBYgYSOuog1735378691983.jpg&w=640&q=75",
+      desc: "A renowned hospital in Faridabad.",
+      longDesc: "This hospital in Faridabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Faridabad"
+      },
+      shortName: "Marengo Asia Hospital, Faridabad"
+    },
+    {
+      id: 48,
+      name: "Apollo Hospital, Hyderabad",
+      address: "India, Hyderabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1602742773673.jpg&w=640&q=75",
+      desc: "A renowned hospital in Hyderabad.",
+      longDesc: "This hospital in Hyderabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Hyderabad"
+      },
+      shortName: "Apollo Hospital, Hyderabad"
+    },
+    {
+      id: 49,
+      name: "Max Healthcare Saket",
+      address: "India, New Delhi",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F161622037398.jpg&w=640&q=75",
+      desc: "A renowned hospital in New Delhi.",
+      longDesc: "This hospital in New Delhi is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "New Delhi"
+      },
+      shortName: "Max Healthcare Saket"
+    },
+    {
+      id: 50,
+      name: "Max Super Speciality Hospital, Noida",
+      address: "India, Noida",
+      image: "https://www.maxhealthcare.in/hospital-network/max-super-speciality-hospital-noida",
+      desc: "A renowned hospital in Noida.",
+      longDesc: "This hospital in Noida is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Noida"
+      },
+      shortName: "Max Super Speciality Hospital, Noida"
+    },
+    {
+      id: 51,
+      name: "Yashoda Hospitals – Malakpet, Hyderabad",
+      address: "India, Kalwakurthy",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FsWr0cBW2AQNxPoqI3KgWZlZk1740563067938.jpg&w=640&q=75",
+      desc: "A renowned hospital in Kalwakurthy.",
+      longDesc: "This hospital in Kalwakurthy is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Kalwakurthy"
+      },
+      shortName: "Yashoda Hospitals – Malakpet, Hyderabad"
+    },
+    {
+      id: 52,
+      name: "Yatharth Hospital, Sector 110, Noida",
+      address: "India, Greater Noida",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1713268257527.jpeg&w=640&q=75",
+      desc: "A renowned hospital in Greater Noida.",
+      longDesc: "This hospital in Greater Noida is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Greater Noida"
+      },
+      shortName: "Yatharth Hospital, Sector 110, Noida"
+    },
+    {
+      id: 53,
+      name: "Apollo Cancer Centres Chennai",
+      address: "India, Chennai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F83217053814828784971.jpg&w=640&q=75",
+      desc: "A renowned hospital in Chennai.",
+      longDesc: "This hospital in Chennai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Chennai"
+      },
+      shortName: "Apollo Cancer Centres Chennai"
+    },
+    {
+      id: 54,
+      name: "Sunshine Hospitals",
+      address: "India, Hyderabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F74917052199760331194.jpg&w=640&q=75",
+      desc: "A renowned hospital in Hyderabad.",
+      longDesc: "This hospital in Hyderabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Hyderabad"
+      },
+      shortName: "Sunshine Hospitals"
+    },
+    {
+      id: 55,
+      name: "Aster CMI hospital, Bangalore",
+      address: "India, Bengaluru",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1695977889570.png&w=640&q=75",
+      desc: "A renowned hospital in Bengaluru.",
+      longDesc: "This hospital in Bengaluru is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Bengaluru"
+      },
+      shortName: "Aster CMI hospital, Bangalore"
+    },
+    {
+      id: 56,
+      name: "Naruvi Hospitals, Vellore",
+      address: "India, Chennai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1687946534609.png&w=640&q=75",
+      desc: "A renowned hospital in Chennai.",
+      longDesc: "This hospital in Chennai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Chennai"
+      },
+      shortName: "Naruvi Hospitals, Vellore"
+    },
+    {
+      id: 57,
+      name: "Health Care Global- The Speciaist in Cancer Care",
+      address: "India, Almatti Sitimani",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1655444128367.jpg&w=640&q=75",
+      desc: "A renowned hospital in Almatti Sitimani.",
+      longDesc: "This hospital in Almatti Sitimani is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Almatti Sitimani"
+      },
+      shortName: "Health Care Global- The Speciaist in Cancer Care"
+    },
+    {
+      id: 58,
+      name: "Apollo Hospital, Mumbai",
+      address: "India, Mumbai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1602748075362.jpg&w=640&q=75",
+      desc: "A renowned hospital in Mumbai.",
+      longDesc: "This hospital in Mumbai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Mumbai"
+      },
+      shortName: "Apollo Hospital, Mumbai"
+    },
+    {
+      id: 59,
+      name: "VPS Lakeshore Hospital, Kerala",
+      address: "India, Kochi",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FTPwk9qs8qEIu12U4N3VXeOnm1735800750751.jpg&w=640&q=75",
+      desc: "A renowned hospital in Kochi.",
+      longDesc: "This hospital in Kochi is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Kochi"
+      },
+      shortName: "VPS Lakeshore Hospital, Kerala"
+    },
+    {
+      id: 60,
+      name: "Yatharth Super Speciality Hospitals, Greater Noida West",
+      address: "India, Greater Noida",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FgFA1qQhwgwZ395A9owTZExiX1719901092308.jpeg&w=640&q=75",
+      desc: "A renowned hospital in Greater Noida.",
+      longDesc: "This hospital in Greater Noida is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Greater Noida"
+      },
+      shortName: "Yatharth Super Speciality Hospitals, Greater Noida West"
+    },
+    {
+      id: 61,
+      name: "BGS Gleneagles Global Hospital",
+      address: "India, Bengaluru",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F94617054923743929758.jpg&w=640&q=75",
+      desc: "A renowned hospital in Bengaluru.",
+      longDesc: "This hospital in Bengaluru is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Bengaluru"
+      },
+      shortName: "BGS Gleneagles Global Hospital"
+    },
+    {
+      id: 62,
+      name: "Dr. Rela Institute and Medical Centre",
+      address: "India, Chennai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1616763221174.jpg&w=640&q=75",
+      desc: "A renowned hospital in Chennai.",
+      longDesc: "This hospital in Chennai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Chennai"
+      },
+      shortName: "Dr. Rela Institute and Medical Centre"
+    },
+    {
+      id: 63,
+      name: "CARE Hospitals, Banjara Hills, Hyderabad",
+      address: "India, Hyderabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FdxvoWRm2X8tic1rcbKR2Sjm21734764109021.jpg&w=640&q=75",
+      desc: "A renowned hospital in Hyderabad.",
+      longDesc: "This hospital in Hyderabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Hyderabad"
+      },
+      shortName: "CARE Hospitals, Banjara Hills, Hyderabad"
+    },
+    {
+      id: 64,
+      name: "Yashoda Hospitals Somajiguda",
+      address: "India, Hyderabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FSJYEuZ1oD4FiDUt4SA4jQn0K1740634349393.jpg&w=640&q=75",
+      desc: "A renowned hospital in Hyderabad.",
+      longDesc: "This hospital in Hyderabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Hyderabad"
+      },
+      shortName: "Yashoda Hospitals Somajiguda"
+    },
+    {
+      id: 65,
+      name: "MGM Healthcare, Adyar",
+      address: "India, Adyar",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2Fp7AWmLLn5HSqUTv8Sb0DCap51719386890390.jpg&w=640&q=75",
+      desc: "A renowned hospital in Adyar.",
+      longDesc: "This hospital in Adyar is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Adyar"
+      },
+      shortName: "MGM Healthcare, Adyar"
+    },
+    {
+      id: 66,
+      name: "SS Sparsh Hospital",
+      address: "India, Bengaluru",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F104417054924875734353.jpg&w=640&q=75",
+      desc: "A renowned hospital in Bengaluru.",
+      longDesc: "This hospital in Bengaluru is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Bengaluru"
+      },
+      shortName: "SS Sparsh Hospital"
+    },
+    {
+      id: 67,
+      name: "Apollo Hospital, Ahmedabad",
+      address: "India, Ahmedabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F89917053815269941483.jpg&w=640&q=75",
+      desc: "A renowned hospital in Ahmedabad.",
+      longDesc: "This hospital in Ahmedabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Ahmedabad"
+      },
+      shortName: "Apollo Hospital, Ahmedabad"
+    },
+    {
+      id: 68,
+      name: "MGM Healthcare",
+      address: "India, Chennai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F87217053815069595878.jpg&w=640&q=75",
+      desc: "A renowned hospital in Chennai.",
+      longDesc: "This hospital in Chennai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Chennai"
+      },
+      shortName: "MGM Healthcare"
+    },
+    {
+      id: 69,
+      name: "Metro Hospital, Faridabad",
+      address: "India, Faridabad",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1675332780618.png&w=640&q=75",
+      desc: "A renowned hospital in Faridabad.",
+      longDesc: "This hospital in Faridabad is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Faridabad"
+      },
+      shortName: "Metro Hospital, Faridabad"
+    },
+    {
+      id: 70,
+      name: "Yatharth Super Speciality Hospital, Greater Noida",
+      address: "India, Greater Noida",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F1642073335372.jpg&w=640&q=75",
+      desc: "A renowned hospital in Greater Noida.",
+      longDesc: "This hospital in Greater Noida is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Greater Noida"
+      },
+      shortName: "Yatharth Super Speciality Hospital, Greater Noida"
+    },
+    {
+      id: 71,
+      name: "MGM Hospital, Chennai",
+      address: "India, Chennai",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F161284725767.jpg&w=640&q=75",
+      desc: "A renowned hospital in Chennai.",
+      longDesc: "This hospital in Chennai is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Chennai"
+      },
+      shortName: "MGM Hospital, Chennai"
+    },
+    {
+      id: 72,
+      name: "Max Super Speciality Hospital, Patparganj",
+      address: "India, New Delhi",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2F171726061388.jpg&w=640&q=75",
+      desc: "A renowned hospital in New Delhi.",
+      longDesc: "This hospital in New Delhi is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "New Delhi"
+      },
+      shortName: "Max Super Speciality Hospital, Patparganj"
+    },
+    {
+      id: 73,
+      name: "Artemis Hospital",
+      address: "India, Delhi / NCR",
+      image: "https://www.healthtrip.com/_next/image?url=https%3A%2F%2Fd3fzwscyjtgllx.cloudfront.net%2Fhospitals%2Fimages%2FsBR3AelAaokog7Y9S4C0qT7A1734759182843.jpg&w=640&q=75",
+      desc: "A renowned hospital in Delhi / NCR.",
+      longDesc: "This hospital in Delhi / NCR is known for providing quality healthcare services.",
+      detail: {
+        beds: null,
+        established: null,
+        country: "India",
+        city: "Delhi / NCR"
+      },
+      shortName: "Artemis Hospital"
+    },
   ];

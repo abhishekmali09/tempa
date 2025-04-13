@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @theme {
-    --font-text: "Noto sans", "sans-serif";
+    --font-text: "Open sans", "sans-serif";
     --font-heading: "poppins", "sans-serif";
 }
 .grayish{

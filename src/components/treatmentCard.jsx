@@ -8,7 +8,7 @@ const TreatmentsCard = ({treatmentDetails }) => {
         alt={treatmentDetails.name}
         className="w-[100px] h-[100px] aspect-square  object-contain pointer-events-none select-none"
       />
-      <div className="text-center pt-5 text-xl font-semibold">
+      <div className="text-center pt-5 text-md font-semibold">
         <h1>{treatmentDetails.name}</h1>
       </div>
     </a>

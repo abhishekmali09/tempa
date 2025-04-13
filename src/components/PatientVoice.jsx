@@ -11,7 +11,7 @@ const PatientVoice = () => {
                         <h1 className='text-4xl text-rose-400'>Journey</h1>
                         <h1 className='text-4xl'>Begins Here</h1>
                     </div>
-                    <p>At Your Health Ally, we lead the way in medical travel, delivering world-class care tailored to your unique needs. Our mission is simple yet bold: to ensure your healing journey is seamless, transparent, and exceptional. With unwavering dedication to your health, comfort, and peace of mind, we strive to redefine excellence in every step. Begin your path to wellness with a partner you can trust.</p>
+                    <p className='text-justify'>At Your Health Ally, we lead the way in medical travel, delivering world-class care tailored to your unique needs. Our mission is simple yet bold: to ensure your healing journey is seamless, transparent, and exceptional. With unwavering dedication to your health, comfort, and peace of mind, we strive to redefine excellence in every step. Begin your path to wellness with a partner you can trust.</p>
                     <button className='py-2 px-5 border-2 border-rose-400 hover:bg-rose-400 duration-700 rounded-2xl '>Learn More</button>
                 </div>
             </div>

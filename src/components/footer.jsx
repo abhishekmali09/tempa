@@ -1,9 +1,11 @@
 import React,{useState} from 'react'
 import {ContactInformation,businessName,newsLetterSchema} from '../constants.js'
-import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -11,7 +13,10 @@ const iconsReg = {
     "facebook":<FacebookOutlinedIcon/>,
     "linkedin":<LinkedInIcon/>,
     "instagram":<InstagramIcon/>,
-    "x":<XIcon/>
+    "x":<XIcon/>,
+    "contactNumber":<PhoneOutlinedIcon/>,
+    "emailAddress":<EmailOutlinedIcon/>,
+    "address":<LocationOnOutlinedIcon/>
 }
 const Footer = () => {
    const { register, handleSubmit, formState: { errors } } = useForm({
@@ -53,10 +58,10 @@ const Footer = () => {
   return (
     <footer className='grayish h-1/2 '>
         <div className='w-full border-b-2 '>
-        <div className='py-10 pl-10 max-w-[1200px] mx-auto text-3xl font-heading'>{businessName}</div>
+        <div className='pt-10 pb-5 pl-10 max-w-[1200px] mx-auto text-3xl font-heading'>{businessName}</div>
         </div>
          <div className='border-b-2'>
-            <div className='grid grid-cols-1 auto-rows-auto lg:grid-rows-1 lg:grid-cols-4 max-w-[1200px] mx-auto'>
+            <div className='flex flex-col max-w-[1200px] mx-auto'>
                     {/* <div className='flex flex-col md:border-r-2 gap-3 py-16 lg:col-span-2 p-10 font-heading'>
                         <div>
                             <h3>Subscribe to Our</h3>
@@ -87,37 +92,45 @@ const Footer = () => {
                         <a href='/contact-us' >Contact Us</a> */}
                     {/* </div> */}
 
-                    <div className=' flex flex-col justify-center items-start px-10 font-text'>
+                    <div className=' flex justify-center items-center divide-x *:px-4  font-text pt-5 flex-wrap'>
                         {
                             // console.log(Object.entries(ContactInformation))
                         Object.entries(ContactInformation).map((entry)=>
                             {
                                 if(entry[0]!=="socialMediaHandles"){
-                                    return  <div className='max-w-[220px]'>
-                                    {entry[1]}
+                                    return  <div className=' flex gap-4 my-3 text-center'>
+                                        <div>
+                                        {iconsReg[entry[0]]}
+                                        </div>
+                                        <div>
+                                            {entry[1]}
+                                        </div>
                                 </div>
                                 }
-                                else{
-                                    return <div className='flex gap-3 pt-3'>
-                                    { Object.entries(entry[1]).map((social)=>{
-                                        return <a className='font-semibold cursor-pointer ' key={social[0]} target='_blank' href={social[1]}>{iconsReg[social[0]]}</a>
-                                    })}
-                                    </div>
-                                }
-
                             })
                         }
                     </div>
-                    <ul className='underline py-16 flex flex-col justify-center items-start font-heading px-10'>
+                        {
+                              <div className='flex gap-3 pb-5 justify-center items-center'>
+                             { Object.entries(ContactInformation.socialMediaHandles).map((social)=>{
+                                 return <a className='font-semibold cursor-pointer ' key={social[0]} target='_blank' href={social[1]}>{iconsReg[social[0]]}</a>
+                             })}
+                             </div>
+                        }
+                    <ul className='underline pb-16 flex  flex-wrap justify-center items-start font-heading px-10  divide-x *:px-4 ' >
                         <li>Privacy Policy</li>
                         <li>Accessibility Statement</li>
-                        <li>Terms and Conditions</li>
+                        <a href=''><li>About us</li></a>
+                        <a href=''><li>Contact us</li></a>
+                        <a href=''><li>Doctors</li></a>
+                        <a href=''><li>Hospitals</li></a>
+                        <a href='/treatments'><li>Treatments</li></a>
                         <li>Compliance  Policy</li>
                     </ul>
-                </div>
+            </div>
            </div>
            <div>
-             <div className='max-w-[1200px] mx-auto py-10 pl-10 font-heading'>@2025 {businessName}</div>
+             <div className='max-w-[1200px] mx-auto text-center py-10 pl-10 font-heading'>@2025 {businessName}. All rights reserved.</div>
            </div>
 
     </footer>
