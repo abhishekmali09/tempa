@@ -2,6 +2,7 @@ import React from 'react'
 import MainImage from "/Images/ServiceImage2.png"
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 const HospitalsCard = ({hospitalDetail,extracss}) => {
+    const name = hospitalDetail.name.length>=20?`${hospitalDetail.name.slice(0,17)}...`:hospitalDetail.name;
   return (
    <a href={`/hospitals/${hospitalDetail.id}`}>
      <div className={`flex gap-4 mx-auto flex-col justify-between h-[16rem] shadow-sm shadow-[#403e3c]  hover:scale-101 duration-850 rounded-xl ${extracss}`}>
@@ -10,7 +11,7 @@ const HospitalsCard = ({hospitalDetail,extracss}) => {
         </div>
         <div className="flex  flex-col justify-between pb-10 h-1/4 ">
         <div className="flex flex-col px-4 pb-2 flex-nowrap">
-            <h1 className="text-xl font-heading flex-nowrap overflow-hidden">{hospitalDetail.shortName}  <ChevronRightIcon/></h1>
+            <h1 className="text-xl font-heading flex-nowrap overflow-hidden">{name}  <ChevronRightIcon/></h1>
             <p className="text-sm font-semibold font-text">{hospitalDetail.address}</p>
         </div>
             {/* <div className="">

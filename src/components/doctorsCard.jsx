@@ -3,7 +3,7 @@ import MainImage from "/Images/doctor avatar.png"
 const DoctorsCard = ({doctorDetail,extracss}) => {
   return (
     <a href={`/doctors/${doctorDetail.id}`}>
-        <div className={`flex gap-4 flex-col p-5 shadow-sm shadow-[#403e3c] rounded-xl ${extracss}`}>
+        <div className={`flex gap-4 flex-col p-5 mx-5 shadow-sm shadow-[#403e3c] rounded-xl ${extracss}`}>
             <div className="flex justify-center items-start w-full rounded-xl bg-gray-400">
                 <img src={doctorDetail.image || MainImage} className="h-[15rem] w-full object-contain"/>
             </div>

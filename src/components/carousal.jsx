@@ -1,7 +1,7 @@
 import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 import { useState, useEffect } from "react";
-import { healthProgrammes,treatments } from "../constants";
+import { treatments } from "../constants";
 import DoctorsCard from '../components/doctorsCard'
 import { hospitals,doctors } from '../constants'
 import HospitalsCard from '../components/hospitalsCard'
