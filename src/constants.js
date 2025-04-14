@@ -241,17 +241,18 @@ export const aboutUsData = [
     {
       heading: "Excellence",
       desc: "We pursue the highest standards, partnering with top-tier medical professionals and facilities to ensure you receive the best care available.",
+
       image: "../../public/Images/Excellence.png",
     },
     {
       heading: "Empathy",
       desc: "We value compassion and understanding, reflecting the human side of medicine through quotes that connect with the emotions and experiences of our users.",
-      image: "../../public/Images/Empathy.png",
+      image: "../../public/Images/PuttingGloves.png",
     },
     {
       heading: "Innovation",
       desc: "We embrace cutting-edge solutions to simplify medical travel, making it accessible, efficient, and tailored to your needs.",
-      image: "../../public/Images/innovation.png",
+      image: "/Images/PuttingGloves.png",
     },
   ];
   export const whyChooseUsData = [
