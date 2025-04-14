@@ -236,45 +236,45 @@ export const aboutUsData = [
     {
       heading: "Trust",
       desc: "We build confidence through honesty, transparency, and a no-hidden-cost guarantee—your peace of mind is our priority.",
-      image: "../../public/Images/Integrity.png",
+      image: "/Images/Integrity.png",
     },
     {
       heading: "Excellence",
       desc: "We pursue the highest standards, partnering with top-tier medical professionals and facilities to ensure you receive the best care available.",
 
-      image: "../../public/Images/Excellence.png",
+      image: "/Images/Excellence.png",
     },
     {
       heading: "Empathy",
       desc: "We value compassion and understanding, reflecting the human side of medicine through quotes that connect with the emotions and experiences of our users.",
-      image: "../../public/Images/PuttingGloves.png",
+      image: "/Images/Empathy.png",
     },
     {
       heading: "Innovation",
       desc: "We embrace cutting-edge solutions to simplify medical travel, making it accessible, efficient, and tailored to your needs.",
-      image: "/Images/PuttingGloves.png",
+      image: "/Images/innovation.png",
     },
   ];
   export const whyChooseUsData = [
     {
       heading: "24x7 Dedicated Support",
       desc: "A caring team is always by your side, ready to assist anytime, day or night, throughout your journey right from the start of planning.",
-      image:"../../public/Images/24-7bg.png"
+      image:"/Images/24-7bg.png"
     },
     {
       heading: "No Hidden Cost Guarantee",
       desc: "Know exactly what you're paying for with clear, upfront pricing—no surprises, just honest answers.",
-       image:"../../public/Images/money.png"
+       image:"/Images/money.png"
     },
     {
       heading: "Opinions Until You're Satisfied",
       desc: "We help you get the expert medical opinions and options until you feel confident in your treatment choices, NO COMPROMISES on your health!",
-       image:"../../public/Images/feedback.png"
+       image:"/Images/feedback.png"
     },
     {
       heading: "Personalized Travel Planning",
       desc: "Every detail of your trip is tailored to your needs, ensuring comfort and peace of mind from start to finish. As many alterations you want or as much involvement you want in planning",
-       image:"../../public/Images/calendar.png"
+       image:"/Images/calendar.png"
     },
   ];
 
