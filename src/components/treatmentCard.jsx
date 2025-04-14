@@ -13,7 +13,7 @@ const TreatmentsCard = ({ treatmentDetails }) => {
         className="w-[60px] h-[60px] object-contain"
       />
       <div className="text-center mt-2 text-black text-sm font-semibold">
-        {treatmentDetails.name}
+        <h1>{treatmentDetails.name}</h1>
       </div>
     </Link>
   );

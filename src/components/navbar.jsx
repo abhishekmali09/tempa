@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav className="bg-white h-24 flex text-[#37474F] justify-around items-center border-b-2 border-gray-300 sticky top-0 z-20 font-heading" >
       {/* Logo */}
       <div>
-        <img alt="logo" src={img_logo} className="w-50 h-50" />
+        <a href='/'><img alt="logo" src={img_logo} className="w-50 h-50" /></a>
       </div>
 
       {/* Desktop Navigation */}
@@ -117,4 +117,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

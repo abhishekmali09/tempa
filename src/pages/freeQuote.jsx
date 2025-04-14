@@ -43,7 +43,7 @@ const FreeQuote = () => {
                 </div>
             </div>
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40811.1274211957!2d77.23156499863079!3d28.553648502338184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3c16e028cd1%3A0x653beb1ee85ec67a!2sLotus%20Temple!5e0!3m2!1sen!2sin!4v1742134950922!5m2!1sen!2sin"
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3790.7941166163414!2d77.05957291124969!3d28.58761278601735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b2188177235%3A0x6fd63d3b832a140a!2s306%2C%2011%2C%20Sector%206%2C%20Sector%2010%20Dwarka%2C%20Dwarka%2C%20New%20Delhi%2C%20Delhi%2C%20110075!5e1!3m2!1sen!2sin!4v1744556728462!5m2!1sen!2sin"
             height="450"
             style={{ border: 0 }} // Use double curly braces for inline styles
             allowFullScreen

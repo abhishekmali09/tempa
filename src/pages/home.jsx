@@ -7,7 +7,7 @@ const Home = () => {
     <>
     <div>
         <HeroSection/>
-        <h1 className='text-4xl p-10  max-w-[1200px] mx-auto text-center font-heading text-teal-400 '>Why Choose Us?</h1>
+        <h1 className='text-4xl p-10  max-w-[1200px] mx-auto text-center font-heading '>Why <span className='text-rose-400'>Choose</span> Us?</h1>
         <WhyChooseUs/>
         <div className=' py-10 bg-white max-w-[1200px] mx-auto'>
             <h1 className='text-4xl p-10  max-w-[1200px] mx-auto font-heading text-rose-400 '>Popular Hospitals</h1>

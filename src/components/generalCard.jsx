@@ -8,8 +8,8 @@ const GeneralCard = ({generalData}) => {
               alt={generalData.heading}
               className="w-36 h-36 mb-4"
             />
-            <h2 className="text-2xl font-semibold text-center font-heading mb-2">{generalData.heading}</h2>
-            <p className="text-center font-text text-[#37474F]  text-text">
+            <h2 className="text-xl font-semibold text-center font-heading mb-2">{generalData.heading}</h2>
+            <p className="text-center font-text text-[#37474F] text-md">
               {generalData.desc}
             </p>
           </div>
