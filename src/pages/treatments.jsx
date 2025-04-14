@@ -1,6 +1,8 @@
 import { treatments } from '../constants'
 import TreatmentsCard from '../components/treatmentCard'
 import FreeQuote from '../components/freeQuote'
+import FAQs from '../components/FAQs'
+
 const Treatments = () => {
   return (
     <section>
@@ -17,6 +19,7 @@ const Treatments = () => {
             </div>
         </div>
         <FreeQuote/>
+        <FAQs/>
     </section>
   )
 }

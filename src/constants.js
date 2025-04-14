@@ -23,32 +23,214 @@ export const ContactInformation = {
         "linkedin":"link",
     }
 }
+
 export const businessName = "Your Health Ally"
 
 export const treatments = [
-    { id: 1, img: "https://img.icons8.com/external-others-pike-picture/100/external-Bariatric-Surgery-bariatric-others-pike-picture.png", name: "Bariatric Surgery" },
-    { id: 2, img: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-cardiac-allergy-flaticons-lineal-color-flat-icons.png", name: "Cardiac Sciences" },
-    { id: 3, img: "https://img.icons8.com/external-obivous-color-kerismaker/100/external-anatomy-anatomy-color-obivous-color-kerismaker-32.png", name: "Cardiothoracic & Vascular Surgery" },
-    { id: 4, img: "https://img.icons8.com/external-tal-revivo-duo-tal-revivo/50/external-doctor-available-for-the-health-and-blood-type-blood-duo-tal-revivo.png", name: "Clinical Hematology & BMT" },
-    { id: 5, img: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/128/external-head-anatomy-flaticons-lineal-color-flat-icons-5.png", name: "ENT" },
-    { id: 6, img: "https://img.icons8.com/external-justicon-lineal-color-justicon/100/external-stomach-human-organs-justicon-lineal-color-justicon.png", name: "Gastroenterology Surgery" },
-    { id: 7, img: "https://img.icons8.com/arcade/64/surgery.png", name: "General Surgery" },
-    { id: 8, img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/50/external-medication-for-the-females-prescribed-by-a-gynecology-drugs-fresh-tal-revivo.png", name: "Gynaecology Treatment" },
-    { id: 9, img: "https://img.icons8.com/doodle/96/drop-of-blood--v1.png", name: "Haematology & BMT" },
-    { id: 10, img: "https://img.icons8.com/external-others-pike-picture/100/external-Liver-Transplant-hepatitis-others-pike-picture.png", name: "Liver Transplant Surgery" },
-    { id: 11, img: "https://img.icons8.com/pulsar-color/100/cancer-ribbon.png", name: "Medical Oncology" },
-    { id: 12, img: "https://img.icons8.com/doodle/96/kidney--v1.png", name: "Nephrology" },
-    { id: 13, img: "https://img.icons8.com/pulsar-color/100/brain-stroke.png", name: "Neuro Sciences" },
-    { id: 14, img: "https://img.icons8.com/external-beshi-color-kerismaker/100/external-Neurology-medical-service-beshi-color-kerismaker.png", name: "Neurology" },
-    { id: 15, img: "https://img.icons8.com/ios-glyphs/90/periods.png", name: "Obstetrics & Gynecology" },
-    { id: 16, img: "https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/external-oncology-world-cancer-awareness-flatart-icons-lineal-color-flatarticons.png", name: "Oncology" },
-    { id: 17, img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/100/external-bone-disorder-orthopedics-department-in-same-hospital-premises-hospital-fresh-tal-revivo.png", name: "Orthopedics" },
-    { id: 18, img: "https://img.icons8.com/ios/100/chromatography.png", name: "Pediatric Cardiac Surgery" },
-    { id: 19, img: "https://img.icons8.com/fluency/100/non-ionizing-radiation.png", name: "Radiation Oncology" },
-    { id: 20, img: "https://img.icons8.com/ios/100/surgical-scissors.png", name: "Surgical Oncology" },
-    { id: 21, img: "https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/64/external-transplant-cancer-care-inipagistudio-lineal-color-inipagistudio.png", name: "Transplant" },
-    { id: 22, img: "https://img.icons8.com/external-beshi-color-kerismaker/100/external-Urology-medical-service-beshi-color-kerismaker.png", name: "Urology Surgery" },
-    { id: 23, img: "https://img.icons8.com/color/100/spleen.png", name: "Vascular Surgery" }
+  {
+    id: 1,
+    name: "Bariatric Surgery",
+    img: "https://img.icons8.com/external-others-pike-picture/100/external-Bariatric-Surgery-bariatric-others-pike-picture.png",
+    shortDesc: "Surgical procedures to aid weight loss.",
+    desc: "Bariatric surgery includes procedures like gastric bypass and sleeve gastrectomy to help with weight loss.",
+    longDesc: "It is recommended for individuals with severe obesity who have not responded to other weight loss methods, improving overall health and quality of life."
+  },
+  {
+    id: 2,
+    name: "Cardiac Sciences",
+    img: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-cardiac-allergy-flaticons-lineal-color-flat-icons.png",
+    shortDesc: "Advanced treatments for heart-related conditions.",
+    desc: "Cardiac Sciences involve diagnosing and treating heart diseases, including surgeries and minimally invasive procedures.",
+    longDesc: "Specialists in this field manage conditions like coronary artery disease, heart failure, and arrhythmias using cutting-edge technology."
+  },
+  {
+    id: 3,
+    name: "ENT",
+    img: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/128/external-head-anatomy-flaticons-lineal-color-flat-icons-5.png",
+    shortDesc: "Treatment for ear, nose, and throat conditions.",
+    desc: "ENT (Ear, Nose, and Throat) specialists, also known as otolaryngologists, diagnose and treat conditions related to the ear, nose, throat, and related structures of the head and neck.",
+    longDesc: "They manage a wide range of issues including sinusitis, hearing loss, ear infections, voice disorders, and sleep apnea. Treatments can involve medication, surgical procedures, and lifestyle changes to alleviate symptoms and improve overall quality of life."
+  },
+  {
+    id: 4,
+    name: "General & Laparoscopic",
+    img: "https://img.icons8.com/ios-filled/100/surgery.png",
+    shortDesc: "Minimally invasive surgical procedures.",
+    desc: "General and laparoscopic surgery involves minimally invasive techniques for various conditions.",
+    longDesc: "These procedures reduce recovery time and complications, addressing issues like gallstones, hernias, and appendicitis."
+  },
+  {
+    id: 5,
+    name: "Haematology & BMT",
+    img: "https://img.icons8.com/doodle/96/drop-of-blood--v1.png",
+    shortDesc: "Blood disorder and bone marrow transplant treatments.",
+    desc: "Haematology and Bone Marrow Transplant (BMT) focus on blood-related diseases and marrow replacement.",
+    longDesc: "Treats conditions like leukemia, anemia, and lymphoma with advanced therapies and transplants."
+  },
+ 
+  {
+    id: 30,
+    name: "Infertility",
+    img: "https://img.icons8.com/external-others-pike-picture/50/external-Infertility-adoption-others-pike-picture.png",
+    shortDesc: "Treatments to assist with conception.",
+    desc: "Infertility treatments help individuals and couples conceive through various medical techniques.",
+    longDesc: "Includes options like IVF, hormonal therapy, and surgical corrections for reproductive issues."
+  },
+  {
+    id: 6,
+    name: "Nephrology & Urology",
+    img: "https://img.icons8.com/color/96/kidney.png",
+    shortDesc: "Kidney and urinary tract treatments.",
+    desc: "Nephrology and Urology manage kidney and urinary system disorders.",
+    longDesc: "Treats kidney stones, urinary infections, and chronic kidney disease with dialysis or surgery."
+  },
+  {
+    id: 7,
+    name: "Neuro Sciences",
+    img: "https://img.icons8.com/fluency/96/brain.png",
+    shortDesc: "Brain and nervous system treatments.",
+    desc: "Neuro Sciences cover brain, spine, and nerve-related conditions.",
+    longDesc: "Manages epilepsy, tumors, and spinal disorders with advanced neurosurgery and therapies."
+  },
+  {
+    id: 8,
+    name: "Obstetrics & Gynecology",
+    img: "https://img.icons8.com/color/96/pregnant.png",
+    shortDesc: "Women’s reproductive health and pregnancy care.",
+    desc: "Obstetrics and Gynecology address pregnancy, childbirth, and female reproductive health.",
+    longDesc: "Includes prenatal care, gynecological surgeries, and treatment for menstrual disorders."
+  },
+  {
+    id: 9,
+    name: "Cardiothoracic & Vascular Surgery" ,
+    img: "https://img.icons8.com/external-obivous-color-kerismaker/100/external-anatomy-anatomy-color-obivous-color-kerismaker-32.png",
+    shortDesc: "Surgery of the heart, lungs, and blood vessels.",
+    desc: "Cardiothoracic & Vascular Surgery treats conditions of the heart, lungs, and vascular system through advanced surgical procedures.",
+    longDesc: "Focuses on surgical treatment of diseases affecting the heart, lungs, esophagus, and major blood vessels, including bypass surgery, valve repair, aortic aneurysm repair, and minimally invasive thoracic procedures."
+
+  },
+  {
+    id: 10,
+    name: "Clinical Hematology & BMT",
+    img: "https://img.icons8.com/external-tal-revivo-duo-tal-revivo/50/external-doctor-available-for-the-health-and-blood-type-blood-duo-tal-revivo.png",
+    shortDesc: "Blood disorders and bone marrow transplant.",
+    desc: "Clinical Hematology & BMT manages blood diseases and offers bone marrow transplantation for various hematological conditions.",
+    longDesc: "Specializes in diagnosing and treating blood disorders such as leukemia, lymphoma, anemia, and clotting disorders. Offers advanced care including chemotherapy, immunotherapy, and bone marrow or stem cell transplantation."
+
+  },
+  {
+   id: 11,
+    img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/50/external-medication-for-the-females-prescribed-by-a-gynecology-drugs-fresh-tal-revivo.png", 
+    name: "Gynaecology Treatment", 
+    shortDesc: "Women's reproductive health care.",
+    desc: "Gynaecology Treatment focuses on the diagnosis and management of female reproductive system disorders.",
+    longDesc: "Provides comprehensive care for conditions affecting the uterus, ovaries, fallopian tubes, and vagina, including menstrual disorders, infertility, fibroids, endometriosis, and menopause-related issues. Treatments include medical management, minimally invasive surgery, and preventive care."
+
+  },
+  {
+     id: 12, 
+     img: "https://img.icons8.com/external-justicon-lineal-color-justicon/100/external-stomach-human-organs-justicon-lineal-color-justicon.png", 
+     name: "Gastroenterology Surgery",
+     shortDesc: "Surgical care for digestive system disorders.",
+     desc: "Gastroenterology Surgery addresses diseases of the digestive tract through specialized surgical procedures.",
+     longDesc: "Focuses on the surgical treatment of conditions affecting the esophagus, stomach, liver, pancreas, intestines, and gallbladder. Common procedures include laparoscopic surgeries for gallstones, hernias, colorectal cancer, and inflammatory bowel disease, aimed at improving digestive health and quality of life."
+
+  },
+
+  { id: 13, 
+    img: "https://img.icons8.com/arcade/64/surgery.png",
+     name: "General Surgery",
+     shortDesc: "Broad surgical care for various conditions.",
+    desc: "General Surgery involves surgical treatment of a wide range of common conditions affecting multiple body systems.",
+    longDesc: "Covers surgical procedures for conditions involving the abdomen, skin, breast, soft tissues, and endocrine system. Includes surgeries for hernias, appendicitis, gallbladder disease, tumors, and trauma. Often utilizes minimally invasive techniques to promote faster recovery and reduced complications."
+
+    },
+    { id: 14,
+     img: "https://img.icons8.com/external-others-pike-picture/100/external-Liver-Transplant-hepatitis-others-pike-picture.png", 
+     name: "Liver Transplant Surgery",
+     shortDesc: "Surgical replacement of a diseased liver.",
+      desc: "Liver Transplant Surgery involves replacing a damaged or failing liver with a healthy donor liver.",
+      longDesc: "Performed for patients with end-stage liver disease, liver cancer, or acute liver failure. This complex procedure involves removing the diseased liver and implanting a healthy liver from a deceased or living donor. Post-transplant care includes immunosuppressive therapy and long-term monitoring to ensure graft success and patient recovery."
+  },
+  {
+   id: 15, 
+      img: "https://img.icons8.com/pulsar-color/100/cancer-ribbon.png", 
+      name: "Medical Oncology",
+      shortDesc: "Cancer treatment using medication.",
+     desc: "Medical Oncology focuses on diagnosing and treating cancer through chemotherapy, immunotherapy, and targeted therapy.",
+     longDesc: "Specializes in the medical management of cancer using advanced drug therapies such as chemotherapy, immunotherapy, hormonal therapy, and targeted treatments. Medical oncologists work closely with surgical and radiation teams to provide personalized, comprehensive cancer care across all stages of the disease."
+  },
+  {
+    id: 16,
+       img: "https://img.icons8.com/doodle/96/kidney--v1.png",
+        name: "Nephrology",
+        shortDesc: "Care for kidney-related diseases.",
+       desc: "Nephrology deals with the diagnosis and treatment of kidney disorders and related conditions.",
+       longDesc: "Focuses on managing conditions such as chronic kidney disease, acute kidney injury, glomerulonephritis, and electrolyte imbalances. Nephrologists also oversee dialysis treatment and prepare patients for kidney transplantation, aiming to preserve kidney function and improve overall health."
+  },
+  { id: 17,
+     img: "https://img.icons8.com/external-beshi-color-kerismaker/100/external-Neurology-medical-service-beshi-color-kerismaker.png",
+      name: "Neurology" ,
+      shortDesc: "Diagnosis and care of brain and nerve disorders.",
+     desc: "Neurology focuses on the diagnosis and treatment of diseases affecting the brain, spinal cord, and nervous system.",
+     longDesc: "Specializes in managing conditions such as stroke, epilepsy, Parkinson’s disease, multiple sclerosis, migraines, and neuropathies. Neurologists use advanced diagnostic tools and medical therapies to treat both acute and chronic neurological disorders, aiming to improve patient function and quality of life."
+    },
+
+  {
+     id: 18,
+       img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/100/external-bone-disorder-orthopedics-department-in-same-hospital-premises-hospital-fresh-tal-revivo.png", 
+       name: "Orthopedics",
+       shortDesc: "Bone, joint, and muscle care.",
+      desc: "Orthopedics focuses on the diagnosis and treatment of the musculoskeletal system, including bones, joints, muscles, and ligaments.",
+      longDesc: "Provides medical and surgical care for conditions such as fractures, arthritis, sports injuries, spine disorders, and joint degeneration. Treatments range from physical therapy and medication to minimally invasive procedures and joint replacement surgeries, aimed at restoring mobility and reducing pain."
+  },
+  { id: 19,
+     img: "https://img.icons8.com/ios/100/chromatography.png",
+      name: "Pediatric Cardiac Surgery",
+      shortDesc: "Heart surgery for infants and children.",
+      desc: "Pediatric Cardiac Surgery treats congenital and acquired heart conditions in newborns, infants, and children through specialized surgical procedures.",
+      longDesc: "Focuses on correcting structural heart defects such as holes in the heart, valve disorders, and complex congenital anomalies. Performed by highly trained surgeons using advanced techniques, often in collaboration with pediatric cardiologists. The goal is to improve heart function, enhance growth and development, and ensure long-term health in young patients."
+     },
+  {
+     id: 20, 
+     img: "https://img.icons8.com/fluency/100/non-ionizing-radiation.png", 
+     name: "Radiation Oncology",
+     shortDesc: "Cancer treatment using targeted radiation.",
+    desc: "Radiation Oncology uses high-energy radiation to treat and manage various types of cancer.",
+    longDesc: "Specializes in the precise delivery of radiation therapy to destroy cancer cells while minimizing damage to surrounding healthy tissue. Used alone or alongside surgery and chemotherapy, it treats cancers such as brain, breast, prostate, and head & neck cancers. Techniques include IMRT, IGRT, stereotactic radiosurgery, and brachytherapy for optimal outcomes."
+  },
+  {
+   id:21 ,
+   img: "https://img.icons8.com/ios/100/surgical-scissors.png", 
+    name: "Surgical Oncology",
+    shortDesc: "Surgical treatment of cancer.",
+    desc: "Surgical Oncology focuses on the removal of tumors and cancerous tissues through advanced surgical techniques.",
+    longDesc: "Specializes in diagnosing, staging, and surgically treating various types of cancer, including breast, gastrointestinal, head and neck, and soft tissue tumors. Surgical oncologists work closely with medical and radiation oncology teams to deliver comprehensive cancer care. Procedures may include minimally invasive and organ-preserving surgeries to enhance recovery and outcomes." 
+  },
+{
+      id: 22,
+     img: "https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/64/external-transplant-cancer-care-inipagistudio-lineal-color-inipagistudio.png", 
+     name: "Transplant",
+     shortDesc: "Organ and tissue transplantation services.",
+    desc: "Transplant services involve replacing damaged organs or tissues with healthy donor organs to restore function and save lives.",
+    longDesc: "Specializes in organ transplantation including kidney, liver, heart, and bone marrow transplants. The transplant team manages the entire process—from donor evaluation and surgery to post-transplant care and immunosuppressive therapy. The goal is to improve survival and quality of life for patients with end-stage organ failure or severe blood disorders."
+},
+{
+      id: 23,
+     img: "https://img.icons8.com/external-beshi-color-kerismaker/100/external-Urology-medical-service-beshi-color-kerismaker.png",
+      name: "Urology Surgery",
+      shortDesc: "Surgical care for urinary and male reproductive systems.",
+      desc: "Urology Surgery treats disorders of the urinary tract and male reproductive organs through advanced surgical methods.",
+      longDesc: "Focuses on the surgical management of conditions such as kidney stones, prostate enlargement, bladder tumors, urinary incontinence, and male infertility. Urologists perform procedures ranging from minimally invasive endoscopy to complex reconstructive and laparoscopic surgeries, aiming to restore urinary function and improve patient quality of life."    
+},
+{
+   id: 24, 
+    img: "https://img.icons8.com/color/100/spleen.png",
+     name: "Vascular Surgery",
+     shortDesc: "Surgical treatment of blood vessel disorders.",
+     desc: "Vascular Surgery focuses on diseases of the arteries, veins, and lymphatic system requiring surgical intervention.",
+     longDesc: "Specializes in treating conditions such as peripheral artery disease, varicose veins, aneurysms, and carotid artery disease. Procedures include both open and minimally invasive techniques like angioplasty, stenting, and bypass surgery to restore healthy blood flow and prevent complications such as stroke or limb loss."
+},
 ];
 export const aboutUsData = [
     {
