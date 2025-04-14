@@ -1,18 +1,23 @@
-import React from 'react';
 
-const TreatmentsCard = ({treatmentDetails }) => {
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+
+const TreatmentsCard = ({ treatmentDetails }) => {
   return (
-    <a className=" py-10 flex font-text flex-col justify-start items-center w-[100px]" href={`/free-quote/t/${treatmentDetails.id}`}  >
+    <Link to={`/treatments/${treatmentDetails.id}`} className="flex flex-col items-center">
       <img
         src={treatmentDetails.img}
         alt={treatmentDetails.name}
-        className="w-[100px] h-[100px] aspect-square  object-contain pointer-events-none select-none"
+        className="w-[60px] h-[60px] object-contain"
       />
-      <div className="text-center pt-5 text-xl font-semibold">
-        <h1>{treatmentDetails.name}</h1>
+      <div className="text-center mt-2 text-black text-sm font-semibold">
+        {treatmentDetails.name}
       </div>
-    </a>
+    </Link>
   );
 };
 
 export default TreatmentsCard;
+

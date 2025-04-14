@@ -2,7 +2,7 @@ import React from 'react'
 
 const FreeQuote = () => {
   return (
-    <div className='grayish py-20'>
+    <div className='bg-white py-20'>
         <div className=' mx-auto max-w-[400px]  flex flex-col justify-center items-center gap-9'>
        <div className='flex flex-col items-center justify-center gap-1'>
             <h1 className='text-teal-400 font-heading text-4xl'>Get a Free Quote</h1>
