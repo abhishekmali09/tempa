@@ -19,14 +19,13 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
 
         if (formType === 'contact') {
             const contactFormData = new FormData();
-            contactFormData.append("entry.904745691", data.firstName);
-            contactFormData.append("entry.29233579", data.lastName);
-            contactFormData.append("entry.295706247", data.email);
-            contactFormData.append("entry.1652019015", data.message);
-
+            contactFormData.append("entry.1996996062", data.firstName);
+            contactFormData.append("entry.1590575703", data.lastName);
+            contactFormData.append("entry.2088677335", data.email);
+            contactFormData.append("entry.239038748", data.message);
             try {
                 await fetch(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSdOlO0T0K5MuxsKQcPqVO5WQT61dXZoQdMiULygIMfBSpbpXw/formResponse",
+                    "https://docs.google.com/forms/d/e/1FAIpQLScHD9D09NgIsDDZxoVfR658U8YlD0c2nJtKz-7xSLDj8afmTw/formResponse",
                     {
                         method: "POST",
                         body: contactFormData,
@@ -44,17 +43,17 @@ const Form = ({ formType,doctorDetail,treatmentDetail }) => {
             }
         } else if (formType === 'quote') {
             const quoteFormData = new FormData();
-            quoteFormData.append("entry.165473670", data.firstName);
-            quoteFormData.append("entry.473017976", data.lastName);
-            quoteFormData.append("entry.1188495906", data.email);
-            if(doctorDetail)quoteFormData.append("entry.966855998", data.doctor_name);
-            if(treatmentDetail)quoteFormData.append("entry.1547308294", data.treatment_name);
-            quoteFormData.append("entry.2139192016", data.message);
-
+            quoteFormData.append("entry.185853128", data.firstName);
+            quoteFormData.append("entry.162375049", data.lastName);
+            quoteFormData.append("entry.859676106", data.email);
+            if(doctorDetail)quoteFormData.append("entry.1090098999", data.doctor_name);
+            if(treatmentDetail)quoteFormData.append("entry.627415965", data.treatment_name);
+            quoteFormData.append("entry.1227958253", data.message);
+            // https://docs.google.com/forms/d/e/1FAIpQLSeWiZ0hlrygVVcoDKesk5hsaos_--5JdPasMoM89bJdgG2CRA/viewform?usp=pp_url&entry.185853128=abhishek&entry.162375049=mali&entry.859676106=abhishekamali@gamil.com&entry.1090098999=abhi&entry.627415965=dvsfbhr&entry.1227958253=nil
             try {
-                // https://docs.google.com/forms/d/e/1FAIpQLSfiDOlrMGhUrEw-RhMDTJYqwQAYPLdwAHEFZAmI4HuBbYbOrQ/viewform?usp=pp_url&entry.165473670=a&entry.473017976=b&entry.1188495906=c&entry.966855998=d&entry.1547308294=e&entry.2139192016=f
+
                 await fetch(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSfiDOlrMGhUrEw-RhMDTJYqwQAYPLdwAHEFZAmI4HuBbYbOrQ/formResponse",
+                    "https://docs.google.com/forms/d/e/1FAIpQLSeWiZ0hlrygVVcoDKesk5hsaos_--5JdPasMoM89bJdgG2CRA/formResponse",
                     {
                         method: "POST",
                         body: quoteFormData,

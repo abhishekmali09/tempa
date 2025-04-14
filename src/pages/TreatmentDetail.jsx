@@ -1,9 +1,10 @@
 
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { treatments } from '../constants';
+import { treatments,hospitals,doctors } from '../constants';
 import FreeQuote from '../components/freeQuote';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Carousal from '../components/carousal';
 
 const TreatmentDetail = () => {
   const { id } = useParams();
@@ -44,9 +45,9 @@ const TreatmentDetail = () => {
             <ExpandMoreIcon
               className={`transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
               onClick={toggleExpand}
-              
+
             />
-            
+
           </div>
           {isExpanded && (
             <div className="mt-2">
@@ -54,7 +55,16 @@ const TreatmentDetail = () => {
             </div>
           )}
         </div>
-
+        <div className='  bg-white max-w-[1200px] mx-auto'>
+            <h1 className='text-4xl p-10  max-w-[1200px] mx-auto font-heading text-rose-400 '>Popular Hospitals</h1>
+            <div className="flex justify-center items-start w-full px-10">
+            <Carousal type="hosptials" treatment={treatment.name}/>
+            </div>
+            <h1 className='text-4xl p-10  max-w-[1200px] mx-auto font-heading text-rose-400 '>Popular Doctors</h1>
+            <div className="flex justify-center items-start w-full px-10">
+            <Carousal type="doctors" treatment={treatment.name}/>
+            </div>
+        </div>
         <FreeQuote />
       </div>
     </div>

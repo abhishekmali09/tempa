@@ -130,7 +130,7 @@ const Footer = () => {
             </div>
            </div>
            <div>
-             <div className='max-w-[1200px] mx-auto text-center py-10 pl-10 font-heading'>@2025 {businessName}. All rights reserved.</div>
+             <div className='max-w-[1200px] mx-auto text-center py-10 font-heading'>@2025 {businessName}. All rights reserved.</div>
            </div>
 
     </footer>

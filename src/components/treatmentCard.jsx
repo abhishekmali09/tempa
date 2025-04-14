@@ -1,23 +1,20 @@
 
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 
 const TreatmentsCard = ({ treatmentDetails }) => {
   return (
-    <Link to={`/treatments/${treatmentDetails.id}`} className="flex flex-col items-center">
+    <a href={`/treatments/${treatmentDetails.id}`} className="flex flex-col items-center w-[100px] h-[200px]">
       <img
         src={treatmentDetails.img}
         alt={treatmentDetails.name}
-        className="w-[60px] h-[60px] object-contain"
+        className="w-[100px] h-[100px] object-contain"
       />
       <div className="text-center mt-2 text-black text-sm font-semibold">
         <h1>{treatmentDetails.name}</h1>
       </div>
-    </Link>
+    </a>
   );
 };
 
 export default TreatmentsCard;
-

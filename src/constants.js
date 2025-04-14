@@ -24,7 +24,7 @@ export const ContactInformation = {
     }
 }
 
-export const businessName = "Your Health Ally"
+export const businessName = "Cure It Aboard"
 
 export const treatments = [
   {
@@ -67,7 +67,7 @@ export const treatments = [
     desc: "Haematology and Bone Marrow Transplant (BMT) focus on blood-related diseases and marrow replacement.",
     longDesc: "Treats conditions like leukemia, anemia, and lymphoma with advanced therapies and transplants."
   },
- 
+
   {
     id: 30,
     name: "Infertility",
@@ -120,16 +120,16 @@ export const treatments = [
   },
   {
    id: 11,
-    img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/50/external-medication-for-the-females-prescribed-by-a-gynecology-drugs-fresh-tal-revivo.png", 
-    name: "Gynaecology Treatment", 
+    img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/50/external-medication-for-the-females-prescribed-by-a-gynecology-drugs-fresh-tal-revivo.png",
+    name: "Gynaecology Treatment",
     shortDesc: "Women's reproductive health care.",
     desc: "Gynaecology Treatment focuses on the diagnosis and management of female reproductive system disorders.",
     longDesc: "Provides comprehensive care for conditions affecting the uterus, ovaries, fallopian tubes, and vagina, including menstrual disorders, infertility, fibroids, endometriosis, and menopause-related issues. Treatments include medical management, minimally invasive surgery, and preventive care."
 
   },
   {
-     id: 12, 
-     img: "https://img.icons8.com/external-justicon-lineal-color-justicon/100/external-stomach-human-organs-justicon-lineal-color-justicon.png", 
+     id: 12,
+     img: "https://img.icons8.com/external-justicon-lineal-color-justicon/100/external-stomach-human-organs-justicon-lineal-color-justicon.png",
      name: "Gastroenterology Surgery",
      shortDesc: "Surgical care for digestive system disorders.",
      desc: "Gastroenterology Surgery addresses diseases of the digestive tract through specialized surgical procedures.",
@@ -137,7 +137,7 @@ export const treatments = [
 
   },
 
-  { id: 13, 
+  { id: 13,
     img: "https://img.icons8.com/arcade/64/surgery.png",
      name: "General Surgery",
      shortDesc: "Broad surgical care for various conditions.",
@@ -146,15 +146,15 @@ export const treatments = [
 
     },
     { id: 14,
-     img: "https://img.icons8.com/external-others-pike-picture/100/external-Liver-Transplant-hepatitis-others-pike-picture.png", 
+     img: "https://img.icons8.com/external-others-pike-picture/100/external-Liver-Transplant-hepatitis-others-pike-picture.png",
      name: "Liver Transplant Surgery",
      shortDesc: "Surgical replacement of a diseased liver.",
       desc: "Liver Transplant Surgery involves replacing a damaged or failing liver with a healthy donor liver.",
       longDesc: "Performed for patients with end-stage liver disease, liver cancer, or acute liver failure. This complex procedure involves removing the diseased liver and implanting a healthy liver from a deceased or living donor. Post-transplant care includes immunosuppressive therapy and long-term monitoring to ensure graft success and patient recovery."
   },
   {
-   id: 15, 
-      img: "https://img.icons8.com/pulsar-color/100/cancer-ribbon.png", 
+   id: 15,
+      img: "https://img.icons8.com/pulsar-color/100/cancer-ribbon.png",
       name: "Medical Oncology",
       shortDesc: "Cancer treatment using medication.",
      desc: "Medical Oncology focuses on diagnosing and treating cancer through chemotherapy, immunotherapy, and targeted therapy.",
@@ -178,7 +178,7 @@ export const treatments = [
 
   {
      id: 18,
-       img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/100/external-bone-disorder-orthopedics-department-in-same-hospital-premises-hospital-fresh-tal-revivo.png", 
+       img: "https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/100/external-bone-disorder-orthopedics-department-in-same-hospital-premises-hospital-fresh-tal-revivo.png",
        name: "Orthopedics",
        shortDesc: "Bone, joint, and muscle care.",
       desc: "Orthopedics focuses on the diagnosis and treatment of the musculoskeletal system, including bones, joints, muscles, and ligaments.",
@@ -192,8 +192,8 @@ export const treatments = [
       longDesc: "Focuses on correcting structural heart defects such as holes in the heart, valve disorders, and complex congenital anomalies. Performed by highly trained surgeons using advanced techniques, often in collaboration with pediatric cardiologists. The goal is to improve heart function, enhance growth and development, and ensure long-term health in young patients."
      },
   {
-     id: 20, 
-     img: "https://img.icons8.com/fluency/100/non-ionizing-radiation.png", 
+     id: 20,
+     img: "https://img.icons8.com/fluency/100/non-ionizing-radiation.png",
      name: "Radiation Oncology",
      shortDesc: "Cancer treatment using targeted radiation.",
     desc: "Radiation Oncology uses high-energy radiation to treat and manage various types of cancer.",
@@ -201,15 +201,15 @@ export const treatments = [
   },
   {
    id:21 ,
-   img: "https://img.icons8.com/ios/100/surgical-scissors.png", 
+   img: "https://img.icons8.com/ios/100/surgical-scissors.png",
     name: "Surgical Oncology",
     shortDesc: "Surgical treatment of cancer.",
     desc: "Surgical Oncology focuses on the removal of tumors and cancerous tissues through advanced surgical techniques.",
-    longDesc: "Specializes in diagnosing, staging, and surgically treating various types of cancer, including breast, gastrointestinal, head and neck, and soft tissue tumors. Surgical oncologists work closely with medical and radiation oncology teams to deliver comprehensive cancer care. Procedures may include minimally invasive and organ-preserving surgeries to enhance recovery and outcomes." 
+    longDesc: "Specializes in diagnosing, staging, and surgically treating various types of cancer, including breast, gastrointestinal, head and neck, and soft tissue tumors. Surgical oncologists work closely with medical and radiation oncology teams to deliver comprehensive cancer care. Procedures may include minimally invasive and organ-preserving surgeries to enhance recovery and outcomes."
   },
 {
       id: 22,
-     img: "https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/64/external-transplant-cancer-care-inipagistudio-lineal-color-inipagistudio.png", 
+     img: "https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/64/external-transplant-cancer-care-inipagistudio-lineal-color-inipagistudio.png",
      name: "Transplant",
      shortDesc: "Organ and tissue transplantation services.",
     desc: "Transplant services involve replacing damaged organs or tissues with healthy donor organs to restore function and save lives.",
@@ -221,10 +221,10 @@ export const treatments = [
       name: "Urology Surgery",
       shortDesc: "Surgical care for urinary and male reproductive systems.",
       desc: "Urology Surgery treats disorders of the urinary tract and male reproductive organs through advanced surgical methods.",
-      longDesc: "Focuses on the surgical management of conditions such as kidney stones, prostate enlargement, bladder tumors, urinary incontinence, and male infertility. Urologists perform procedures ranging from minimally invasive endoscopy to complex reconstructive and laparoscopic surgeries, aiming to restore urinary function and improve patient quality of life."    
+      longDesc: "Focuses on the surgical management of conditions such as kidney stones, prostate enlargement, bladder tumors, urinary incontinence, and male infertility. Urologists perform procedures ranging from minimally invasive endoscopy to complex reconstructive and laparoscopic surgeries, aiming to restore urinary function and improve patient quality of life."
 },
 {
-   id: 24, 
+   id: 24,
     img: "https://img.icons8.com/color/100/spleen.png",
      name: "Vascular Surgery",
      shortDesc: "Surgical treatment of blood vessel disorders.",
