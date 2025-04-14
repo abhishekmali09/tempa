@@ -3,7 +3,7 @@ import MainImage from "/Images/heroSectionModified.png"
 import MainVideo from "/Untitled design.mp4"
 const HeroSection = () => {
   return (
-    <section className='flex grayish flex-col-reverse lg:gap-0 gap-8 relative lg:flex-row h-screen'>
+    <section className='flex grayish lg:gap-0 gap-8 relative lg:flex-row h-screen'>
         {/* sm:max-w-screen lg:w-1/2 */}
             <video src={MainVideo} autoPlay={true} loop={true} className='w-full object-cover'></video>
         <div className='absolute inset-0 flex flex-col gap-4  w-full justify-center items-center pb-10'>

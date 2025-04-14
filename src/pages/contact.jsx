@@ -21,34 +21,34 @@ const Contact = () => {
 
             <div className='flex flex-col mx-auto max-w-[750px] justify-center items-center pt-30 pb-10'>
                 <div className='pb-6 flex gap-6 flex-col justify-center items-center'>
-                    <h1 className='md:text-7xl text-6xl font-heading text-rose-400 '>Contact Us</h1>
-                    <p className='text-center font-text text-2xl px-10'>Connect with us for tailored medical quotes. Use the form, email, or call us—we're here to make it easy for you.</p>
+                    <h1 className='md:text-5xl font-heading '>Let's <span className='text-teal-400'>Talk</span></h1>
+                    <p className='text-center font-text text-lg px-10'>Connect with us for tailored medical quotes. Use the form, email, or call us—we're here to make it easy for you.</p>
                 </div>
             </div>
             <div className='border-b-[1px] border-t-[1px] w-full bg-white '>
-                <div className='max-w-[1200px] mx-auto flex lg:flex-row flex-col'>
-                    <div className='lg:w-2/5 w-full grid grid-rows-2 grid-cols-1 justify-center py-10'>
+                <div className='max-w-[1200px] mx-auto flex lg:flex-row flex-col justify-center items-center'>
+                    <div className='lg:w-2/5 w-full grid grid-rows-2 grid-cols-1 gap-10 px-10 my-10'>
                             <div className=' flex flex-col gap-10 w-full'>
-                                <div className='flex flex-col gap-5 '>
+                                <div className='flex flex-col gap-5  '>
                                     <LocationOnOutlinedIcon/>
-                                    <h1 className='font-heading text-2xl'>Address</h1>
-                                    <p className='  font-text text-xl'>{ContactInformation.address}</p>
+                                    <h1 className='font-heading text-xl'>Address</h1>
+                                    <p className='  font-text text-lg'>{ContactInformation.address}</p>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <PhoneOutlinedIcon/>
-                                    <h1 className='font-heading text-2xl'>Phone</h1>
-                                    <p className=' font-text text-xl'>{ContactInformation.contactNumber}</p>
+                                    <h1 className='font-heading text-xl'>Phone</h1>
+                                    <p className=' font-text text-lg'>{ContactInformation.contactNumber}</p>
                                 </div>
                             </div>
                             <div className='flex flex-col gap-10 w-full'>
                                 <div className='flex flex-col gap-5'>
                                     <EmailOutlinedIcon/>
-                                    <h1 className='font-heading text-2xl text-wrap'>Email</h1>
-                                    <p className=' font-text text-xl'>{ContactInformation.emailAddress}</p>
+                                    <h1 className='font-heading text-xl text-wrap'>Email</h1>
+                                    <p className=' font-text text-lg'>{ContactInformation.emailAddress}</p>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <ConnectWithoutContactIcon/>
-                                    <h1 className='font-heading text-2xl'>Social Media</h1>
+                                    <h1 className='font-heading text-xl'>Social Media</h1>
                                     <div className='flex gap-2 '>
                                     { Object.entries(ContactInformation.socialMediaHandles).map((social)=>{
                                         return <a className='font-semibold cursor-pointer ' target='_blank' href={social[1]} key={social[0]} >{iconsReg[social[0]]}</a>

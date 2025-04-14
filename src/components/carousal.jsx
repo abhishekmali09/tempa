@@ -6,7 +6,7 @@ import DoctorsCard from '../components/doctorsCard'
 import { hospitals,doctors } from '../constants'
 import HospitalsCard from '../components/hospitalsCard'
 // homeServices
-const Carousal = ({type}) => {
+const Carousal = ({type,treatment}) => {
     const handleSlideClick = (index) => {
         if (emblaApi) {
           emblaApi.scrollTo(index);
@@ -41,21 +41,29 @@ const Carousal = ({type}) => {
     //   }, [emblaApi, initialSlideIndex, activeIndex]);
     let data ;
     if(type==="hosptials"){
-        data = hospitals.slice(0,6);
+        if(treatment){
+            data = hospitals.filter((hos)=>true)
+        }
+        else data = hospitals.slice(0,6);
     }
     else if(type==="doctors"){
-        data=doctors.slice(10,16);
+        if(treatment){
+            console.log
+            data = doctors.filter((doc)=>doc.department===treatment)
+        }
+        else data=doctors.slice(10,16);
     }
+
     console.log(type,data);
     return (
         <section className="embla overflow-hidden w-full pb-10">
         <div className="embla__viewport " ref={emblaRef}>
           <div className="embla__container flex shrink-0 gap-10 w-full ">
                 { type==="hosptials" && data.length!==0 && data.map((hospital)=>{
-                    return <HospitalsCard hospitalDetail={hospital} extracss =" w-[20rem] "/>
+                    return <HospitalsCard hospitalDetail={hospital} extracss =" w-[18rem] md:w-[20rem] "/>
                 })}
                 { type==="doctors" && data.length!==0 &&  data.map((doctor)=>{
-                    return <DoctorsCard doctorDetail={doctor} extracss="w-full sm:w-[30rem] "/>
+                    return <DoctorsCard doctorDetail={doctor} extracss="w-[18rem] md:w-[30rem] "/>
                 })}
           </div>
         </div>

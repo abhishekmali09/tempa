@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
-import img_logo from '../../public/Images/navbar__logo.png';
+import img_logo from '../../public/Images/Transparent-logo.png';
 
 const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav className="bg-white h-24 flex text-[#37474F] justify-around items-center border-b-2 border-gray-300 sticky top-0 z-20 font-heading" >
       {/* Logo */}
       <div>
-        <a href='/'><img alt="logo" src={img_logo} className="w-50 h-50" /></a>
+        <a href='/'><img alt="logo" src={img_logo} className="w-36 h-28" /></a>
       </div>
 
       {/* Desktop Navigation */}
