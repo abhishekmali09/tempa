@@ -278,159 +278,9 @@ export const aboutUsData = [
     },
   ];
 
-export const doctors = [
+  export const doctors = [
     {
         id: 1,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. Dharma Chaudhary",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "17 Years",
-        department: "Clinical Hematology & BMT",
-        desc: "Renowned Haematologist, Sr. Consultant & Director in Bone Marrow Transplant Department.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "17 Years",
-            department: "Clinical Hematology & BMT",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 2,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. W V B S Ramalingam",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "34 Years",
-        department: "ENT Surgery",
-        desc: "Experienced ENT Surgeon, Sr. Consultant & Director in ENT & Cochlear Implant Department.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "34 Years",
-            department: "ENT Surgery",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 3,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. Sunil Prakash",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "35 Years",
-        department: "Nephrology & Kidney Transplant",
-        desc: "Best Nephrologist in India, Sr. Consultant & Director in the Nephrology Department.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "35 Years",
-            department: "Nephrology & Kidney Transplant",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 4,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. Kapil Kumar",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "25 Years",
-        department: "Surgical Oncology",
-        desc: "One of the best oncologist surgeons, Director & HOD - Surgical Oncology.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "25 Years",
-            department: "Surgical Oncology",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 5,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. Rajiv Anand",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "38 Years",
-        department: "Neurology",
-        desc: "Top Neurologist, Director & Sr. Consultant, Department of Neurology.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "38 Years",
-            department: "Neurology",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 6,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. Deep Goel",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "25 Years",
-        department: "GI & Bariatric Surgery",
-        desc: "Expert in Bariatric Surgery, Sr. Consultant & Director in Surgical Gastroenterology.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "25 Years",
-            department: "GI & Bariatric Surgery",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 7,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. Subhash Chandra",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "28 Years",
-        department: "Cardiology",
-        desc: "Chairman & HOD in Cardiology Department, one of India's best cardiologists.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "28 Years",
-            department: "Cardiology",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 8,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. Amit Agarwal",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "25 Years",
-        department: "Medical Oncology",
-        desc: "Experienced Oncologist, Director & HOD in Medical Oncology Department.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "25 Years",
-            department: "Medical Oncology",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 9,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. S Hukku",
-        hospital: "BLK Super Specialty Hospital, New Delhi",
-        experience: "35 Years",
-        department: "Radiation Oncology",
-        desc: "Renowned Radiation Oncologist, Sr. Consultant & Chairman Radiation Oncology.",
-        detail: {
-            hospital: "BLK Super Specialty Hospital, New Delhi",
-            experience: "35 Years",
-            department: "Radiation Oncology",
-            city: "New Delhi"
-        }
-    },
-    {
-        id: 10,
-        image: "/Images/Doctors_design-removebg.png",
-        name: "Dr. Rajesh Sharma",
-        hospital: "Jaypee Hospital, Noida",
-        experience: "25 Years",
-        department: "Pediatric Cardiac Surgery",
-        desc: "Expert Pediatric Cardiothoracic Surgeon, performed over 20,000 surgeries.",
-        detail: {
-            hospital: "Jaypee Hospital, Noida",
-            experience: "25 Years",
-            department: "Pediatric Cardiac Surgery",
-            city: "Noida"
-        }
-    },
-    {
-        id: 11,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr-Sanjay-Gupta21.jpg",
         name: "DR SANJAY GUPTA",
         hospital: "Jaypee Hospital, Noida - India",
@@ -445,7 +295,7 @@ export const doctors = [
         }
     },
     {
-        id: 12,
+        id: 2,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_-Abhideep-Chaudhary.jpg",
         name: "DR ABHIDEEP CHAUDHARY",
         hospital: "Blk Hospital, New Delhi - India",
@@ -460,7 +310,7 @@ export const doctors = [
         }
     },
     {
-        id: 13,
+        id: 3,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Harit_Chaturvedi_new_0.jpg",
         name: "DR HARIT CHATURVEDI",
         hospital: "Max Hospital, New Delhi - India",
@@ -475,9 +325,9 @@ export const doctors = [
         }
     },
     {
-        id: 14,
+        id: 4,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Sanjay_gupta-Liver.jpg",
-        name: "PROF DR SUBHASH GUPTA",
+        name: "PROF DR SUBHASH GtepUPTA",
         hospital: "Max Hospital, New Delhi - India",
         experience: "35 Years ",
         department: "Liver Transplant Surgeon",
@@ -490,7 +340,7 @@ export const doctors = [
         }
     },
     {
-        id: 15,
+        id: 5,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_Anant_Kumar_max1.png",
         name: "DR ANANT KUMAR",
         hospital: "Max Hospital, New Delhi - India",
@@ -505,7 +355,7 @@ export const doctors = [
         }
     },
     {
-        id: 16,
+        id: 6,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_Anurag_Krishna_Max1.jpg",
         name: "DR ANURAG KRISHNA",
         hospital: "Max Hospital, New Delhi - India",
@@ -520,7 +370,7 @@ export const doctors = [
         }
     },
     {
-        id: 17,
+        id: 7,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Pradeep_Chowbey_Max.jpg",
         name: "DR PRADEEP CHOWBEY",
         hospital: "Max Hospital, New Delhi - India",
@@ -535,7 +385,7 @@ export const doctors = [
         }
     },
     {
-        id: 18,
+        id: 8,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr_Anil_Arora.JPG",
         name: "PROF DR ANIL ARORA",
         hospital: "Max Hospital, New Delhi - India",
@@ -550,7 +400,7 @@ export const doctors = [
         }
     },
     {
-        id: 19,
+        id: 9,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_shishta-nadda-bas.JPG",
         name: "DR SHISHTA NADDA BASU",
         hospital: "Max Hospital, New Delhi - India",
@@ -565,7 +415,7 @@ export const doctors = [
         }
     },
     {
-        id: 20,
+        id: 10,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr_ashok_seth.jpg",
         name: "DR ASHOK SETH",
         hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
@@ -580,7 +430,7 @@ export const doctors = [
         }
     },
     {
-        id: 21,
+        id: 11,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/DR_YUGAL_K_MISHRA.PNG",
         name: "DR YUGAL K MISHRA",
         hospital: "Manipal Hospital, Dwarka - India",
@@ -595,7 +445,7 @@ export const doctors = [
         }
     },
     {
-        id: 22,
+        id: 12,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Vivek_Vij.jpg",
         name: "DR VIVEK VIJ",
         hospital: "Fortis Escorts Heart Hospital, New Delhi - India",
@@ -610,7 +460,7 @@ export const doctors = [
         }
     },
     {
-        id: 23,
+        id: 13,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Ashok_Rajgopal.jpg",
         name: "DR ASHOK RAJGOPAL",
         hospital: "Fortis Hospital, Gurugram - India",
@@ -625,7 +475,7 @@ export const doctors = [
         }
     },
     {
-        id: 24,
+        id: 14,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/Dr__Sheshir_seth.png",
         name: "DR SHISHIR SETH",
         hospital: "Apollo Hospital, New Delhi - India",
@@ -640,7 +490,7 @@ export const doctors = [
         }
     },
     {
-        id: 25,
+        id: 15,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr-s-m-shuaib-zaidi.jpg",
         name: "DR S M SHUAIB ZAIDI",
         hospital: "Apollo Hospital, New Delhi - India",
@@ -655,7 +505,7 @@ export const doctors = [
         }
     },
     {
-        id: 26,
+        id: 16,
         image: "https://peacemedicaltourism.com/assets/uploads/doctors/dr-sandeep-attawar.jpg",
         name: "DR SANDEEP ATTAWAR",
         hospital: "Gleneagles Global Hospital, Tamil Nadu - India",
@@ -666,11 +516,160 @@ export const doctors = [
             hospital: "Gleneagles Global Hospital, Tamil Nadu - India",
             experience: "22 Years ",
             department: "Cardiothoracic & Vascular Surgeon",
-            city: "Chennai" // Assuming Tamil Nadu refers to Chennai, a major city
+            city: "Chennai"
+        }
+    },
+    {
+        id: 17,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. Dharma Chaudhary",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "17 Years",
+        department: "Clinical Hematology & BMT",
+        desc: "Renowned Haematologist, Sr. Consultant & Director in Bone Marrow Transplant Department.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "17 Years",
+            department: "Clinical Hematology & BMT",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 18,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. W V B S Ramalingam",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "34 Years",
+        department: "ENT Surgery",
+        desc: "Experienced ENT Surgeon, Sr. Consultant & Director in ENT & Cochlear Implant Department.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "34 Years",
+            department: "ENT Surgery",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 19,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. Sunil Prakash",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "35 Years",
+        department: "Nephrology & Kidney Transplant",
+        desc: "Best Nephrologist in India, Sr. Consultant & Director in the Nephrology Department.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "35 Years",
+            department: "Nephrology & Kidney Transplant",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 20,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. Kapil Kumar",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "25 Years",
+        department: "Surgical Oncology",
+        desc: "One of the best oncologist surgeons, Director & HOD - Surgical Oncology.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "25 Years",
+            department: "Surgical Oncology",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 21,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. Rajiv Anand",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "38 Years",
+        department: "Neurology",
+        desc: "Top Neurologist, Director & Sr. Consultant, Department of Neurology.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "38 Years",
+            department: "Neurology",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 22,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. Deep Goel",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "25 Years",
+        department: "GI & Bariatric Surgery",
+        desc: "Expert in Bariatric Surgery, Sr. Consultant & Director in Surgical Gastroenterology.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "25 Years",
+            department: "GI & Bariatric Surgery",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 23,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. Subhash Chandra",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "28 Years",
+        department: "Cardiology",
+        desc: "Chairman & HOD in Cardiology Department, one of India's best cardiologists.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "28 Years",
+            department: "Cardiology",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 24,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. Amit Agarwal",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "25 Years",
+        department: "Medical Oncology",
+        desc: "Experienced Oncologist, Director & HOD in Medical Oncology Department.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "25 Years",
+            department: "Medical Oncology",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 25,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. S Hukku",
+        hospital: "BLK Super Specialty Hospital, New Delhi",
+        experience: "35 Years",
+        department: "Radiation Oncology",
+        desc: "Renowned Radiation Oncologist, Sr OJHLConsultant & Chairman Radiation Oncology.",
+        detail: {
+            hospital: "BLK Super Specialty Hospital, New Delhi",
+            experience: "35 Years",
+            department: "Radiation Oncology",
+            city: "New Delhi"
+        }
+    },
+    {
+        id: 26,
+        image: "/Images/Doctors_design-removebg.png",
+        name: "Dr. Rajesh Sharma",
+        hospital: "Jaypee Hospital, Noida",
+        experience: "25 Years",
+        department: "Pediatric Cardiac Surgery",
+        desc: "Expert Pediatric Cardiothoracic Surgeon, performed over 20,000 surgeries.",
+        detail: {
+            hospital: "Jaypee Hospital, Noida",
+            experience: "25 Years",
+            department: "Pediatric Cardiac Surgery",
+            city: "Noida"
         }
     }
 ];
-
 export const hospitals = [
     {
       id: 1,
